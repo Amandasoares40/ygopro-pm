@@ -1,0 +1,57 @@
+--Chaos Tower (Fates Collide 94/124)
+local scard,sid=aux.GetID()
+function scard.initial_effect(c)
+	--choose one (cannot be confused, poisoned or cannot be asleep, paralyzed)
+	aux.EnableStadiumAttribute(c,true,scard.op1,scard.op2)
+end
+--choose one (cannot be confused, poisoned or cannot be asleep, paralyzed)
+function scard.op1(e,tp,eg,ep,ev,re,r,rp)
+	local c=e:GetHandler()
+	scard.play(c,tp,tp)
+	scard.immune1(c,tp)
+	scard.immune2(c,1-tp)
+end
+function scard.op2(e,tp,eg,ep,ev,re,r,rp)
+	local c=e:GetHandler()
+	scard.play(c,tp,1-tp)
+	scard.immune1(c,1-tp)
+	scard.immune2(c,tp)
+end
+function scard.play(c,tp,player)
+	local sc=Duel.GetStadiumCard(player)
+	if sc then
+		Duel.SendtoDPile(sc,REASON_EFFECT+REASON_DISCARD)
+		Duel.BreakEffect()
+	end
+	Duel.MoveToField(c,tp,player,LOCATION_SZONE,POS_FACEUP,true)
+end
+function scard.immune1(c,player)
+	local s_range=(player==1-player and 0 or LOCATION_INPLAY)
+	local o_range=(player==1-player and LOCATION_INPLAY or 0)
+	--cannot be confused, poisoned
+	local e1=Effect.CreateEffect(c)
+	e1:SetType(EFFECT_TYPE_FIELD)
+	e1:SetCode(EFFECT_IMMUNE_CONFUSED)
+	e1:SetRange(LOCATION_STADIUM)
+	e1:SetTargetRange(s_range,o_range)
+	e1:SetTarget(aux.TargetBoolFunction(Card.IsPokemon))
+	Duel.RegisterEffect(e1,player)
+	local e2=e1:Clone()
+	e2:SetCode(EFFECT_IMMUNE_POISONED)
+	Duel.RegisterEffect(e2,player)
+end
+function scard.immune2(c,player)
+	local s_range=(player==1-player and 0 or LOCATION_INPLAY)
+	local o_range=(player==1-player and LOCATION_INPLAY or 0)
+	--cannot be asleep, paralyzed
+	local e1=Effect.CreateEffect(c)
+	e1:SetType(EFFECT_TYPE_FIELD)
+	e1:SetCode(EFFECT_IMMUNE_ASLEEP)
+	e1:SetRange(LOCATION_STADIUM)
+	e1:SetTargetRange(s_range,o_range)
+	e1:SetTarget(aux.TargetBoolFunction(Card.IsPokemon))
+	Duel.RegisterEffect(e1,player)
+	local e2=e1:Clone()
+	e2:SetCode(EFFECT_IMMUNE_PARALYZED)
+	Duel.RegisterEffect(e2,player)
+end

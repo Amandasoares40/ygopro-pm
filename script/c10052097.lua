@@ -1,0 +1,26 @@
+--Old Amber Aerodactyl (Dark Explorers 97/108)
+local scard,sid=aux.GetID()
+function scard.initial_effect(c)
+	--search (to bench)
+	aux.PlayTrainerFunction(c,scard.tg1,scard.op1)
+end
+scard.trainer_item=true
+--search (to bench)
+function scard.tg1(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then return Duel.IsNotBenchFull(tp) and Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)>0 end
+end
+function scard.tbfilter(c,e,tp)
+	return c:IsCode(CARD_AERODACTYL) and c:IsCanBePlayed(e,0,tp,true,false)
+end
+function scard.op1(e,tp,eg,ep,ev,re,r,rp)
+	if Duel.IsBenchFull(tp) then return end
+	local g=Duel.GetDeckbottomGroup(tp,7)
+	Duel.ConfirmCards(tp,g)
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TOBENCH)
+	local sg=g:FilterSelect(tp,scard.tbfilter,0,1,nil,e,tp)
+	if sg:GetCount()>0 then
+		Duel.PlayPokemon(sg,0,tp,tp,true,false,POS_FACEUP_UPSIDE)
+	else
+		Duel.ShuffleDeck(tp)
+	end
+end
