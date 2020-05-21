@@ -5,8 +5,7 @@
 </p>
 
 ## How to play
-1. Start `ygopro_vs.exe`.<br>
-Note: If YGOPro crashes between games, start `ygopro_vs_lan_fix.exe` instead.
+1. Start `ygopro.exe`.
 2. Click on `Deck Manager` to build your deck. Remember to add 1 _Pokemon Rules_ to your extra deck!<br>
 If you do not build your deck according to the following rules, you will lose the game and have to rebuild your deck:<br>
 ● Your deck must be exactly 60 cards (or 30 for [Half Decks](https://bulbapedia.bulbagarden.net/wiki/Half_Deck_(TCG))).<br>
@@ -36,7 +35,7 @@ If you do not build your deck according to the following rules, you will lose th
 1. This YGOPro game is only compatible with the Microsoft Windows operating system.
 2. Online play is not supported.
 3. At least 1 player must have _Pokemon Rules_ in their deck, otherwise the mod will not function properly.
-4. When you host a game and get an error that tells you the number of a particular card is not allowed in your deck, if there are no illegal cards in your deck it is because YGOPro does not allow you to have more than 3 copies of a card with the same name. Enable `Do not check deck` when creating a game to avoid this error.
+4. When you host a game and get an error that tells you the number of a particular card is not allowed in your deck, if there are no illegal cards in your deck it is because YGOPro does not allow you to have more than 3 copies of a card with the same name. Enable `Do not check Deck` when creating a game to avoid this error.
 
 ## How to win
 1. Take all your Prize cards.
