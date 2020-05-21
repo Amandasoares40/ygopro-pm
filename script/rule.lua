@@ -1,6 +1,6 @@
 --register rules
 --Not fully implemented: Cannot change turn counter to 1 during sudden death
-Rule=Rule or {}
+Rule={}
 function Rule.RegisterRules(c)
 	local e1=Effect.CreateEffect(c)
 	e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE+EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_NO_TURN_RESET)
