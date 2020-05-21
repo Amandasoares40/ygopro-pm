@@ -5,7 +5,7 @@
 </p>
 
 ## How to play
-1. Start `ygopro.exe`.
+1. Start YGOPro.
 2. Click on `Deck Manager` to build your deck. Remember to add 1 _Pokemon Rules_ to your extra deck!<br>
 If you do not build your deck according to the following rules, you will lose the game and have to rebuild your deck:<br>
 ● Your deck must be exactly 60 cards (or 30 for [Half Decks](https://bulbapedia.bulbagarden.net/wiki/Half_Deck_(TCG))).<br>
