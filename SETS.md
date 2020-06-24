@@ -1,6 +1,14 @@
 # Pokemon TCG [Sets](http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_Trading_Card_Game_expansions)
 
-## Base Sets & Expansions (In order of EN release date)
+## ID Map
+- `10000XXX` : System
+- `10XXXYYY` : Base Sets, Expansions
+- `11XXXYYY` : Japanese Exclusive Cards
+- `10XXXXX` : [Promotional Cards](https://bulbapedia.bulbagarden.net/wiki/Promotional_cards_(TCG)), Sub-Sets, Special Sets, Collections
+- `100XXX` : [Trainer Kits](https://bulbapedia.bulbagarden.net/wiki/Deck#Trainer_Kit)
+
+## Base Sets & Expansions
+(In order of EN release date)
 
 ### Original Series | Original Era
 <details>
@@ -31,14 +39,14 @@
 <details>
 <summary></summary>
 
-- **Aug. 19 2001** : Pokemon Card VS | *Not released in English* : `-` (151)
+- **Aug. 19 2001** : Pokemon Card VS | *Not released in English* : `11011XXX` (151)
 </details>
 
 ### Web Era
 <details>
 <summary></summary>
 
-- **Oct. 20 2001** : Pokemon Card Web | *Not released in English* : `-` (48)
+- **Oct. 20 2001** : Pokemon Card Web | *Not released in English* : `11012XXX` (48)
 </details>
 
 ### Legendary Collection Series
@@ -68,7 +76,7 @@
 - Nov. 24, 2003 : Dragon (DR) | Rulers of the Heavens : `10018XXX`
 - Mar. 14, 2004 : Team Magma vs Team Aqua (incl. Box Topper) (MA) | Magma VS Aqua: Two Ambitions : `10019XXX`
 - June 14, 2004 : Hidden Legends (incl. Box Topper) (HL) | Undone Seal : `10020XXX`
-- **June 2004 : [Trainer Kit: Latias and Latios (TK1A-TK1B)](https://bulbapedia.bulbagarden.net/wiki/EX_Trainer_Kit_(TCG))** : `1001XX`
+- **June 2004 : [EX Trainer Kit: Latias & Latios (TK1)](https://bulbapedia.bulbagarden.net/wiki/EX_Trainer_Kit_(TCG))** : `1001XX`
 - Aug. 30, 2004 : FireRed & LeafGreen (incl. Box Topper) (FG) | Flight of Legends : `10021XXX`
 - **Sept. 2004 - Aug. 2005 : [POP Series 1 (P1)](https://bulbapedia.bulbagarden.net/wiki/POP_Series_1_(TCG))** : `1005XXX`
 - Nov. 8, 2004 : Team Rocket Returns (incl. Box Topper) (TR) | Rocket Gang Strikes Back : `10022XXX`
@@ -78,7 +86,7 @@
 - Aug. 22, 2005 : Unseen Forces (incl. Box Topper) (UF) | Golden Sky, Silvery Ocean : `10025XXX`
 - Oct. 31, 2005 : Delta Species (incl. Box Topper) (DS) | Holon Research Tower : `10026XXX`
 - Feb. 13, 2006 : Legend Maker (incl. Box Topper) (LM) | Mirage Forest : `10027XXX`
-- **Mar. 2006 : [Trainer Kit 2: Plusle and Minun (TK2A-TK2B)](https://bulbapedia.bulbagarden.net/wiki/EX_Trainer_Kit_2_(TCG))** : `1002XX`
+- **Mar. 2006 : [EX Trainer Kit 2: Plusle & Minun (TK2)](https://bulbapedia.bulbagarden.net/wiki/EX_Trainer_Kit_2_(TCG))** : `1002XX`
 - **Apr. 2006 - Aug. 2006 : [POP Series 3 (P3)](https://bulbapedia.bulbagarden.net/wiki/POP_Series_3_(TCG))** : `1007XXX`
 - May 3, 2006 : Holon Phantoms (incl. Box Topper) (HP) | Holon Phantom : `10028XXX`
 - **Aug. 2006 - Mar. 2007 : [POP Series 4 (P4)](https://bulbapedia.bulbagarden.net/wiki/POP_Series_4_(TCG))** : `1008XXX`
@@ -95,7 +103,7 @@
 - **May 2007 - Dec. 2009 : [Diamond & Pearl Promos (PR)](https://bulbapedia.bulbagarden.net/wiki/DP_Black_Star_Promos_(TCG))** : `1010XXX`
 - May 23, 2007 : Diamond & Pearl (DP) | Space-Time Creation : `10032XXX`
 - Aug. 22, 2007 : Mysterious Treasures (MT) | Secret of the Lakes : `10033XXX`
-- **Sept. 2007 : [Diamond & Pearl Trainer Kit: Manaphy and Lucario (TK3A-TK3B)](https://bulbapedia.bulbagarden.net/wiki/Diamond_%26_Pearl_Trainer_Kit_(TCG))** : `1003XX`
+- **Sept. 2007 : [Diamond & Pearl Trainer Kit: Manaphy & Lucario (TK3)](https://bulbapedia.bulbagarden.net/wiki/Diamond_%26_Pearl_Trainer_Kit_(TCG))** : `1003XX`
 - **Sept. 2007 - Mar. 2008 : [POP Series 6 (P6)](https://bulbapedia.bulbagarden.net/wiki/POP_Series_6_(TCG))** : `1011XXX`
 - Nov. 7, 2007 : Secret Wonders (SW) | Shining Darkness : `10034XXX`
 - Feb. 13, 2008 : Great Encounters (GE) | Moonlit Pursuit : `10035XXX`
@@ -124,7 +132,7 @@
 
 - **Feb. 2010 - Feb. 2011 : [HeartGold & SoulSilver Promos (PR)](https://bulbapedia.bulbagarden.net/wiki/HGSS_Black_Star_Promos_(TCG))** : `1016XXX`
 - Feb. 10, 2010 : HeartGold & SoulSilver (HS) | HeartGold Collection/SoulSilver Collection : `10043XXX`
-- **May 2010 : [HS Trainer Kit: Gyarados and Raichu (TK4A-TK4B)](https://bulbapedia.bulbagarden.net/wiki/HS_Trainer_Kit_(TCG))** : `1004XX`
+- **May 2010 : [HS Trainer Kit: Gyarados & Raichu (TK4)](https://bulbapedia.bulbagarden.net/wiki/HS_Trainer_Kit_(TCG))** : `1004XX`
 - May 12, 2010 : Unleashed (UL) | *Not Released in Japanese* : `10044XXX`
 - **July 8, 2010 : [World Collection](https://bulbapedia.bulbagarden.net/wiki/World_Collection_(TCG))** : `1017XXX`
 - Aug. 18, 2010 : Undaunted (UD) | Reviving Legends : `10045XXX`
@@ -145,7 +153,7 @@
 - **Mar. 2011 - Dec. 2013 : [Black & White Promos (BWP)](https://bulbapedia.bulbagarden.net/wiki/BW_Black_Star_Promos_(TCG))** : `1018XXX`
 - Apr. 25, 2011 : Black & White (BLW) | Black Collection/White Collection : `10048XXX`
 - **June 17, 2011 : [McDonald's Collection 2011 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_(TCG))** : `1019XXX`
-- **Sept. 2011 : [Black & White Trainer Kit: Excadrill and Zoroark (TK5A-TK5B)](https://bulbapedia.bulbagarden.net/wiki/Black_%26_White_Trainer_Kit_(TCG))** : `1005XX`
+- **Sept. 2011 : [Black & White Trainer Kit: Excadrill & Zoroark (TK5)](https://bulbapedia.bulbagarden.net/wiki/Black_%26_White_Trainer_Kit_(TCG))** : `1005XX`
 - Aug. 31, 2011 : Emerging Powers (EPO) | *Not Released in Japanese* : `10049XXX`
 - Nov. 16, 2011 : Noble Victories (NVI) | Red Collection : `10050XXX`
 - Feb. 8, 2012 : Next Destinies (NXD) | Psycho Drive/Hail Blizzard : `10051XXX`
@@ -168,15 +176,15 @@
 - **Oct. 2013 - May 2017 : [XY Promos (XYP)](https://bulbapedia.bulbagarden.net/wiki/XY_Black_Star_Promos_(TCG))** : `1023XXX`
 - ~**Nov. 8, 2013 : [Kalos Starter Set (KSS)](https://bulbapedia.bulbagarden.net/wiki/Kalos_Starter_Set_(TCG))** : `1024XXX`~
 - Feb. 5, 2014 : XY (XY) | Collection X/Collection Y : `10059XXX`
-- **Mar. 12, 2014 : [XY Trainer Kit: Sylveon and Noivern (TK6A-TK6B)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit_(TCG))** : `1006XX`
+- **Mar. 12, 2014 : [XY Trainer Kit: Sylveon & Noivern (TK6)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit_(TCG))** : `1006XX`
 - May 7, 2014 : Flashfire (FLF) | Wild Blaze : `10060XXX`
 - **May 23, 2014 - June 12, 2014 : [McDonald's Collection 2014 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_2014_(TCG))** : `1025XXX`
 - Aug. 13, 2014 : Furious Fists (FFI) | Rising Fist : `10061XXX`
 - Nov. 5, 2014 : Phantom Forces (PHF) | Phantom Gate : `10062XXX`
-- **Nov. 2014 : [XY Trainer Kit: Bisharp and Wigglytuff (TK7A-TK7B)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Bisharp_%26_Wigglytuff_(TCG))** : `1007XX`
+- **Nov. 2014 : [XY Trainer Kit: Bisharp & Wigglytuff (TK7)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Bisharp_%26_Wigglytuff_(TCG))** : `1007XX`
 - Feb. 4, 2015 : Primal Clash (PRC) | Gaia Volcano/Tidal Storm : `10063XXX`
 - ~**Mar. 25, 2015 : [Double Crisis (DCR)](https://bulbapedia.bulbagarden.net/wiki/Double_Crisis_(TCG))** | **Jan. 30 2015** : Magma Gang VS Aqua Gang: Double Crisis : `1026XXX`~
-- **Apr. 29, 2015 : [XY Trainer Kit: Latias and Latios (TK8A-TK8B)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Latias_%26_Latios_(TCG))** : `1008XX`
+- **Apr. 29, 2015 : [XY Trainer Kit: Latias & Latios (TK8)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Latias_%26_Latios_(TCG))** : `1008XX`
 - May 6, 2015 : Roaring Skies (ROS) | Emerald Break : `10064XXX`
 - Aug 12. 2015 : Ancient Origins (AOR) | Bandit Ring : `10065XXX`
 </details>
@@ -189,7 +197,7 @@
 - **Oct. 14, 2015 : [McDonald's Collection 2015 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_2015_(TCG))** : `1027XXX`
 - Feb. 3, 2016 : BREAKpoint (BKP) | Rage of the Broken Heavens : `10067XXX`
 - Feb. 22, 2016 : Generations (GEN) | Starter Pack : `10068XXX`
-- **Apr. 27, 2016 : [XY Trainer Kit: Pikachu Libre and Suicune (TK9A-TK9B)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Pikachu_Libre_%26_Suicune_(TCG))** : `1009XX`
+- **Apr. 27, 2016 : [XY Trainer Kit: Pikachu Libre & Suicune (TK9)](https://bulbapedia.bulbagarden.net/wiki/XY_Trainer_Kit:_Pikachu_Libre_%26_Suicune_(TCG))** : `1009XX`
 - May 2, 2016 : Fates Collide (FCO) | Awakening Psychic King : `10069XXX`
 - Aug. 3, 2016 : Steam Siege (STS) | Fever-Burst Fighter/Cruel Traitor : `10070XXX`
 - **Aug. 19, 2016 : [McDonald's Collection 2016 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_2016_(TCG))** : `1028XXX`
@@ -202,7 +210,7 @@
 
 - **Nov. 2016 - Present : [Sun & Moon Promos (SMP)](https://bulbapedia.bulbagarden.net/wiki/SM_Black_Star_Promos_(TCG))** : `1029XXX` (Ongoing)
 - Feb. 3, 2017 : Sun & Moon (SUM) | Collection Sun/Collection Moon : `10072XXX`
-- **Apr. 21, 2017 : [SM Trainer Kit: Lycanroc and Alolan Raichu (TK10A-TK10B)](https://bulbapedia.bulbagarden.net/wiki/Sun_%26_Moon_Trainer_Kit:_Lycanroc_%26_Alolan_Raichu_(TCG))** : `1010XX`
+- **Apr. 21, 2017 : [Sun & Moon Trainer Kit: Lycanroc & Alolan Raichu (TK10)](https://bulbapedia.bulbagarden.net/wiki/Sun_%26_Moon_Trainer_Kit:_Lycanroc_%26_Alolan_Raichu_(TCG))** : `1010XX`
 - May. 5, 2017 : Guardians Rising (GRI) | Islands Await You/Alolan Moonlight : `10073XXX`
 - Aug. 4, 2017 : Burning Shadows (BUS) | To Have Seen the Battle Rainbow/Darkness that Consumes Light : `10074XXX`
 - **July 2017 - Feb. 2018 : [McDonald's Collection 2017 (MCD)](http://www.pokellector.com/sets/MCD7-McDonalds-Collection-2017)** : `1030XXX`
@@ -210,7 +218,7 @@
 - Nov. 3, 2017 : Crimson Invasion (CIN) | Awakened Heroes/Ultradimensional Beasts : `10076XXX`
 - Feb. 2, 2018 : Ultra Prism (UPR) | Ultra Sun/Ultra Moon : `10077XXX`
 - May 4, 2018 : Forbidden Light (FLI) : `10078XXX`
-- **June 1, 2018 : [SM Trainer Kit: Alolan Sandslash & Alolan Ninetales (TK11A-TK11B)](https://bulbapedia.bulbagarden.net/wiki/Sun_%26_Moon_Trainer_Kit:_Alolan_Sandslash_%26_Alolan_Ninetales_(TCG))** : `1011XX`
+- **June 1, 2018 : [Sun & Moon Trainer Kit: Alolan Sandslash & Alolan Ninetales (TK11)](https://bulbapedia.bulbagarden.net/wiki/Sun_%26_Moon_Trainer_Kit:_Alolan_Sandslash_%26_Alolan_Ninetales_(TCG))** : `1011XX`
 - **Oct. 16, 2018 - Nov. 12, 2018 : [McDonald's Collection 2018 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_2018_(TCG))** : `1031XXX`
 - Aug. 3, 2018 : Celestial Storm (CES) | Sky-Splitting Charisma : `10079XXX`
 - Sept. 7, 2018 : Dragon Majesty (DRM) | Dragon Storm : `10080XXX`
@@ -230,6 +238,7 @@
 
 - **Nov. 2019 - Present : [Sword & Shield Promos (SWSHP)](https://bulbapedia.bulbagarden.net/wiki/SWSH_Black_Star_Promos_(TCG))** : `1034XXX` (Ongoing)
 - Feb. 7, 2020 : Sword & Shield (SSH) | Sword/Shield : `10087XXX`
+- May 1, 2020 : Rebellion Crash (RCL) | Rebel Clash : `10088XXX`
 </details>
 
 ## Miscellaneous Promotional cards
