@@ -48,11 +48,11 @@ function scard.con2(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	return rp==1-tp and c:IsReason(REASON_ATTACK+REASON_DAMAGE) and c:GetFlagEffect(sid)>0
 end
-function scard.retfilter(c)
+function scard.thfilter(c)
 	return c:IsBasicEnergy() and c:IsAbleToHand()
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
-	local g=e:GetLabelObject():Filter(scard.retfilter,nil)
+	local g=e:GetLabelObject():Filter(scard.thfilter,nil)
 	if g:GetCount()==0 or not Duel.SelectYesNo(tp,YESNOMSG_ATTACHEDTOHAND) then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATOHAND)
 	local sg=g:Select(tp,1,2,nil)

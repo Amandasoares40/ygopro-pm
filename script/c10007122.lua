@@ -16,9 +16,9 @@ end
 --return
 function scard.cfilter(c)
 	return c:IsFaceup() and c:IsPokemon()
-		and c:IsSetCard(SETNAME_SABRINA) and c:GetAttachedGroup():IsExists(scard.retfilter,1,nil)
+		and c:IsSetCard(SETNAME_SABRINA) and c:GetAttachedGroup():IsExists(scard.thfilter,1,nil)
 end
-function scard.retfilter(c)
+function scard.thfilter(c)
 	return c:IsBasicEnergy() and c:IsAbleToHand()
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
@@ -28,7 +28,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if g:GetCount()==0 then return end
 	Duel.HintSelection(g)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RTOHAND)
-	local sg=g:GetFirst():GetAttachedGroup():FilterSelect(tp,scard.retfilter,1,1,nil)
+	local sg=g:GetFirst():GetAttachedGroup():FilterSelect(tp,scard.thfilter,1,1,nil)
 	Duel.SendtoHand(sg,PLAYER_OWNER,REASON_EFFECT)
 	Duel.ConfirmCards(1-tp,sg)
 end

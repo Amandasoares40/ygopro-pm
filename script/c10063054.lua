@@ -23,13 +23,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	end
 end
 --return
-function scard.retfilter(c)
+function scard.thfilter(c)
 	return c:IsEnergy(ENERGY_W) and c:IsAbleToHand()
 end
 function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,140)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RTOHAND)
-	local g=e:GetHandler():GetAttachedGroup():FilterSelect(tp,scard.retfilter,2,2,nil)
+	local g=e:GetHandler():GetAttachedGroup():FilterSelect(tp,scard.thfilter,2,2,nil)
 	if g:GetCount()==0 then return end
 	Duel.SendtoHand(g,PLAYER_OWNER,REASON_ATTACK)
 	Duel.ConfirmCards(1-tp,g)

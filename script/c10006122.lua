@@ -7,9 +7,9 @@ end
 scard.trainer_item=true
 --return
 function scard.cfilter(c)
-	return c:IsFaceup() and c:IsPokemon() and c:GetAttachedGroup():IsExists(scard.retfilter,1,nil)
+	return c:IsFaceup() and c:IsPokemon() and c:GetAttachedGroup():IsExists(scard.thfilter,1,nil)
 end
-function scard.retfilter(c)
+function scard.thfilter(c)
 	return c:IsEnergy() and c:IsAbleToHand()
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
@@ -20,7 +20,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.HintSelection(sg1)
 	local ct=Duel.GetInPlayPokemon(tp):GetCount()
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RTOHAND)
-	local sg2=sg1:GetFirst():GetAttachedGroup():FilterSelect(tp,scard.retfilter,1,ct,nil)
+	local sg2=sg1:GetFirst():GetAttachedGroup():FilterSelect(tp,scard.thfilter,1,ct,nil)
 	Duel.SendtoHand(sg2,PLAYER_OWNER,REASON_EFFECT)
 	Duel.ConfirmCards(1-tp,sg2)
 end

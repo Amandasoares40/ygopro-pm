@@ -7,14 +7,14 @@ end
 scard.trainer_rockets_secret_machine=true
 --return, end turn
 function scard.cfilter(c)
-	return c:GetAttachedGroup():IsExists(scard.retfilter,1,nil)
+	return c:GetAttachedGroup():IsExists(scard.thfilter,1,nil)
 end
-function scard.retfilter(c)
+function scard.thfilter(c)
 	return c:IsEnergy() and c:IsAbleToHand()
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local tc=Duel.GetActivePokemon(1-tp)
-	local g=tc:GetAttachedGroup():Filter(scard.retfilter,nil)
+	local g=tc:GetAttachedGroup():Filter(scard.thfilter,nil)
 	if g:GetCount()>0 then
 		local ct=0
 		repeat

@@ -9,7 +9,7 @@ function scard.initial_effect(c)
 	e0:SetCode(EVENT_ADJUST)
 	e0:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
 	e0:SetRange(LOCATION_STADIUM)
-	e0:SetOperation(scard.regop)
+	e0:SetOperation(scard.regop1)
 	c:RegisterEffect(e0)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(sid,0))
@@ -27,7 +27,7 @@ end
 function scard.cfilter1(c)
 	return c:IsEnergy() and c:GetEnergyType()~=ENERGY_C and c:GetFlagEffect(sid)==0
 end
-function scard.regop(e,tp,eg,ep,ev,re,r,rp)
+function scard.regop1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetAttachedGroup(tp,1,1):Filter(scard.cfilter1,nil)
 	for tc in aux.Next(g) do
 		tc:RegisterFlagEffect(sid,RESET_EVENT+RESET_ATTACH,0,1)
