@@ -22,8 +22,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can you play Rocket's Mission if playing it leaves you with a zero card hand?
-		A. The first step with Rocket's Mission is to discard a card; if you can't, then you can't play it.
-		(Jul 7, 2005 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. Can you play Rocket's Mission if playing it leaves you with a zero card hand?
+	A. The first step with Rocket's Mission is to discard a card; if you can't, then you can't play it.
+	(Jul 7, 2005 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

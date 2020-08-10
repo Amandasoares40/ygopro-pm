@@ -1,11 +1,11 @@
 --Black Belt (Triumphant 85/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--get effect
+	--gain effect
 	aux.PlayTrainerFunction(c,nil,scard.op1,scard.con1)
 end
 scard.trainer_supporter=true
---get effect
+--gain effect
 function scard.con1(e,tp,eg,ep,ev,re,r,rp)
 	return Duel.GetPrizeCount(tp)>Duel.GetPrizeCount(1-tp)
 end

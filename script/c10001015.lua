@@ -53,6 +53,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	References
-		1. Tailor of the Fickle
-		https://github.com/Fluorohydride/ygopro-scripts/blob/master/c43641473.lua
+	* Tailor of the Fickle
+	https://github.com/Fluorohydride/ygopro-scripts/blob/master/c43641473.lua
 ]]

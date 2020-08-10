@@ -13,8 +13,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use Double Gust if I don't have any Pokemon on my bench? The first sentence reads, "If you have any
-		Benched Pokemon..."; so what if I don't? And does it matter if the opponent has any on their bench or not?
-		A. Yes, you can. No, it does not. (Oct 4, 2001 WotC Chat, Q3)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Can I use Double Gust if I don't have any Pokemon on my bench? The first sentence reads, "If you have any Benched
+	Pokemon..."; so what if I don't? And does it matter if the opponent has any on their bench or not?
+	A. Yes, you can. No, it does not. (Oct 4, 2001 WotC Chat, Q3)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

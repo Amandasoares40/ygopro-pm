@@ -2,11 +2,11 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_GIOVANNI)
-	--get effect
+	--gain effect
 	aux.PlayTrainerFunction(c,aux.CheckCardFunction(scard.cfilter,LOCATION_INPLAY,0),scard.op1)
 end
 scard.trainer_item=true
---get effect
+--gain effect
 function scard.cfilter(c)
 	return c:IsFaceup() and c:IsPokemon() and c:IsSetCard(SETNAME_GIOVANNI)
 end

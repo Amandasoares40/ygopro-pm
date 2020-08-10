@@ -9,5 +9,5 @@ end
 --gain hp
 scard.tg1=aux.NOT(aux.TargetBoolFunction(Card.IsEvolved))
 --[[
-	Note: This card's effect is almost identical to that of "Rocket's Hideout".
+	Note: This card's effect is similar to that of "Rocket's Hideout".
 ]]

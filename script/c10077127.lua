@@ -21,8 +21,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use Looker Whistle to search my deck for another Looker Whistle since "Looker" is part of its name?
-		A. No, you cannot. You can only search for the card named "Looker".
-		(Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#564
+	Q. Can I use Looker Whistle to search my deck for another Looker Whistle since "Looker" is part of its name?
+	A. No, you cannot. You can only search for the card named "Looker". (Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#564
 ]]

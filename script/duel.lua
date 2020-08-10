@@ -51,7 +51,7 @@ function Duel.IsPlayerCanDraw(player,count)
 	if deck_count>0 and count>deck_count then count=deck_count end
 	return duel_is_player_can_draw(player,count)
 end
---a player selects a card
+--select a card
 --Note: Overwritten to notify a player if there are no cards to select
 local duel_select_matching_card=Duel.SelectMatchingCard
 function Duel.SelectMatchingCard(sel_player,f,player,s,o,min,max,ex,...)
@@ -289,8 +289,8 @@ function Duel.GetActivePokemon(player)
 	if player then
 		return Duel.GetFirstMatchingCard(aux.ActivePokemonFilter(),player,LOCATION_ACTIVE,0,nil)
 	else
-		local c1=Duel.GetFirstMatchingCard(aux.ActivePokemonFilter(),0,LOCATION_ACTIVE,0,nil)
-		local c2=Duel.GetFirstMatchingCard(aux.ActivePokemonFilter(),1,LOCATION_ACTIVE,0,nil)
+		local c1=Duel.GetFirstMatchingCard(aux.ActivePokemonFilter(),PLAYER_ONE,LOCATION_ACTIVE,0,nil)
+		local c2=Duel.GetFirstMatchingCard(aux.ActivePokemonFilter(),PLAYER_TWO,LOCATION_ACTIVE,0,nil)
 		return Group.FromCards(c1,c2)
 	end
 end

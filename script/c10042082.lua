@@ -21,7 +21,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use Beginning Door to search for Arceus Lv.X?
-		A. Yes. Arceus Lv.X counts as being named "Arceus". (PL:Arceus FAQ; Nov 5, 2009 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#436
+	Q. Can I use Beginning Door to search for Arceus Lv.X?
+	A. Yes. Arceus Lv.X counts as being named "Arceus". (PL:Arceus FAQ; Nov 5, 2009 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#436
 ]]

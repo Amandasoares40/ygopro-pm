@@ -18,8 +18,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Plumeria and discard two cards if my if my opponent has no energy attached to any of their Pokemon?
-		A. No, you cannot. Discarding the two cards is a cost not the effect, and you cannot play Trainer cards for no
-		effect. (Mar 21, 2019 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#653
+	Q. Can I play Plumeria and discard two cards if my if my opponent has no energy attached to any of their Pokemon?
+	A. No, you cannot. Discarding the two cards is a cost not the effect, and you cannot play Trainer cards for no effect.
+	(Mar 21, 2019 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#653
 ]]

@@ -24,10 +24,10 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I use Sylveon's "Wink Wink" attack to have my opponent discard Ilima, can I use Victini's "Victory Star"
-		Ability to force my opponent to re-flip their coins?
-		A. Yes, you can. If your opponent flips a coin as part of your Pokemon's attack, you can use "Victory Star" to
-		force them to re-flip those coins; but keep in mind you will have to re-flip your coins for Ilima too.
-		(Nov 15, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#629
+	Q. If I use Sylveon's "Wink Wink" attack to have my opponent discard Ilima, can I use Victini's "Victory Star" Ability
+	to force my opponent to re-flip their coins?
+	A. Yes, you can. If your opponent flips a coin as part of your Pokemon's attack, you can use "Victory Star" to force
+	them to re-flip those coins; but keep in mind you will have to re-flip your coins for Ilima too.
+	(Nov 15, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#629
 ]]

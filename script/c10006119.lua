@@ -43,9 +43,9 @@ function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can the card Tickling Machine (Gym Heroes) be involved where effects make use of Rocket's Secret Machine cards
-		(such as Rocket's Meowth's first attack), even though Tickling Machine is labeled as a "Rocket's Secret Robot"?
-		A. Tickling Machine is considered a "Rocket's Secret Machine" for the purposes of Rocket's Meowth and Rocket's
-		Wobbuffet. (Feb 24, 2005 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. Can the card Tickling Machine (Gym Heroes) be involved where effects make use of Rocket's Secret Machine cards
+	(such as Rocket's Meowth's first attack), even though Tickling Machine is labeled as a "Rocket's Secret Robot"?
+	A. Tickling Machine is considered a "Rocket's Secret Machine" for the purposes of Rocket's Meowth and Rocket's
+	Wobbuffet. (Feb 24, 2005 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

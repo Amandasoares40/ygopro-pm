@@ -1,5 +1,5 @@
 --First Ticket (Dragon Vault 19/20)
---Note: Can't be used after rule change: http://compendium.pokegym.net/compendium-bw.html#271
+--Note: Can't be used after rule change: https://compendium.pokegym.net/compendium-bw.html#271
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--

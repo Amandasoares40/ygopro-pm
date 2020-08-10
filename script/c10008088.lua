@@ -1,11 +1,11 @@
 --PokeGear (Neo Genesis 88/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--to hand, get effect
+	--to hand, gain effect
 	aux.PlayTrainerFunction(c,aux.CheckDeckFunction(PLAYER_SELF),scard.op1)
 end
 scard.trainer_item=true
---to hand, get effect
+--to hand, gain effect
 function scard.thfilter(c)
 	return c:IsTrainer() and c:IsAbleToHand()
 end

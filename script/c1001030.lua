@@ -4,7 +4,7 @@ local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
-	--get effect
+	--gain effect
 	local e1=aux.AddPokemonAttack(c,0,nil,scard.op1)
 	e1:SetAttackCost(ENERGY_C)
 	--copy attack
@@ -15,7 +15,7 @@ scard.pokemon_basic=true
 scard.length=1.00
 scard.evolution_list1={["Basic"]=CARD_TOGEPI,["Stage 1"]=CARD_TOGETIC,["Stage 2"]=CARD_TOGEKISS}
 scard.resistance_30={ENERGY_P}
---get effect
+--gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	Duel.AttackDamage(e,0)

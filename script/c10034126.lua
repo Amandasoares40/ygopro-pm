@@ -16,8 +16,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can Team Galactic's Mars be played when your deck consists of zero cards?
-		A. No, you must be able to draw at least one card from your deck in order to play this card.
-		(Mar 27, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#228
+	Q. Can Team Galactic's Mars be played when your deck consists of zero cards?
+	A. No, you must be able to draw at least one card from your deck in order to play this card.
+	(Mar 27, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#228
 ]]

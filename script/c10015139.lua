@@ -39,13 +39,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If there are 2 damage counters and Star Piece on a baby Pokémon, can you use it to search for its evolution?
-		A. No, you cannot. Star Piece looks for an Evolution card, where Babies evolve into Basic Pokémon (and only
-		treated as an Evolved Pokémon, when it is actually in play). (Nov 6, 2003 PUI Rules Team)
+	Q. If there are 2 damage counters and Star Piece on a baby Pokémon, can you use it to search for its evolution?
+	A. No, you cannot. Star Piece looks for an Evolution card, where Babies evolve into Basic Pokémon (and only treated as
+	an Evolved Pokémon, when it is actually in play). (Nov 6, 2003 PUI Rules Team)
 
-		Q. What happens if Star Piece is used to search your deck for an evolution Pokémon, but there aren't any left in
-		there? Does Star Piece remain attached or does it get discarded?
-		A. It gets discarded because you used it to perform a search; it doesn't matter whether you found the card or not.
-		(Jul 15, 2004 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. What happens if Star Piece is used to search your deck for an evolution Pokémon, but there aren't any left in
+	there? Does Star Piece remain attached or does it get discarded?
+	A. It gets discarded because you used it to perform a search; it doesn't matter whether you found the card or not.
+	(Jul 15, 2004 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

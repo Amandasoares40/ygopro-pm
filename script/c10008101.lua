@@ -22,8 +22,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Due to the fact that this card's HeartGold & SoulSilver print's name and effect slightly differ from the original,
-		it was ruled that "Moo-Moo Milk" and "Moomoo Milk" were not the same card in the English-language printings. A
-		similar situation exists surrounding Energy Charge and Power Charge.
-		https://bulbapedia.bulbagarden.net/wiki/Moo-Moo_Milk_(Neo_Genesis_101)
+	* Due to the fact that this card's HeartGold & SoulSilver print's name and effect slightly differ from the original,
+	it was ruled that "Moo-Moo Milk" and "Moomoo Milk" were not the same card in the English-language printings. A similar
+	situation exists surrounding Energy Charge and Power Charge.
+	https://bulbapedia.bulbagarden.net/wiki/Moo-Moo_Milk_(Neo_Genesis_101)
 ]]

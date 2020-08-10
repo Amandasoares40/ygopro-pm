@@ -7,7 +7,7 @@ function scard.initial_effect(c)
 	--damage
 	local e1=aux.AddPokemonAttack(c,0,nil,aux.AttackDamageOperation(10))
 	e1:SetAttackCost(ENERGY_C)
-	--get effect
+	--gain effect
 	local e2=aux.AddPokemonAttack(c,1,nil,scard.op1)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
@@ -15,7 +15,7 @@ scard.pokemon_basic=true
 scard.length=1.00
 scard.weakness_x2={ENERGY_L}
 scard.resistance_30={ENERGY_F}
---get effect
+--gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local tc=Duel.GetActivePokemon(1-tp)
 	Duel.AttackDamage(e,20)

@@ -41,7 +41,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If my bench if full can I still use "Call Energy" to search my deck?
-		A. Yes, you could search your deck, but not put out any Pokemon. (Feb 17, 2011 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#250
+	Q. If my bench if full can I still use "Call Energy" to search my deck?
+	A. Yes, you could search your deck, but not put out any Pokemon. (Feb 17, 2011 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#250
 ]]

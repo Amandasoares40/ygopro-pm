@@ -29,8 +29,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I have 6 cards in my hand including a Hugh, and my opponent has 5 cards, can I play Hugh or not?
-		A. No, you cannot. After playing Hugh both players would have exactly 5 cards in their hands, and you cannot play
-		a Trainer card for no effect. (Jan 3, 2013 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#281
+	Q. If I have 6 cards in my hand including a Hugh, and my opponent has 5 cards, can I play Hugh or not?
+	A. No, you cannot. After playing Hugh both players would have exactly 5 cards in their hands, and you cannot play a
+	Trainer card for no effect. (Jan 3, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#281
 ]]

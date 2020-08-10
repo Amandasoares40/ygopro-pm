@@ -1,10 +1,10 @@
 --Giant Stump (Legend Maker 75/92)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--discard pokemon, get effect
+	--discard pokemon, gain effect
 	aux.EnableStadiumAttribute(c,nil,scard.op1)
 end
---discard pokemon, get effect
+--discard pokemon, gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	scard.discard(tp)
 	local dis1=Duel.SelectDisableBenchZone(tp,3)
@@ -42,15 +42,15 @@ function scard.discard(tp)
 end
 --[[
 	Rulings
-		Q. When you discard benched Pokémon as Giant Stump comes into play, does the opponent get to take prizes for my
-		discarded Pokémon?
-		A. No, the Pokémon get discarded but they are not KO'd, so the opponent does not get to take any prizes for them.
-		(Feb 16, 2006 PUI Rules Team)
+	Q. When you discard benched Pokémon as Giant Stump comes into play, does the opponent get to take prizes for my
+	discarded Pokémon?
+	A. No, the Pokémon get discarded but they are not KO'd, so the opponent does not get to take any prizes for them.
+	(Feb 16, 2006 PUI Rules Team)
 
-		Q. My opponent has 5 benched Pokémon with two of them being Rocket's Sneasel-EX with 100hp of damage on each of
-		them and 10HP remaining due to Rocket's Hideout stadium being in play. If I play Giant Stump, are they knocked out
-		because they no longer have the +20 bonus or can my opponent choose to discard them before getting KO'd.
-		A. When you play Giant Stump, resolve all effects in play before removing Knocked Out Pokémon. So the Rocket's
-		Sneasel-EX's could be discarded before being Knocked Out. (Jul 13, 2006 PUI Rules Team) Save the Sneasel!(tm)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. My opponent has 5 benched Pokémon with two of them being Rocket's Sneasel-EX with 100hp of damage on each of them
+	and 10HP remaining due to Rocket's Hideout stadium being in play. If I play Giant Stump, are they knocked out because
+	they no longer have the +20 bonus or can my opponent choose to discard them before getting KO'd.
+	A. When you play Giant Stump, resolve all effects in play before removing Knocked Out Pokémon. So the Rocket's
+	Sneasel-EX's could be discarded before being Knocked Out. (Jul 13, 2006 PUI Rules Team) Save the Sneasel!(tm)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

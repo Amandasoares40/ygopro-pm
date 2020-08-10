@@ -3,7 +3,7 @@ local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--pokemon tool
 	aux.EnablePokemonToolAttribute(c)
-	--knock out replace (get effect)
+	--knock out replace (gain effect)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(sid,0))
 	e1:SetType(EFFECT_TYPE_ATTACHED+EFFECT_TYPE_CONTINUOUS)
@@ -15,7 +15,7 @@ function scard.initial_effect(c)
 	aux.AddAttachedDescription(c,DESC_DONOT_KO)
 end
 scard.trainer_item=TYPE_POKEMON_TOOL
---knock out replace (get effect)
+--knock out replace (gain effect)
 function scard.tg1(e,tp,eg,ep,ev,re,r,rp,chk)
 	local c=e:GetHandler()
 	if chk==0 then return not c:IsReason(REASON_REPLACE) and c:IsReason(REASON_ATTACK+REASON_DAMAGE)

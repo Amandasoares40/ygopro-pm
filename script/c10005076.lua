@@ -19,7 +19,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If my opponent has no hand and I play Imposter Oak's Revenge, do they still shuffle their deck?
-		A. Yes they would. (Nov 14, 2002 WotC Chat, Q16 & Q31)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. If my opponent has no hand and I play Imposter Oak's Revenge, do they still shuffle their deck?
+	A. Yes they would. (Nov 14, 2002 WotC Chat, Q16 & Q31)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

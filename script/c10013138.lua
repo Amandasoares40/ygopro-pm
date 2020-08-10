@@ -20,12 +20,12 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use the Supporter "Copycat" when my opponent has no cards in his or her hand?
-		A. Yes, you can. Shuffle your hand into your deck, but don't draw any cards.
-		(GS:Heart Gold/Soul Silver FAQ; Feb 11, 2010 PUI Rules Team)
+	Q. Can I use the Supporter "Copycat" when my opponent has no cards in his or her hand?
+	A. Yes, you can. Shuffle your hand into your deck, but don't draw any cards.
+	(GS:Heart Gold/Soul Silver FAQ; Feb 11, 2010 PUI Rules Team)
 
-		Q. Can I play the Supporter "Copycat" when it's the only card in my hand?
-		A. Yes, you can. Shuffle your deck, then draw cards equal to the number of cards in your opponent's hand.
-		(GS:Heart Gold/Soul Silver FAQ; Feb 11, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#639
+	Q. Can I play the Supporter "Copycat" when it's the only card in my hand?
+	A. Yes, you can. Shuffle your deck, then draw cards equal to the number of cards in your opponent's hand.
+	(GS:Heart Gold/Soul Silver FAQ; Feb 11, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#639
 ]]

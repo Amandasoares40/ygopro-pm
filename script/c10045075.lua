@@ -40,10 +40,10 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. On the part of Legend Box where it talks about "you can play only 1 Pokemon LEGEND in this way", is that just
-		for the play of the card, or for the entire game?
-		A. It only lasts for as long as the Trainer is being used. It just means that if you reveal two or more complete
-		Pokemon LEGENDs that you can only put one of them onto your bench for that trainer card played.
-		(Sep 23, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#158
+	Q. On the part of Legend Box where it talks about "you can play only 1 Pokemon LEGEND in this way", is that just for
+	the play of the card, or for the entire game?
+	A. It only lasts for as long as the Trainer is being used. It just means that if you reveal two or more complete
+	Pokemon LEGENDs that you can only put one of them onto your bench for that trainer card played.
+	(Sep 23, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#158
 ]]

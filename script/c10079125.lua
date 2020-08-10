@@ -29,8 +29,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Does using Beast Ball count as "taking a prize" for the purpose of calculating damage for Stakataka GX's
-		"Assembly GX" attack?
-		A. No, it does not. You are switching cards, not taking a prize. (Aug 16, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#611
+	Q. Does using Beast Ball count as "taking a prize" for the purpose of calculating damage for Stakataka GX's
+	"Assembly GX" attack?
+	A. No, it does not. You are switching cards, not taking a prize. (Aug 16, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#611
 ]]

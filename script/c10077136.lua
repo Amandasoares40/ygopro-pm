@@ -27,9 +27,9 @@ function scard.val2(e,c)
 end
 --[[
 	Rulings
-		Q. If I have 3 or more Stage 2 Pokemon in play, can I attach Super Boost Energy {*} to any of my Pokemon
-		(regardless if it's Stage 2 or not) and get the 4-Energy effect?
-		A. No, you only get the multiple energy and rainbow effects when it's attached to a Stage 2 Pokemon.
-		(Feb 8, 2018 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#568
+	Q. If I have 3 or more Stage 2 Pokemon in play, can I attach Super Boost Energy {*} to any of my Pokemon
+	(regardless if it's Stage 2 or not) and get the 4-Energy effect?
+	A. No, you only get the multiple energy and rainbow effects when it's attached to a Stage 2 Pokemon.
+	(Feb 8, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#568
 ]]

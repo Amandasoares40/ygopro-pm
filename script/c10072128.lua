@@ -1,11 +1,11 @@
 --Professor Kukui (Sun & Moon 128/149)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--draw, get effect
+	--draw, gain effect
 	aux.PlayTrainerFunction(c,nil,scard.op1)
 end
 scard.trainer_supporter=true
---draw, get effect
+--draw, gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Draw(tp,2,REASON_EFFECT)
 	local c=e:GetHandler()
@@ -26,8 +26,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Professor Kukui if I have no cards left in my deck?
-		A. Yes you can, because you still get to do the +20 bonus damage for your Pokemon's attacks.
-		(Jan 26, 2017 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#499
+	Q. Can I play Professor Kukui if I have no cards left in my deck?
+	A. Yes you can, because you still get to do the +20 bonus damage for your Pokemon's attacks.
+	(Jan 26, 2017 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#499
 ]]

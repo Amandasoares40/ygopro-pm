@@ -24,7 +24,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. With Cleffa, do you have to have at least one card in order to use it's attack?
-		A. Nope, you can shuffle in a hand of zero cards. (Dec 14, 2000 WotC Chat, Q116)
-		http://compendium.pokegym.net/compendium.html#pattacks
+	Q. With Cleffa, do you have to have at least one card in order to use it's attack?
+	A. Nope, you can shuffle in a hand of zero cards. (Dec 14, 2000 WotC Chat, Q116)
+	https://compendium.pokegym.net/compendium.html#pattacks
 ]]

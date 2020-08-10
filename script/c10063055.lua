@@ -64,9 +64,9 @@ function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. The "Alpha Growth" Ancient Trait says "When you attach an Energy card from your hand to this Pokemon... you may
-		attach 2 Energy cards." Does that mean I get to attach one additional Energy card or two additional Energy cards?
-		A. You only get to attach one additional Energy card, for a total of two cards attached at that time.
-		(Primal Clash FAQ; Feb 5, 2015 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#380
+	Q. The "Alpha Growth" Ancient Trait says "When you attach an Energy card from your hand to this Pokemon... you may
+	attach 2 Energy cards." Does that mean I get to attach one additional Energy card or two additional Energy cards?
+	A. You only get to attach one additional Energy card, for a total of two cards attached at that time.
+	(Primal Clash FAQ; Feb 5, 2015 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#380
 ]]

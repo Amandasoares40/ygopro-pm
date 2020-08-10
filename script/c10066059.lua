@@ -16,7 +16,7 @@ function scard.initial_effect(c)
 	e1:SetTarget(aux.HintTarget)
 	e1:SetOperation(scard.op1)
 	c:RegisterEffect(e1)
-	--poisoned, get effect
+	--poisoned, gain effect
 	local e2=aux.AddPokemonAttack(c,1,nil,scard.op2)
 	e2:SetAttackCost(ENERGY_P,ENERGY_C)
 end
@@ -34,7 +34,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.GetActivePokemon(1-tp):ApplySpecialCondition(tp,SPC_CONFUSED)
 	end
 end
---poisoned, get effect
+--poisoned, gain effect
 function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 	local tc=Duel.GetActivePokemon(1-tp)
 	Duel.AttackDamage(e,0)

@@ -16,8 +16,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I have no cards left in my deck, can I use Prof. Oak's Visit to put one card from my hand back into my deck
-		pile so I don't run out of cards the next turn?
-		A. No, since you are unable to draw any cards you cannot play Professor Oak's Visit. (Feb 7, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#201
+	Q. If I have no cards left in my deck, can I use Prof. Oak's Visit to put one card from my hand back into my deck pile
+	so I don't run out of cards the next turn?
+	A. No, since you are unable to draw any cards you cannot play Professor Oak's Visit. (Feb 7, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#201
 ]]

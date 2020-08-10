@@ -20,9 +20,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I only have two cards in my hand and play Professor Rowan then I keep the one remaining card in my hand, but
-		do I shuffle my deck or not (since I put zero cards from my hand into it)?
-		A. Shuffling is a must when playing Professor Rowan regardless of whether you put any cards back into your deck or
-		not. (Apr 3, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#559
+	Q. If I only have two cards in my hand and play Professor Rowan then I keep the one remaining card in my hand, but do
+	I shuffle my deck or not (since I put zero cards from my hand into it)?
+	A. Shuffling is a must when playing Professor Rowan regardless of whether you put any cards back into your deck or
+	not. (Apr 3, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#559
 ]]

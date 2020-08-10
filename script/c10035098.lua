@@ -23,8 +23,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I discard 0 cards from my hand when playing Felicity's Drawing?
-		A. No. You may either discard 1 or 2 cards; there is not an option to discard 0 cards.
-		(DP:Great Encounters FAQ; Feb 21, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#209
+	Q. Can I discard 0 cards from my hand when playing Felicity's Drawing?
+	A. No. You may either discard 1 or 2 cards; there is not an option to discard 0 cards.
+	(DP:Great Encounters FAQ; Feb 21, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#209
 ]]

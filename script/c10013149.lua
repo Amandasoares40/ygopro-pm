@@ -19,8 +19,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If the other player has a Slowking out and I play a Prof. Oak Research, do I have to shuffle my hand into the
-		deck before the coin flip?
-		A. No, it is not a cost of playing the card, it is an effect. (Apr 17, 2003 WotC Chat, Q1261)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. If the other player has a Slowking out and I play a Prof. Oak Research, do I have to shuffle my hand into the deck
+	before the coin flip?
+	A. No, it is not a cost of playing the card, it is an effect. (Apr 17, 2003 WotC Chat, Q1261)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

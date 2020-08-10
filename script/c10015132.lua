@@ -3,7 +3,7 @@ local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--stadium
 	aux.EnableStadiumAttribute(c)
-	--get effect
+	--gain effect
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(sid,0))
 	e1:SetType(EFFECT_TYPE_QUICK_F)
@@ -13,7 +13,7 @@ function scard.initial_effect(c)
 	e1:SetOperation(scard.op1)
 	c:RegisterEffect(e1)
 end
---get effect
+--gain effect
 function scard.con1(e,tp,eg,ep,ev,re,r,rp)
 	return re:IsHasCategory(CATEGORY_RETREAT)
 end

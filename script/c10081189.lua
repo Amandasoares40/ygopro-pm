@@ -26,8 +26,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rullings
-		Q. When I have seven cards in my hand, can I discard only one with "Sightseer"?
-		A. No, you cannot. You must discard until your hand has 4 or fewer cards when using Sightseer.
-		(Dec 6, 2018 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#631
+	Q. When I have seven cards in my hand, can I discard only one with "Sightseer"?
+	A. No, you cannot. You must discard until your hand has 4 or fewer cards when using Sightseer.
+	(Dec 6, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#631
 ]]

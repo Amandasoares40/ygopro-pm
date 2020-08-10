@@ -9,5 +9,5 @@ function scard.initial_effect(c)
 end
 scard.trainer_item=TYPE_POKEMON_TOOL
 --[[
-	Note: This card's effect is almost identical to that of "Weakness Guard".
+	Note: This card's effect is similar to that of "Weakness Guard".
 ]]

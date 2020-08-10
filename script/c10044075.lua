@@ -7,7 +7,7 @@ end
 scard.trainer_supporter=true
 --[[
 	Rulings
-		Q. If I don't discard an energy, can I play "Engineer's Adjustments"?
-		A. No. You must be able to discard an energy to play the card. (HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#147
+	Q. If I don't discard an energy, can I play "Engineer's Adjustments"?
+	A. No. You must be able to discard an energy to play the card. (HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#147
 ]]

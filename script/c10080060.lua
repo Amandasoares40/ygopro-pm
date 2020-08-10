@@ -21,11 +21,11 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Fiery Flint if I only have 1 card in my hand to discard?
-		A. No, you must be able to discard 2 cards in order to use Fiery Flint. (Sep 27, 2018 TPCi Rules Team)
+	Q. Can I play Fiery Flint if I only have 1 card in my hand to discard?
+	A. No, you must be able to discard 2 cards in order to use Fiery Flint. (Sep 27, 2018 TPCi Rules Team)
 
-		Q. Can I play Fiery Flint and discard two cards if there are no cards left in my deck?
-		A. No, you cannot. Discarding the two cards is a cost not the effect, and you cannot play Trainer cards for no
-		effect. (Mar 21, 2019 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#613
+	Q. Can I play Fiery Flint and discard two cards if there are no cards left in my deck?
+	A. No, you cannot. Discarding the two cards is a cost not the effect, and you cannot play Trainer cards for no effect.
+	(Mar 21, 2019 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#613
 ]]

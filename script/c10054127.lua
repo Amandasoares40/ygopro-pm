@@ -9,5 +9,5 @@ end
 --gain hp
 scard.tg1=aux.TargetBoolFunction(Card.IsEnergyType,ENERGY_C)
 --[[
-	Note: This card's effect is almost identical to that of "Snowpoint Temple".
+	Note: This card's effect is similar to that of "Snowpoint Temple".
 ]]

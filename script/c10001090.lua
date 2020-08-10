@@ -20,7 +20,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. What happens if you play Super Potion for a Pokemon that doesn't have any energy cards attached to it?
-		A. You still remove 60 damage (or as much as you can), but that's all. (XY FAQ; Feb 6, 2014 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#343
+	Q. What happens if you play Super Potion for a Pokemon that doesn't have any energy cards attached to it?
+	A. You still remove 60 damage (or as much as you can), but that's all. (XY FAQ; Feb 6, 2014 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#343
 ]]

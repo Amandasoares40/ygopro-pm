@@ -1,10 +1,10 @@
 --Narrow Gym (Gym Heroes 124/132)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--return, get effect
+	--return, gain effect
 	aux.EnableStadiumAttribute(c,nil,scard.op1)
 end
---return, get effect
+--return, gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	local g1=Duel.GetBenchedPokemon(1-tp)

@@ -5,7 +5,7 @@ function scard.initial_effect(c)
 	aux.EnableEnergyAttribute(c)
 	--provide energy
 	aux.EnableProvideEnergy(c,ENERGY_C)
-	--get effect
+	--gain effect
 	local e1=Effect.CreateEffect(c)
 	e1:SetType(EFFECT_TYPE_ATTACHED+EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 	e1:SetCode(EVENT_ADJUST)
@@ -15,7 +15,7 @@ function scard.initial_effect(c)
 	aux.AddAttachedDescription(c,DESC_RETURN_FROM_KO)
 end
 scard.energy_special=true
---get effect
+--gain effect
 function scard.regop1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	if not c or c:GetFlagEffect(sid)>0 then return end

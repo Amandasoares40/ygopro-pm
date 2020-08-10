@@ -4,7 +4,7 @@ local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--pokemon tool
 	aux.EnablePokemonToolAttribute(c)
-	--get effect
+	--gain effect
 	local e1=Effect.CreateEffect(c)
 	e1:SetType(EFFECT_TYPE_ATTACHED+EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 	e1:SetCode(EVENT_ADJUST)
@@ -14,7 +14,7 @@ function scard.initial_effect(c)
 	aux.AddAttachedDescription(c,DESC_WISHFUL_BATON_BUS128,aux.SelfActiveCondition)
 end
 scard.trainer_item=TYPE_POKEMON_TOOL
---get effect
+--gain effect
 function scard.regop1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	if not c or c:GetFlagEffect(sid)>0 then return end

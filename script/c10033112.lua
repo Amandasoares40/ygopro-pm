@@ -15,9 +15,9 @@ function scard.initial_effect(c)
 end
 --[[
 	Rulings
-		Q. How does "Lake Boundary" affect Pokemon that have had their Weakness removed or reduced to zero?
-		A. It only affects Pokemon that have Weakness, changing the modifier for that Weakness to x2 instead of whatever
-		other modifier that Pokémon may have had. If the weakness has been reduced to zero, then zero times two is still
-		zero. (Mysterious Treasures FAQ; Aug 23, 2007 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#182
+	Q. How does "Lake Boundary" affect Pokemon that have had their Weakness removed or reduced to zero?
+	A. It only affects Pokemon that have Weakness, changing the modifier for that Weakness to x2 instead of whatever other
+	modifier that Pokémon may have had. If the weakness has been reduced to zero, then zero times two is still zero.
+	(Mysterious Treasures FAQ; Aug 23, 2007 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#182
 ]]

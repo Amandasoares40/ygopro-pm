@@ -56,30 +56,29 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Despite the change in the card's name for the Next Destinies print, it was ruled that "EXP.ALL" and "Exp. Share"
-		are the same card in the English-language printings, with all old "EXP.ALL" printings considered to have the name
-		of "Exp. Share".
-		https://bulbapedia.bulbagarden.net/wiki/EXP.ALL_(Neo_Destiny_93)
+	* Despite the change in the card's name for the Next Destinies print, it was ruled that "EXP.ALL" and "Exp. Share" are
+	the same card in the English-language printings, with all old "EXP.ALL" printings considered to have the name of "Exp.
+	Share".
+	https://bulbapedia.bulbagarden.net/wiki/EXP.ALL_(Neo_Destiny_93)
 
-		Q. If a player with Exp. Share on a benched Pokemon has discarded their Active Pokemon and its attached energy due
-		to KO from an attack and already promoted a new Active Pokemon, have they missed the opportunity to use Exp.
-		Share?
-		A. Promoting a new Active Pokemon takes place after the knockout, so at that point it would be too late to use
-		Exp. Share. (Oct 27, 2016 TPCi Rules Team)
+	Q. If a player with Exp. Share on a benched Pokemon has discarded their Active Pokemon and its attached energy due to
+	KO from an attack and already promoted a new Active Pokemon, have they missed the opportunity to use Exp. Share?
+	A. Promoting a new Active Pokemon takes place after the knockout, so at that point it would be too late to use Exp.
+	Share. (Oct 27, 2016 TPCi Rules Team)
 
-		Q. If my Yveltal with "Fright Night" Ability gets KO'd, am I then able to use Exp.Share on one of my Benched
-		Pokemon to recover one of Yveltal's Basic Energy cards?
-		A. Sorry, but no. Fright Night would still be working so Exp.Share would not enable before Yveltal hits the
-		Discard Pile. (Jan 5, 2017 TPCi Rules Team)
+	Q. If my Yveltal with "Fright Night" Ability gets KO'd, am I then able to use Exp.Share on one of my Benched Pokemon
+	to recover one of Yveltal's Basic Energy cards?
+	A. Sorry, but no. Fright Night would still be working so Exp.Share would not enable before Yveltal hits the Discard
+	Pile. (Jan 5, 2017 TPCi Rules Team)
 
-		Q. Yveltal with "Fright Night" Ability knocks out Wobbuffet with the "Bide Barricade" Ability which was turning
-		"Fright Night" off. Does Exp. Share on the Benched Pokemon behind Wobbuffet work?
-		A. Yes, since Wobbuffet was not yet in the Discard Pile, Fright Night remains off and Exp. Share works.
-		(Apr 20, 2017 TPCi Rules Team)
+	Q. Yveltal with "Fright Night" Ability knocks out Wobbuffet with the "Bide Barricade" Ability which was turning
+	"Fright Night" off. Does Exp. Share on the Benched Pokemon behind Wobbuffet work?
+	A. Yes, since Wobbuffet was not yet in the Discard Pile, Fright Night remains off and Exp. Share works.
+	(Apr 20, 2017 TPCi Rules Team)
 
-		Q. Say I have an Active Pokemon with Energy Pouch attached and a Benched Pokemon with Exp. Share attached. If the
-		Active Pokemon is KO'd, how do the effects of the tools resolve?
-		A. You may choose the order in which the tools' effects resolve. There is no preference of one tool over the other
-		in this situation. (Apr 20, 2017 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#490
+	Q. Say I have an Active Pokemon with Energy Pouch attached and a Benched Pokemon with Exp. Share attached. If the
+	Active Pokemon is KO'd, how do the effects of the tools resolve?
+	A. You may choose the order in which the tools' effects resolve. There is no preference of one tool over the other in
+	this situation. (Apr 20, 2017 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#490
 ]]

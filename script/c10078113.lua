@@ -21,8 +21,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Mysterious Treasure and discard a card if there are no cards left in my deck?
-		A. No, you cannot. Discarding the card is a cost not the effect, and you cannot play Trainer cards for no effect.
-		(Mar 21, 2019 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#652
+	Q. Can I play Mysterious Treasure and discard a card if there are no cards left in my deck?
+	A. No, you cannot. Discarding the card is a cost not the effect, and you cannot play Trainer cards for no effect.
+	(Mar 21, 2019 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#652
 ]]

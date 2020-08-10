@@ -24,8 +24,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I use Gladion can I choose Greedy Dice from my prizes and play it right then?
-		A. Greedy Dice can be played only if it's taken as a face-down Prize card. Gladion doesn’t count as "taking a
-		Prize card." (Mar 1, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#571
+	Q. If I use Gladion can I choose Greedy Dice from my prizes and play it right then?
+	A. Greedy Dice can be played only if it's taken as a face-down Prize card. Gladion doesn’t count as "taking a Prize
+	card." (Mar 1, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#571
 ]]

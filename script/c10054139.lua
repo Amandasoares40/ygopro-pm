@@ -11,9 +11,9 @@ scard.trainer_item=TYPE_POKEMON_TOOL
 scard.trainer_ace_spec=true
 --[[
 	Rulings
-		Q. If Crystal Wall is attached to Black Kyurem-EX, can anything raise its maximum HP beyond 300 (ike if it were
-		somehow made Colorless and Aspertia City Gym is in play)?
-		A. Crystal Wall essentially replaces Black Kyurem-EX's printed HP with 300, and anything to add or reduce HP would
-		work accordingly. (Boundaries Crossed FAQ; Nov 8, 2012 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#278
+	Q. If Crystal Wall is attached to Black Kyurem-EX, can anything raise its maximum HP beyond 300 (ike if it were
+	somehow made Colorless and Aspertia City Gym is in play)?
+	A. Crystal Wall essentially replaces Black Kyurem-EX's printed HP with 300, and anything to add or reduce HP would
+	work accordingly. (Boundaries Crossed FAQ; Nov 8, 2012 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#278
 ]]

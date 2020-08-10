@@ -25,5 +25,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.TossCoin(tp,ev)
 end
 --[[
-	Note: This card's effect is almost identical to that of "Sabrina's ESP".
+	Note: This card's effect is similar to that of "Sabrina's ESP".
 ]]

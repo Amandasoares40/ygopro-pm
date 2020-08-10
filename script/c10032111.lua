@@ -30,9 +30,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can you use "Pokedex HANDY910is" if there's only 1 card left in your deck?
-		A. Yes, you can. It says to draw two cards, but you do as much as you can since you only have one card in your
-		deck. Then, you choose one to keep, so you keep the one you drew. Now, you're supposed to put the other card back,
-		but since there is no other card you simply don't put anything back. (Jan 15, 2009 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#353
+	Q. Can you use "Pokedex HANDY910is" if there's only 1 card left in your deck?
+	A. Yes, you can. It says to draw two cards, but you do as much as you can since you only have one card in your deck.
+	Then, you choose one to keep, so you keep the one you drew. Now, you're supposed to put the other card back, but since
+	there is no other card you simply don't put anything back. (Jan 15, 2009 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#353
 ]]

@@ -2,11 +2,11 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_PRISM_STAR)
-	--get effect
+	--gain effect
 	aux.PlayTrainerFunction(c,nil,scard.op1,scard.con1)
 end
 scard.trainer_supporter=true
---get effect
+--gain effect
 function scard.con1(e,tp,eg,ep,ev,re,r,rp)
 	return Duel.GetPrizeCount(1-tp)==3
 end

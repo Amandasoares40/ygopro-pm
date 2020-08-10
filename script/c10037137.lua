@@ -23,9 +23,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Technical Machine TS-2's "Devoluter" attack says to choose an opponent's evolved pokemon (excluding Lv.X). Does
-		this mean I remove the Stage 2 but leave the Level X card?
-		A. No. It means that you cannot target any Pokemon that has a Level X Pokemon attached to it. You can't use
-		Devoluter against it at all. (Aug 28, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#282
+	Q. Technical Machine TS-2's "Devoluter" attack says to choose an opponent's evolved pokemon (excluding Lv.X). Does
+	this mean I remove the Stage 2 but leave the Level X card?
+	A. No. It means that you cannot target any Pokemon that has a Level X Pokemon attached to it. You can't use Devoluter
+	against it at all. (Aug 28, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#282
 ]]

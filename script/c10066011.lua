@@ -8,7 +8,7 @@ function scard.initial_effect(c)
 	--damage
 	local e1=aux.AddPokemonAttack(c,0,nil,scard.op1)
 	e1:SetAttackCost(ENERGY_G,ENERGY_C,ENERGY_C)
-	--get effect
+	--gain effect
 	local e2=aux.AddPokemonAttack(c,1,nil,scard.op2)
 	e2:SetAttackCost(ENERGY_G,ENERGY_G,ENERGY_C,ENERGY_C)
 end
@@ -24,7 +24,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if Duel.GetActivePokemon(1-tp):IsDamaged() then dam=dam+60 end
 	Duel.AttackDamage(e,dam)
 end
---get effect
+--gain effect
 function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,100)
 	local c=e:GetHandler()

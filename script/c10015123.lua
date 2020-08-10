@@ -22,10 +22,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Desert Shaman says, "Shuffle your hand into your deck and draw up to 4 cards; your opponent does the same".
-		Does this mean that if you choose to only draw one card, your opponent only gets to draw one card? Or can they
-		draw up to four if they want to?
-		A. Each player can draw up to 4 cards. What you choose does not limit your opponent.
-		(May 15, 2003 WotC Chat, Q1571)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Desert Shaman says, "Shuffle your hand into your deck and draw up to 4 cards; your opponent does the same".
+	Does this mean that if you choose to only draw one card, your opponent only gets to draw one card? Or can they draw up
+	to four if they want to?
+	A. Each player can draw up to 4 cards. What you choose does not limit your opponent. (May 15, 2003 WotC Chat, Q1571)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

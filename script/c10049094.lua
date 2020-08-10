@@ -21,11 +21,11 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can you use Max Potion to heal a Pokemon that doesn't have any energy attached to it?
-		A. Yes, you can. (BW:Emerging Powers FAQ; Sep 1, 2011 PUI Rules Team)
+	Q. Can you use Max Potion to heal a Pokemon that doesn't have any energy attached to it?
+	A. Yes, you can. (BW:Emerging Powers FAQ; Sep 1, 2011 PUI Rules Team)
 
-		Q. Can you use Max Potion on a Pokemon with Energies attached but no damage on it?
-		A. No, you cannot. If you don't have any damage, you cannot use Max Potion on that Pokemon.
-		(Feb 16, 2012 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#210
+	Q. Can you use Max Potion on a Pokemon with Energies attached but no damage on it?
+	A. No, you cannot. If you don't have any damage, you cannot use Max Potion on that Pokemon.
+	(Feb 16, 2012 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#210
 ]]

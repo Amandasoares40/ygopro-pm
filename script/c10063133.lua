@@ -26,19 +26,20 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use "Archie's Ace in the Hole" or "Maxie's Hidden Ball Trick" to put a Stage 2 or Mega Pokemon directly
-		onto my bench?
-		A. Yes, they're very sneaky like that. (Primal Clash FAQ; Feb 5, 2015 TPCi Rules Team)
+	Q. Can I use "Archie's Ace in the Hole" or "Maxie's Hidden Ball Trick" to put a Stage 2 or Mega Pokemon directly onto
+	my bench?
+	A. Yes, they're very sneaky like that. (Primal Clash FAQ; Feb 5, 2015 TPCi Rules Team)
 
-		Q. With "Archie's Ace in the Hole" and "Maxie's Hidden Ball Trick", does a Stage 2 Pokemon put on the bench count
-		as a Basic Pokemon?
-		A. No, it is an unevolved Stage 2 Pokemon. It is still considered an "Evolution Pokemon", but it is not a "Basic
-		Pokemon". (Apr 27, 2017 TPCi Rules Team)
+	Q. With "Archie's Ace in the Hole" and "Maxie's Hidden Ball Trick", does a Stage 2 Pokemon put on the bench count as a
+	Basic Pokemon?
+	A. No, it is an unevolved Stage 2 Pokemon. It is still considered an "Evolution Pokemon", but it is not a "Basic
+	Pokemon". (Apr 27, 2017 TPCi Rules Team)
 
-		Q. Can I play "Archie's Ace in the Hole" or "Maxie's Hidden Ball Trick" if I don't have a Water/Fighting Pokemon
-		in my discard pile?
-		A. No, you cannot. If you can't put one of those Pokemon onto your bench you don't get to draw 5 cards.
-		(Feb 26, 2015 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#389
-	Note: This card's effect is almost identical to that of "Archie's Ace in the Hole".
+	Q. Can I play "Archie's Ace in the Hole" or "Maxie's Hidden Ball Trick" if I don't have a Water/Fighting Pokemon in my
+	discard pile?
+	A. No, you cannot. If you can't put one of those Pokemon onto your bench you don't get to draw 5 cards.
+	(Feb 26, 2015 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#389
+
+	Note: This card's effect is similar to that of "Archie's Ace in the Hole".
 ]]

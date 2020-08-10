@@ -1,11 +1,11 @@
 --Bonnie (Forbidden Light 103/131)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--discard stadium, get effect
+	--discard stadium, gain effect
 	aux.PlayTrainerFunction(c,aux.CheckCardFunction(scard.dtfilter,LOCATION_INPLAY,LOCATION_INPLAY),scard.op1)
 end
 scard.trainer_supporter=true
---discard stadium, get effect
+--discard stadium, gain effect
 function scard.dtfilter(c)
 	return c:IsFaceup() and c:IsStadium()
 end
@@ -28,9 +28,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If my opponent used Latios GX's "Clear Vision GX" attack on me, could I use Bonnie to allow my Zygarde-GX to
-		use its GX attack?
-		A. No, you cannot. Although Bonnie would normally let Zygarde-GX re-use its GX attack, the effect of Clear Vision
-		GX is on Zygarde-GX and that still prevents using *ANY* GX attacks. (Sep 5, 2019 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#726
+	Q. If my opponent used Latios GX's "Clear Vision GX" attack on me, could I use Bonnie to allow my Zygarde-GX to use
+	its GX attack?
+	A. No, you cannot. Although Bonnie would normally let Zygarde-GX re-use its GX attack, the effect of Clear Vision GX
+	is on Zygarde-GX and that still prevents using *ANY* GX attacks. (Sep 5, 2019 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#726
 ]]

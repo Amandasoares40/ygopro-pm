@@ -20,9 +20,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Island Hermit states "Choose up to 2" can I choose not to reveal any of my Prize cards?
-		A. No. If you have any face-down Prize cards, you must put at least one of them face-up. But if all of your Prize
-		cards are face-up, you can still play this Trainer card and draw 2 cards.
-		(EX:Dragon Frontiers FAQ; Oct 26, 2006 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. Island Hermit states "Choose up to 2" can I choose not to reveal any of my Prize cards?
+	A. No. If you have any face-down Prize cards, you must put at least one of them face-up. But if all of your Prize
+	cards are face-up, you can still play this Trainer card and draw 2 cards.
+	(EX:Dragon Frontiers FAQ; Oct 26, 2006 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

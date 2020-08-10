@@ -28,8 +28,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. What if you play Windstorm and your opponent only has a stadium in play? Can you play Windstorm and not discard
-		the stadium?
-		A. No. You must discard at least 1 card in play, or you can't play the card. (Sep 21, 2006 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#195
+	Q. What if you play Windstorm and your opponent only has a stadium in play? Can you play Windstorm and not discard
+	the stadium?
+	A. No. You must discard at least 1 card in play, or you can't play the card. (Sep 21, 2006 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#195
 ]]

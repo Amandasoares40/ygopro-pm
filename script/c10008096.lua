@@ -33,12 +33,12 @@ function scard.val1(e,re,tp)
 end
 --[[
 	Rulings
-		* Professor Elm: You can choose to use this card on yourself or on your teammate during your turn. Either way, the
-		person who is actually playing the card (takes it from his or her hand and discards it) cannot play any more
-		Trainer cards that turn (this is a cost). (WotC Pokemon Multiplayer Rules v1.3, Jul 12, 2002)
+	* Professor Elm: You can choose to use this card on yourself or on your teammate during your turn. Either way, the
+	person who is actually playing the card (takes it from his or her hand and discards it) cannot play any more Trainer
+	cards that turn (this is a cost). (WotC Pokemon Multiplayer Rules v1.3, Jul 12, 2002)
 
-		Q. Does Prof-Elming with 0 cards in your hand allow you to shuffle before drawing 7 cards?
-		A. Yes. [ED.NOTE: In fact, it *REQUIRES* it to be shuffled before drawing 7 cards, even with a hand of zero].
-		(Nov 14, 2002 WotC Chat, Q31)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Does Prof-Elming with 0 cards in your hand allow you to shuffle before drawing 7 cards?
+	A. Yes. [ED.NOTE: In fact, it *REQUIRES* it to be shuffled before drawing 7 cards, even with a hand of zero].
+	(Nov 14, 2002 WotC Chat, Q31)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

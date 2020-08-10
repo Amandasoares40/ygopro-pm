@@ -17,10 +17,10 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can you play Blaine's Last Resort if you have another Blaine's Last Resort in your Hand? Cause Since it says
-		you can't use it if you have no cards in your hand other than "Blaine's Last Resort" and the one in your hand
-		simply bypasses it. If not, why do you have to state to show your hand when you don't have any cards in your hand
-		when you play it?
-		A. Yes you can play Blaine's Last Resort if you have another in your hand. (August 17, 2000 WotC Chat Q94)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Can you play Blaine's Last Resort if you have another Blaine's Last Resort in your Hand? Cause Since it says you
+	can't use it if you have no cards in your hand other than "Blaine's Last Resort" and the one in your hand simply
+	bypasses it. If not, why do you have to state to show your hand when you don't have any cards in your hand when you
+	play it?
+	A. Yes you can play Blaine's Last Resort if you have another in your hand. (August 17, 2000 WotC Chat Q94)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

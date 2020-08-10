@@ -126,7 +126,7 @@ function Auxiliary.GetID()
 	local sid=tonumber(string.sub(str,2))
 	return scard,sid
 end
---add to a card the supported name(s) that is written in its card name (e.g. "Misty", "Unown", "Shining", "Ball", etc.)
+--register a card's "archetype" (e.g. "Misty", "Unown", "Shining", "Ball", etc.)
 --required for Card.IsSetCard, Card.IsOriginalSetCard
 function Auxiliary.AddSetcode(c,...)
 	local setname_list={...}
@@ -429,7 +429,7 @@ function Auxiliary.RetreatCancelCheck(e)
 end
 --Evolution card
 --Not fully implemented: Cannot evolve Pokemon in LOCATION_BENCHEXT
---Rulings: http://compendium.pokegym.net/compendium-bw.html#193
+--Rulings: https://compendium.pokegym.net/compendium-bw.html#193
 function Auxiliary.EnableEvolutionAttribute(c)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(DESC_EVOLVE)
@@ -548,7 +548,7 @@ function Auxiliary.BabyEvolutionOperation(code)
 end
 --Pokemon LV.X
 --Not fully implemented: The names of the gained attacks are wrong
---Rulings: http://compendium.pokegym.net/compendium-lvx.html#92
+--Rulings: https://compendium.pokegym.net/compendium-lvx.html#92
 function Auxiliary.EnableLevelUpAttribute(c)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(DESC_LEVEL_UP)
@@ -612,7 +612,7 @@ function Auxiliary.LevelUpOperation(e,tp,eg,ep,ev,re,r,rp)
 end
 ]]
 --Pokemon LEGEND
---Rulings: http://compendium.pokegym.net/compendium-bw.html#177
+--Rulings: https://compendium.pokegym.net/compendium-bw.html#177
 function Auxiliary.EnablePokemonLEGENDAttribute(c,code)
 	--code: the id of the other half of the Pokemon LEGEND card
 	code=code or c:GetOriginalCode()+1
@@ -1043,7 +1043,7 @@ function Auxiliary.AddTrainerAttack(c,desc_id,cate,op_func,cost_func,con_func)
 	c:RegisterEffect(e1)
 	return e1
 end
---operation function for an attack that only does damage
+--operation for an attack that only does damage
 function Auxiliary.AttackDamageOperation(count,apply_weak,apply_resist,apply_effect)
 	return	function(e,tp,eg,ep,ev,re,r,rp)
 				Duel.AttackDamage(e,count,apply_weak,apply_resist,apply_effect)
@@ -1544,7 +1544,7 @@ function Auxiliary.GoingSecondCondition(p)
 				return Duel.GetTurnCount()==2 and Duel.GetTurnPlayer()==player
 			end
 end
---cost function for discarding a card from the hand
+--cost for discarding a card from the hand
 function Auxiliary.DiscardHandCost(min,max,f,...)
 	--min,max: the number of cards to discard (nil to discard all cards)
 	--f: filter function if the card is specified
@@ -1565,7 +1565,7 @@ function Auxiliary.DiscardHandCost(min,max,f,...)
 				end
 			end
 end
---cost function for putting a card into the deck
+--cost for putting a card into the deck
 function Auxiliary.SendtoDeckCost(f,location,min,max,seq,...)
 	--f: filter function if the card is specified
 	--location: the location to send the card from
@@ -1593,7 +1593,7 @@ function Auxiliary.SendtoDeckCost(f,location,min,max,seq,...)
 				end
 			end
 end
---cost function for discarding a card from a pokemon
+--cost for discarding a card from a pokemon
 function Auxiliary.DiscardAttachedCost(f,min,max,...)
 	--f: filter function if the card is specified
 	--min,max: the number of cards to discard
@@ -1607,12 +1607,12 @@ function Auxiliary.DiscardAttachedCost(f,min,max,...)
 				Duel.DiscardAttached(tp,c,f,minc,maxc,REASON_COST,nil,table.unpack(ext_params))
 			end
 end
---target function for Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription())
+--target for Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription())
 function Auxiliary.HintTarget(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return true end
 	Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription())
 end
---target function to check if a card exists in a location
+--target to check if a card exists in a location
 function Auxiliary.CheckCardFunction(f,s,o,count,ex,...)
 	--f: filter function if the card is specified
 	--s: your location
@@ -1629,7 +1629,7 @@ function Auxiliary.CheckCardFunction(f,s,o,count,ex,...)
 				if e:GetHandler():IsPokemon() then Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription()) end
 			end
 end
---target function to check if a player has cards in their hand
+--target to check if a player has cards in their hand
 function Auxiliary.CheckHandFunction(p)
 	--p: the player to check (PLAYER_SELF for you or PLAYER_OPPO for opponent)
 	return	function(e,tp,eg,ep,ev,re,r,rp,chk)
@@ -1638,7 +1638,7 @@ function Auxiliary.CheckHandFunction(p)
 				if e:GetHandler():IsPokemon() then Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription()) end
 			end
 end
---target function to check if a player has cards in their deck
+--target to check if a player has cards in their deck
 function Auxiliary.CheckDeckFunction(p)
 	return	function(e,tp,eg,ep,ev,re,r,rp,chk)
 				local player=(p==PLAYER_SELF and tp) or (p==PLAYER_OPPO and 1-tp)
@@ -1646,28 +1646,28 @@ function Auxiliary.CheckDeckFunction(p)
 				if e:GetHandler():IsPokemon() then Duel.Hint(HINT_OPSELECTED,1-tp,e:GetDescription()) end
 			end
 end
---filter for active pokemon (LOCATION_ACTIVE)
+--filter for active pokemon
 function Auxiliary.ActivePokemonFilter(f)
 	--f: filter function
 	return	function(target,...)
 				return target:IsFaceup() and target:IsPokemon() and target:IsActive() and (not f or f(target,...))
 			end
 end
---filter for pokemon on the bench (LOCATION_INPLAY)
+--filter for pokemon on the bench
 function Auxiliary.BenchedPokemonFilter(f)
 	--f: filter function
 	return	function(target,...)
 				return target:IsFaceup() and target:IsPokemon() and target:IsBenched() and (not f or f(target,...))
 			end
 end
---filter for prize cards (LOCATION_PRIZE)
+--filter for prize cards
 function Auxiliary.PrizeFilter(f)
 	--f: filter function
 	return	function(target,...)
 				return target:IsPrize() and (not f or f(target,...))
 			end
 end
---filter for the lost zone (LOCATION_LZONE)
+--filter for the lost zone
 function Auxiliary.LostZoneFilter(f)
 	--f: filter function
 	return	function(target,...)

@@ -26,9 +26,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If you have don't have a Pokemon or a Trainer in your discard pile, can you play "Good Rod"?
-		A. No. You can't play a trainer or supporter if it's public knowledge that it won't have any game effect. If you
-		have at least one Trainer or Pokemon in your discard pile, you can play Good Rod.
-		(HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#152
+	Q. If you have don't have a Pokemon or a Trainer in your discard pile, can you play "Good Rod"?
+	A. No. You can't play a trainer or supporter if it's public knowledge that it won't have any game effect. If you have
+	at least one Trainer or Pokemon in your discard pile, you can play Good Rod.
+	(HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#152
 ]]

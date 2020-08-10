@@ -6,7 +6,7 @@ function scard.initial_effect(c)
 	--damage
 	local e1=aux.AddPokemonAttack(c,0,nil,aux.AttackDamageOperation(10))
 	e1:SetAttackCost(ENERGY_L)
-	--get effect
+	--gain effect
 	local e2=aux.AddPokemonAttack(c,1,nil,scard.op1)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
@@ -16,7 +16,7 @@ scard.evolution_list1={["Baby"]=CARD_PICHU,["Basic"]=CARD_PIKACHU,["Stage 1"]=CA
 scard.break_evolution_list={CARD_RAICHU,CARD_RAICHU_BREAK}
 scard.weakness_x2={ENERGY_F}
 scard.resistance_20={ENERGY_M}
---get effect
+--gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,10)
 	if Duel.TossCoin(tp,1)==RESULT_HEADS then

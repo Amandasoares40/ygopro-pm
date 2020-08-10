@@ -40,8 +40,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If player a uses Looker's Investigation and decides that they want to draw the cards, can they choose zero as
-		their up to amount?
-		A. No, the player must draw at least one card if they are able to. (Feb 19, 2009 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#352
+	Q. If player a uses Looker's Investigation and decides that they want to draw the cards, can they choose zero as their
+	up to amount?
+	A. No, the player must draw at least one card if they are able to. (Feb 19, 2009 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#352
 ]]

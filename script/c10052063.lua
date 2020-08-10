@@ -29,5 +29,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		This card's Japanese name doesn't contain わるい (Dark).
+	* This card's Japanese name doesn't contain わるい (Dark).
 ]]

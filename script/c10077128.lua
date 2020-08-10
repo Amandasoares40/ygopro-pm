@@ -15,8 +15,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I use Mars with only 1 card left in my deck, can I still discard a random card from my opponent's hand?
-		A. Yes, as long as you can draw at least 1 card you get the other effect. Of course if you can't draw any cards,
-		you can't play Mars. (Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#565
+	Q. If I use Mars with only 1 card left in my deck, can I still discard a random card from my opponent's hand?
+	A. Yes, as long as you can draw at least 1 card you get the other effect. Of course if you can't draw any cards, you
+	can't play Mars. (Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#565
 ]]

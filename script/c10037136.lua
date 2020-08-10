@@ -32,10 +32,10 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use Technical Machine TS-1's "Evoluter" attack to search through my deck if I don't have any Pokemon in
-		play that can evolve any further?
-		A. Yes you could use Evoluter, because contents of a deck search cannot be deduced, even on the basis of public
-		knowledge. As long as you meet the requirements to use an attack, you follow what it does (in this case, searching
-		your deck). (Dec 4, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#322
+	Q. Can I use Technical Machine TS-1's "Evoluter" attack to search through my deck if I don't have any Pokemon in play
+	that can evolve any further?
+	A. Yes you could use Evoluter, because contents of a deck search cannot be deduced, even on the basis of public
+	knowledge. As long as you meet the requirements to use an attack, you follow what it does (in this case, searching
+	your deck). (Dec 4, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#322
 ]]

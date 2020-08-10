@@ -20,8 +20,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If you play a Mary Trainer card but you cannot draw 2 cards from your deck, can you still play Mary and shuffle
-		2 cards from your hand back into your deck?
-		A. Yes. (Jul 18, 2002 WotC Chat, Q9)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. If you play a Mary Trainer card but you cannot draw 2 cards from your deck, can you still play Mary and shuffle 2
+	cards from your hand back into your deck?
+	A. Yes. (Jul 18, 2002 WotC Chat, Q9)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

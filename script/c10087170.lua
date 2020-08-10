@@ -26,5 +26,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Attach(e,sg2:GetFirst(),sg1)
 end
 --[[
-	Note: This card's effect is almost identical to that of "Aqua Patch".
+	Note: This card's effect is similar to that of "Aqua Patch".
 ]]

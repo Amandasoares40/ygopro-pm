@@ -75,9 +75,9 @@ function scard.rstop(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If Darkrai attacks with "Abyssal Sleep", can Pokemon Ranger clear the effect of flipping 2 coins when Asleep?
-		A. Asleep, Poisoned, etc. are Special Conditions, regardless of how many coins you need to flip or how much damage
-		the poison condition does. Therefore they are not altered by Pokemon Ranger.
-		(Nov 10, 2016 TPCi Rules Team; Dec 8, 2016 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#492
+	Q. If Darkrai attacks with "Abyssal Sleep", can Pokemon Ranger clear the effect of flipping 2 coins when Asleep?
+	A. Asleep, Poisoned, etc. are Special Conditions, regardless of how many coins you need to flip or how much damage the
+	poison condition does. Therefore they are not altered by Pokemon Ranger.
+	(Nov 10, 2016 TPCi Rules Team; Dec 8, 2016 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#492
 ]]

@@ -8,7 +8,7 @@ function scard.initial_effect(c)
 	--move counter
 	local e1=aux.AddPokemonAttack(c,0,nil,scard.op1)
 	e1:SetAttackCost(ENERGY_P)
-	--get effect
+	--gain effect
 	local e2=aux.AddPokemonAttack(c,1,nil,scard.op2)
 	e2:SetAttackCost(ENERGY_D,ENERGY_D,ENERGY_C,ENERGY_C)
 end
@@ -46,7 +46,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		tc2:AddCounter(tp,COUNTER_DAMAGE,damc,REASON_ATTACK)
 	until g1:GetCount()==0 or not Duel.SelectYesNo(tp,YESNOMSG_REMOVECOUNTERAGAIN)
 end
---get effect
+--gain effect
 function scard.tlfilter(c)
 	return c:IsEnergy() and c:IsAbleToLost()
 end
@@ -81,16 +81,16 @@ function scard.op3(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		This card's Japanese name doesn't contain わるい (Dark).
+	* This card's Japanese name doesn't contain わるい (Dark).
 
-		Q. When using Darkrai & Cresselia LEGEND's "Moon's Invite" attack, can you move damage counters to/from more than
-		one Pokemon?
-		A. Yes. Basically the attack let's you rearrange your opponent's damage counters any way you want, as long as
-		other effects, Poke-POWERs, Poke-BODYs, etc. will allow. (HS:Triumphant FAQ; Nov 4, 2010 PUI Rules Team)
+	Q. When using Darkrai & Cresselia LEGEND's "Moon's Invite" attack, can you move damage counters to/from more than one
+	Pokemon?
+	A. Yes. Basically the attack let's you rearrange your opponent's damage counters any way you want, as long as other
+	effects, Poke-POWERs, Poke-BODYs, etc. will allow. (HS:Triumphant FAQ; Nov 4, 2010 PUI Rules Team)
 
-		Q. When using Darkrai & Cresselia LEGEND's "Moon's Invite" attack, can you put more damage counters on a Pokemon
-		than it has HP left?
-		A. Yes, you can put as many on a Pokemon as you want to, as long as you have enough to move, of course.
-		(HS:Triumphant FAQ; Nov 4, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#63
+	Q. When using Darkrai & Cresselia LEGEND's "Moon's Invite" attack, can you put more damage counters on a Pokemon than
+	it has HP left?
+	A. Yes, you can put as many on a Pokemon as you want to, as long as you have enough to move, of course.
+	(HS:Triumphant FAQ; Nov 4, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#63
 ]]

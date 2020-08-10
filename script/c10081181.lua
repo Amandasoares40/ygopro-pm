@@ -15,13 +15,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Lost Blender if I only have one card in my hand to put into the Lost Zone?
-		A. No, you cannot play Lost Blender unless you put 2 cards from your hand in the Lost Zone.
-		(Jan 3, 2019 TPCi Rules Team)
+	Q. Can I play Lost Blender if I only have one card in my hand to put into the Lost Zone?
+	A. No, you cannot play Lost Blender unless you put 2 cards from your hand in the Lost Zone.
+	(Jan 3, 2019 TPCi Rules Team)
 
-		Q. Can I play Lost Blender if there are no cards left in my deck to draw from?
-		A. Yes, you can. Putting cards into the Lost Zone is the main effect, so you can use this even if you have no
-		cards in your deck. However, you cannot play it unless you can put 2 cards from your hand in the Lost Zone.
-		(Jan 3, 2019 TPCi Rules Team; Mar 21, 2019 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#634
+	Q. Can I play Lost Blender if there are no cards left in my deck to draw from?
+	A. Yes, you can. Putting cards into the Lost Zone is the main effect, so you can use this even if you have no cards in
+	your deck. However, you cannot play it unless you can put 2 cards from your hand in the Lost Zone.
+	(Jan 3, 2019 TPCi Rules Team; Mar 21, 2019 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#634
 ]]

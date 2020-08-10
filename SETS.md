@@ -1,4 +1,4 @@
-# Pokemon TCG [Sets](http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_Trading_Card_Game_expansions)
+# Pokemon TCG [Sets](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_Trading_Card_Game_expansions)
 
 ## ID Map
 - `10000XXX` : System
@@ -213,7 +213,7 @@
 - **Apr. 21, 2017 : [Sun & Moon Trainer Kit: Lycanroc & Alolan Raichu (TK10)](https://bulbapedia.bulbagarden.net/wiki/Sun_%26_Moon_Trainer_Kit:_Lycanroc_%26_Alolan_Raichu_(TCG))** : `1010XX`
 - May. 5, 2017 : Guardians Rising (GRI) | Islands Await You/Alolan Moonlight : `10073XXX`
 - Aug. 4, 2017 : Burning Shadows (BUS) | To Have Seen the Battle Rainbow/Darkness that Consumes Light : `10074XXX`
-- **July 2017 - Feb. 2018 : [McDonald's Collection 2017 (MCD)](http://www.pokellector.com/sets/MCD7-McDonalds-Collection-2017)** : `1030XXX`
+- **July 2017 - Feb. 2018 : [McDonald's Collection 2017 (MCD)](https://www.pokellector.com/sets/MCD7-McDonalds-Collection-2017)** : `1030XXX`
 - Oct. 6, 2017 : Shining Legends (SLG) | Strength Expansion Pack Shining Legends : `10075XXX`
 - Nov. 3, 2017 : Crimson Invasion (CIN) | Awakened Heroes/Ultradimensional Beasts : `10076XXX`
 - Feb. 2, 2018 : Ultra Prism (UPR) | Ultra Sun/Ultra Moon : `10077XXX`

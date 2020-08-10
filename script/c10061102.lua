@@ -11,5 +11,5 @@ function scard.tg1(e,c)
 	return c:IsStage1() or c:IsStage2()
 end
 --[[
-	Note: This card's effect is almost identical to that of "Indigo Plateau".
+	Note: This card's effect is similar to that of "Indigo Plateau".
 ]]

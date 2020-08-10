@@ -6,7 +6,7 @@ function scard.initial_effect(c)
 	aux.EnablePokemonAttribute(c)
 	--evolution
 	aux.EnableEvolutionAttribute(c)
-	--poke-power (add marker, get effect)
+	--poke-power (add marker, gain effect)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(sid,0))
 	e1:SetCategory(CATEGORY_POKEPOWER)
@@ -26,7 +26,7 @@ scard.pokemon_ex_old=true
 scard.evolves_from=CARD_KIRLIA
 scard.evolution_list2={["Basic"]=CARD_RALTS,["Stage 1"]=CARD_KIRLIA,["Stage 2"]=CARD_GARDEVOIR_EX_OLD}
 scard.weakness_x2={ENERGY_P}
---poke-power (add marker, get effect)
+--poke-power (add marker, gain effect)
 function scard.markfilter(c)
 	return c:IsFaceup() and c:IsPokemon()
 end
@@ -83,9 +83,9 @@ function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. I realize that Imprison markers remain if Garvevoir-EX leaves play, but does the effect of "Imprison" still
-		remain in that the Pokémon cannot use any Poké-POWERS or Poké-BODIES?
-		A. Yes, even if Gardevoir-EX leaves play the effects of "Imprison" still apply to any Pokémon that have Imprison
-		markers on them. (Nov 16, 2006 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#ppowers
+	Q. I realize that Imprison markers remain if Garvevoir-EX leaves play, but does the effect of "Imprison" still remain
+	in that the Pokémon cannot use any Poké-POWERS or Poké-BODIES?
+	A. Yes, even if Gardevoir-EX leaves play the effects of "Imprison" still apply to any Pokémon that have Imprison
+	markers on them. (Nov 16, 2006 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#ppowers
 ]]

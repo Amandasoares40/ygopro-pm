@@ -18,7 +18,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If the only card I have in my hand is Professor Oak, can I use it to draw 7 more cards?
-		A. Yes, you can discard a hand of zero cards. (Mar 2 WotC Chat)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. If the only card I have in my hand is Professor Oak, can I use it to draw 7 more cards?
+	A. Yes, you can discard a hand of zero cards. (Mar 2 WotC Chat)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

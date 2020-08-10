@@ -1,10 +1,10 @@
 --Parallel City (BREAKthrough 145/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--choose one (limit bench or get effect)
+	--choose one (limit bench or gain effect)
 	aux.EnableStadiumAttribute(c,true,scard.op1,scard.op2)
 end
---choose one (limit bench or get effect)
+--choose one (limit bench or gain effect)
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	scard.play(c,tp,tp)

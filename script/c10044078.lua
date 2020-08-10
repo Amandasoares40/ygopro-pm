@@ -22,9 +22,10 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. What happens if a player has no hand when "Judge" is played?
-		A. The player shuffles his or her deck and draws 4 cards (or as many cards as possible if the deck contains less
-		than 4 cards). (HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#156
-	Note: This card's effect is almost identical to that of "Desert Shaman".
+	Q. What happens if a player has no hand when "Judge" is played?
+	A. The player shuffles his or her deck and draws 4 cards (or as many cards as possible if the deck contains less than
+	4 cards). (HS:Unleashed FAQ; May 13, 2010 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#156
+
+	Note: This card's effect is similar to that of "Desert Shaman".
 ]]

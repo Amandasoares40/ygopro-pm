@@ -40,9 +40,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If you remove 2 damage counters with Retro Engery do you [have to] devolve since it seems linked to each other.
-		A. It is poorly worded isn't it. Since every other of the new special energies has an effect that you MUST do, I
-		will say for tournament purposes that you MUST devolve the Pokemon it is attached to (if it is possible). The "you
-		may" has to do with how much damage is removed (if any). (May 22, 2003 WotC Chat, Q1634)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. If you remove 2 damage counters with Retro Engery do you [have to] devolve since it seems linked to each other.
+	A. It is poorly worded isn't it. Since every other of the new special energies has an effect that you MUST do, I will
+	say for tournament purposes that you MUST devolve the Pokemon it is attached to (if it is possible). The "you may" has
+	to do with how much damage is removed (if any). (May 22, 2003 WotC Chat, Q1634)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

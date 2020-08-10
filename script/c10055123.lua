@@ -20,12 +20,12 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If the Defending Pokemon is already Asleep & Poisoned, can you use Hypnotoxic Laser or not?
-		A. No, you cannot. (Feb 21, 2013 TPCi Rules Team)
+	Q. If the Defending Pokemon is already Asleep & Poisoned, can you use Hypnotoxic Laser or not?
+	A. No, you cannot. (Feb 21, 2013 TPCi Rules Team)
 
-		Q. If the Defending Pokemon is already Asleep & Poisoned with a condition that places more than one damage counter
-		in between turns, can you use Hypnotoxic Laser to change the number of counters to be placed?
-		A. Yes, the new single-counter Poison condition replaces the multi-counter Poison condition.
-		(Feb 21, 2013 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#291
+	Q. If the Defending Pokemon is already Asleep & Poisoned with a condition that places more than one damage counter in
+	between turns, can you use Hypnotoxic Laser to change the number of counters to be placed?
+	A. Yes, the new single-counter Poison condition replaces the multi-counter Poison condition.
+	(Feb 21, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#291
 ]]

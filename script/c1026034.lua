@@ -9,12 +9,12 @@ end
 scard.energy_special=true
 --[[
 	Rulings
-		* Most Special Energy cards that provide a particular energy type do not provide that type when it is in the deck,
-		the discard pile, or in your hand. Please read the text of the Special Energy card for clarification.
-		(Jul 6, 2017 TPCi Rules Team)
+	* Most Special Energy cards that provide a particular energy type do not provide that type when it is in the deck, the
+	discard pile, or in your hand. Please read the text of the Special Energy card for clarification.
+	(Jul 6, 2017 TPCi Rules Team)
 
-		* The [default or normal] amount of energy an Energy card provides is equal to the number of energy symbols in the
-		upper right or left corner of the card, regardless of how many different types of energy is provided.
-		(Apr 8, 2004 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#c7
+	* The [default or normal] amount of energy an Energy card provides is equal to the number of energy symbols in the
+	upper right or left corner of the card, regardless of how many different types of energy is provided.
+	(Apr 8, 2004 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#c7
 ]]

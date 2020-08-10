@@ -21,13 +21,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Do you *have* to discard a card in order to use Volkner's Philosophy?
-		A. No, the discard portion of Volkner's Philosophy is optional. (May 21, 2009 PUI Rules Team)
+	Q. Do you *have* to discard a card in order to use Volkner's Philosophy?
+	A. No, the discard portion of Volkner's Philosophy is optional. (May 21, 2009 PUI Rules Team)
 
-		Q. Can I play Volkner's Philosophy if I already have more than 6 cards in my hand? Or what if I don't have any
-		cards in my deck?
-		A. You have to be able to draw at least one card from your deck, regardless of whether you discard a card first or
-		not. If you cannot draw any cards, due to having too many in your hand or zero in your deck, you cannot play this
-		card. (May 21, 2009 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#399
+	Q. Can I play Volkner's Philosophy if I already have more than 6 cards in my hand? Or what if I don't have any cards
+	in my deck?
+	A. You have to be able to draw at least one card from your deck, regardless of whether you discard a card first or
+	not. If you cannot draw any cards, due to having too many in your hand or zero in your deck, you cannot play this
+	card. (May 21, 2009 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#399
 ]]

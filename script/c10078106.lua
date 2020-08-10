@@ -33,13 +33,12 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Eneporter to try and fail to move a Special Energy onto a Pyroar that is protected by its "Unnerve"
-		Ability, or would I not be able to play Eneporter at all?
-		A. The fact that its effect will be blocked by another effect such as Unnerve does not prevent an Item or
-		Supporter card from being played. For example, your opponent may play Eneporter to try moving a Special Energy and
-		Pyroar is a valid target, but Unnerve blocks the effect even though Eneporter was played. Playing a card for no
-		effect happens when the game state itself prevents any effect from taking place and in that case the card would
-		not be played, but that is not what this example is referring to.
-		(Forbidden Light FAQ; May 3, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#583
+	Q. Can I play Eneporter to try and fail to move a Special Energy onto a Pyroar that is protected by its "Unnerve"
+	Ability, or would I not be able to play Eneporter at all?
+	A. The fact that its effect will be blocked by another effect such as Unnerve does not prevent an Item or Supporter
+	card from being played. For example, your opponent may play Eneporter to try moving a Special Energy and Pyroar is a
+	valid target, but Unnerve blocks the effect even though Eneporter was played. Playing a card for no effect happens
+	when the game state itself prevents any effect from taking place and in that case the card would not be played, but
+	that is not what this example is referring to. (Forbidden Light FAQ; May 3, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#583
 ]]

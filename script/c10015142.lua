@@ -40,7 +40,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Should the second sentence of Bounce Energy include the word 'ONLY'...saying 'you can ONLY attach this card..."
-		A. Right-o. (May 8, 2003 WotC Chat, Q1483)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Should the second sentence of Bounce Energy include the word 'ONLY'...saying 'you can ONLY attach this card..."
+	A. Right-o. (May 8, 2003 WotC Chat, Q1483)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

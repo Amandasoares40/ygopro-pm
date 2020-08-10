@@ -7,7 +7,7 @@ end
 scard.trainer_item=true
 --[[
 	Rulings
-		Q. Can you play Professor Juniper or Fiery Torch, or any draw Trainer, with no cards in your deck?
-		A. No, you cannot play a Trainer when it is known that it will have no effect. (Nov 13, 2014 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#c6
+	Q. Can you play Professor Juniper or Fiery Torch, or any draw Trainer, with no cards in your deck?
+	A. No, you cannot play a Trainer when it is known that it will have no effect. (Nov 13, 2014 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#c6
 ]]

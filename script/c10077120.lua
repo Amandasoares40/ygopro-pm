@@ -29,14 +29,14 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. When using Cyrus{*} does my opponent shuffle in their Active Pokemon too?
-		A. No, your opponent only shuffles in their Benched Pokemon except for the 2 that were chosen.
-		(Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
+	Q. When using Cyrus{*} does my opponent shuffle in their Active Pokemon too?
+	A. No, your opponent only shuffles in their Benched Pokemon except for the 2 that were chosen.
+	(Ultra Prism FAQ; Feb 1, 2018 TPCi Rules Team)
 
-		Q. I have 3 Pokemon on my Bench, and 1 of them has the "Omega Barrier" Ancient Trait. My opponent plays Cyrus {*},
-		and I choose to keep the 2 Pokemon that don't have "Omega Barrier". Does the Pokemon with "Omega Barrier" get
-		shuffled into my deck?
-		A. Yes, it does. The effect of Cyrus {*} is on the player, not on the Pokemon with Omega Barrier.
-		(May 31, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#555
+	Q. I have 3 Pokemon on my Bench, and 1 of them has the "Omega Barrier" Ancient Trait. My opponent plays Cyrus {*},
+	and I choose to keep the 2 Pokemon that don't have "Omega Barrier". Does the Pokemon with "Omega Barrier" get shuffled
+	into my deck?
+	A. Yes, it does. The effect of Cyrus {*} is on the player, not on the Pokemon with Omega Barrier.
+	(May 31, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#555
 ]]

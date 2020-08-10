@@ -31,5 +31,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	end
 end
 --[[
-	Rulings: https://compendium.pokegym.net/compendium-bw.html#500
+	Rulings
+	https://compendium.pokegym.net/compendium-bw.html#500
 ]]

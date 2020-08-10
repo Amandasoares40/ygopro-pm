@@ -26,8 +26,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. What happens if you play Ghetsis but your opponent does not have any Item cards in their hand?
-		A. Your opponent shuffles their deck (even though they did not put any cards into it) and you do not get to draw
-		any additional cards. (Jun 20, 2013 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#296
+	Q. What happens if you play Ghetsis but your opponent does not have any Item cards in their hand?
+	A. Your opponent shuffles their deck (even though they did not put any cards into it) and you do not get to draw any
+	additional cards. (Jun 20, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#296
 ]]

@@ -19,9 +19,9 @@ function scard.val1(e,c)
 end
 --[[
 	Rulings
-		Q. When building a deck, are Delta Rainbow Energy and Rainbow Energy considered to be the same card, or 2
-		different cards? Can I put 4 Rainbow Energies AND 4 Delta Rainbow Energies in the same deck?
-		A. They are considered to be different cards; you may have up to 4 of each of them in your deck.
-		(May 25, 2006 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#ecards
+	Q. When building a deck, are Delta Rainbow Energy and Rainbow Energy considered to be the same card, or 2 different
+	cards? Can I put 4 Rainbow Energies AND 4 Delta Rainbow Energies in the same deck?
+	A. They are considered to be different cards; you may have up to 4 of each of them in your deck.
+	(May 25, 2006 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#ecards
 ]]

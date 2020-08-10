@@ -23,10 +23,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		* In the Japanese card, there is a text saying "If Balloon Berry is attached to one of your Pokémon., the
-		Pokémon.'s retreat cost is 0". So, you should play Balloon Berry as if it negates the Pokémon.'s retreat cost
-		while attached to that Pokémon., not just when it actually attempts to retreat. For example, Muk-EX's "Slimy
-		Water" attack damage will be reduced to only 40 against a Pokémon. with Balloon Berry attached to it.
-		(Nov 13, 2003 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#46
+	* In the Japanese card, there is a text saying "If Balloon Berry is attached to one of your Pokémon., the Pokémon.'s
+	retreat cost is 0". So, you should play Balloon Berry as if it negates the Pokémon.'s retreat cost while attached to
+	that Pokémon., not just when it actually attempts to retreat. For example, Muk-EX's "Slimy Water" attack damage will
+	be reduced to only 40 against a Pokémon. with Balloon Berry attached to it. (Nov 13, 2003 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#46
 ]]

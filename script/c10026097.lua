@@ -19,8 +19,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can you play Holon Scientist if you will not be able to draw any cards?
-		A. No, you must be able to draw at least one card after you have paid the discard cost.
-		(Jan 4, 2007 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-ex.html#trainers
+	Q. Can you play Holon Scientist if you will not be able to draw any cards?
+	A. No, you must be able to draw at least one card after you have paid the discard cost. (Jan 4, 2007 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-ex.html#trainers
 ]]

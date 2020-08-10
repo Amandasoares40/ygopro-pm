@@ -21,9 +21,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If my opponent has no cards in their hand, and I only have 1 Colress in my hand, and neither player has any
-		Benched Pokemon, am I allowed to play Colress or not?
-		A. Yes, you can. You would shuffle your "hand of zero cards" into your deck and draw nothing.
-		(Mar 7, 2013 TPCi Rules Team)
-		http://compendium.pokegym.net/compendium-bw.html#296
+	Q. If my opponent has no cards in their hand, and I only have 1 Colress in my hand, and neither player has any Benched
+	Pokemon, am I allowed to play Colress or not?
+	A. Yes, you can. You would shuffle your "hand of zero cards" into your deck and draw nothing.
+	(Mar 7, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#296
 ]]

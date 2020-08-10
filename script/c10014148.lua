@@ -5,7 +5,7 @@ function scard.initial_effect(c)
 	aux.EnablePokemonAttribute(c)
 	--evolution
 	aux.EnableEvolutionAttribute(c)
-	--poke-body (get effect)
+	--poke-body (gain effect)
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(aux.Stringid(sid,0))
 	e1:SetCategory(CATEGORY_POKEBODY)
@@ -27,7 +27,7 @@ scard.length=5.11
 scard.evolves_from=CARD_SEADRA
 scard.evolution_list1={["Basic"]=CARD_HORSEA,["Stage 1"]=CARD_SEADRA,["Stage 2"]=CARD_KINGDRA}
 scard.weakness_x2={ENERGY_L}
---poke-body (get effect)
+--poke-body (gain effect)
 function scard.cfilter(c)
 	return c:IsBasicEnergy() and c:IsPlayedFromHand()
 		and c:IsEnergy(ENERGY_W+ENERGY_L+ENERGY_P)

@@ -1,6 +1,6 @@
+Rule={}
 --register rules
 --Not fully implemented: Cannot change turn counter to 1 during sudden death
-Rule={}
 function Rule.RegisterRules(c)
 	local e1=Effect.CreateEffect(c)
 	e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE+EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_NO_TURN_RESET)
@@ -230,7 +230,7 @@ function Rule.ApplyRules(e,tp,eg,ep,ev,re,r,rp)
 	Rule.activate_quick_in_ntphand()
 	--infinite hand
 	Rule.infinite_hand()
-	--cannot bp
+	--cannot conduct battle phase
 	Rule.cannot_battle_phase()
 	--cannot change position
 	Rule.cannot_change_position()
@@ -634,7 +634,7 @@ function Rule.infinite_hand()
 	e1:SetValue(MAX_NUMBER)
 	Duel.RegisterEffect(e1,0)
 end
---cannot bp
+--cannot conduct battle phase
 function Rule.cannot_battle_phase()
 	local e1=Effect.GlobalEffect()
 	e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)

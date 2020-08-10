@@ -33,15 +33,15 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use Level MAX to level up a Benched Pokemon?
-		A. Yes, you can. (Feb 12, 2009 PUI Rules Team)
+	Q. Can I use Level MAX to level up a Benched Pokemon?
+	A. Yes, you can. (Feb 12, 2009 PUI Rules Team)
 
-		Q. Can I use Level MAX on a Pokemon that I just put into play or evolved this turn?
-		A. Yes, you can. (Feb 12, 2009 PUI Rules Team)
+	Q. Can I use Level MAX on a Pokemon that I just put into play or evolved this turn?
+	A. Yes, you can. (Feb 12, 2009 PUI Rules Team)
 
-		Q. If you play Level Max to level up one of your benched Pokemon while the Battle Tower stadium is in play, do you
-		get to remove 4 damage counters from that Pokemon or not?
-		A. No, you cannot remove any damage counters. Level Max has you search your deck for the Lv.X Pokemon, but Battle
-		Tower only works when you play the Lv.X card from your hand. (Sep 24, 2009 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#351
+	Q. If you play Level Max to level up one of your benched Pokemon while the Battle Tower stadium is in play, do you get
+	to remove 4 damage counters from that Pokemon or not?
+	A. No, you cannot remove any damage counters. Level Max has you search your deck for the Lv.X Pokemon, but Battle
+	Tower only works when you play the Lv.X card from your hand. (Sep 24, 2009 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#351
 ]]

@@ -13,8 +13,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I use the effect of a Stadium like Rough Seas, then play Delinquent to remove the Stadium, then play
-		another Stadium of the same name as the original and use its effect too?
-		A. Yes, that is permissible. (Feb 25, 2016 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#455
+	Q. Can I use the effect of a Stadium like Rough Seas, then play Delinquent to remove the Stadium, then play another
+	Stadium of the same name as the original and use its effect too?
+	A. Yes, that is permissible. (Feb 25, 2016 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#455
 ]]

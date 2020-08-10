@@ -13,7 +13,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. For Erika, does your opponent have to take cards?
-		A. Nope, they may [or may not]. (Nov 30, 2000 WotC Chat, Q147)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. For Erika, does your opponent have to take cards?
+	A. Nope, they may [or may not]. (Nov 30, 2000 WotC Chat, Q147)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

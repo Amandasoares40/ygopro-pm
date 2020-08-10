@@ -1,11 +1,11 @@
 --Buck's Training (Legends Awakened 130/146)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--draw, get effect
+	--draw, gain effect
 	aux.PlayTrainerFunction(c,nil,scard.op1)
 end
 scard.trainer_supporter=true
---draw, get effect
+--draw, gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Draw(tp,2,REASON_EFFECT)
 	local c=e:GetHandler()

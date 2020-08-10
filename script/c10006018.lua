@@ -2,11 +2,11 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_MISTY)
-	--get effect
+	--gain effect
 	aux.PlayTrainerFunction(c,nil,scard.op1,nil,aux.DiscardHandCost(2))
 end
 scard.trainer_item=true
---get effect
+--gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	--increase damage

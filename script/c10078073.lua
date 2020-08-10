@@ -9,7 +9,7 @@ function scard.initial_effect(c)
 	--damage
 	local e2=aux.AddPokemonAttack(c,1,nil,aux.AttackDamageOperation(130))
 	e2:SetAttackCost(ENERGY_F,ENERGY_F,ENERGY_C,ENERGY_C)
-	--gx attack (get effect)
+	--gx attack (gain effect)
 	local e3=aux.AddPokemonAttack(c,2,CATEGORY_GX_ATTACK,scard.op2)
 	e3:SetAttackCost(ENERGY_F,ENERGY_F,ENERGY_C,ENERGY_C)
 end
@@ -28,7 +28,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.Attach(e,e:GetHandler(),g)
 	end
 end
---gx attack (get effect)
+--gx attack (gain effect)
 function scard.op2(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,150)
 	local c=e:GetHandler()

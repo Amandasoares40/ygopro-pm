@@ -25,8 +25,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Sabrina's Gaze says, "Each player shuffles his/her hand into his/her deck and draws a new hand of the same
-		number of cards." So if someone has a zero-card hand, they still have to shuffle, right?
-		A. That's right. Your hand can be 0. (Dec 7, 2000 WotC Chat, Q91)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Sabrina's Gaze says, "Each player shuffles his/her hand into his/her deck and draws a new hand of the same number
+	of cards." So if someone has a zero-card hand, they still have to shuffle, right?
+	A. That's right. Your hand can be 0. (Dec 7, 2000 WotC Chat, Q91)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

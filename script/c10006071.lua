@@ -4,7 +4,7 @@ function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_BROCK,SETNAME_OWNER)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
-	--get effect
+	--gain effect
 	local e1=aux.AddPokemonAttack(c,0,nil,scard.op1)
 	e1:SetAttackCost(ENERGY_C)
 	--damage
@@ -16,7 +16,7 @@ scard.length=2.00
 scard.evolution_list1={["Basic"]=CARD_BROCKS_SANDSHREW,["Stage 1"]=CARD_BROCKS_SANDSLASH}
 scard.weakness_x2={ENERGY_G}
 scard.resistance_30={ENERGY_L}
---get effect
+--gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	Duel.AttackDamage(e,0)

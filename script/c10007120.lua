@@ -2,11 +2,11 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_ROCKETS)
-	--search (to hand) or get effect
+	--search (to hand) or gain effect
 	aux.PlayTrainerFunction(c,aux.CheckDeckFunction(PLAYER_SELF),scard.op1)
 end
 scard.trainer_item=true
---search (to hand) or get effect
+--search (to hand) or gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if Duel.TossCoin(tp,1)==RESULT_HEADS then
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATOHAND)

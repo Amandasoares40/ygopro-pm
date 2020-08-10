@@ -22,5 +22,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Draw(tp,ct,REASON_EFFECT)
 end
 --[[
-	Note: This card's effect is almost identical to that of "Team Aqua Schemer".
+	Note: This card's effect is similar to that of "Team Aqua Schemer".
 ]]

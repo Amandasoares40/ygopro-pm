@@ -9,5 +9,5 @@ scard.legend_bottom_half=CARD_DARKRAI_CRESSELIA_LEGEND
 scard.weakness_x2={ENERGY_F,ENERGY_P}
 --[[
 	Rulings
-		This card's Japanese name doesn't contain わるい (Dark).
+	* This card's Japanese name doesn't contain わるい (Dark).
 ]]

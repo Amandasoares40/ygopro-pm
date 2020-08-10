@@ -30,9 +30,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If a Pokemon has a poison condition that places more than one damage counter per turn, like from Crobat's
-		"Ultra-Toxic Fang" attack, does Virbank City Gym work or not?
-		A. Yes, it works. You place 4 damage counters for Crobat's "Ultra-Toxic Fang", then you place 2 more for Virbank
-		City Gym making a total of 6 counters placed. (Feb 28, 2013 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#295
+	Q. If a Pokemon has a poison condition that places more than one damage counter per turn, like from Crobat's
+	"Ultra-Toxic Fang" attack, does Virbank City Gym work or not?
+	A. Yes, it works. You place 4 damage counters for Crobat's "Ultra-Toxic Fang", then you place 2 more for Virbank City
+	Gym making a total of 6 counters placed. (Feb 28, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#295
 ]]

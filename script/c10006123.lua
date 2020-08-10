@@ -38,8 +38,8 @@ function scard.shuffle_draw(tp)
 end
 --[[
 	Rulings
-		Q. Can I just flip a coin with Misty's Duel instead of playing Rock, Paper and Scissors (R.P.S.) since R.P.S. is
-		an easy target for cheaters?
-		A. It's up to the person playing Misty's Duel. (August 17, 2000 WotC Chat Q175)
-		http://compendium.pokegym.net/compendium.html#trainers
+	Q. Can I just flip a coin with Misty's Duel instead of playing Rock, Paper and Scissors (R.P.S.) since R.P.S. is an
+	easy target for cheaters?
+	A. It's up to the person playing Misty's Duel. (August 17, 2000 WotC Chat Q175)
+	https://compendium.pokegym.net/compendium.html#trainers
 ]]

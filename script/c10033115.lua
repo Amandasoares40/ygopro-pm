@@ -25,16 +25,16 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I play Team Galactic's Wager can I choose to draw zero cards, or must each player draw at least one card
-		since it says "UP TO 3" for losing or "UP TO 6" for winning?
-		A. Each player must draw at least one card if they are able to. (Feb 21, 2008 PUI Rules Team)
+	Q. If I play Team Galactic's Wager can I choose to draw zero cards, or must each player draw at least one card since
+	it says "UP TO 3" for losing or "UP TO 6" for winning?
+	A. Each player must draw at least one card if they are able to. (Feb 21, 2008 PUI Rules Team)
 
-		Q. Can I play Team Galactic's Wager if I or my opponent have no hand after playing the card... or no deck?
-		A. Yes, both players do as much as they can of the required actions. A player with no hand will shuffle then draw
-		and a player with no deck will shuffle in and draw. (Sep 18, 2007 PUI Rules Team)
+	Q. Can I play Team Galactic's Wager if I or my opponent have no hand after playing the card... or no deck?
+	A. Yes, both players do as much as they can of the required actions. A player with no hand will shuffle then draw and
+	a player with no deck will shuffle in and draw. (Sep 18, 2007 PUI Rules Team)
 
-		Q. If no one has any cards left in their deck, and no cards in their hand except for a single Team Galactic's
-		Wager, can I play Team Galactic's Wager or not?
-		A. No. At least one player must be able to draw a card. (Feb 21, 2008 PUI Rules Team)
-		http://compendium.pokegym.net/compendium-lvx.html#193
+	Q. If no one has any cards left in their deck, and no cards in their hand except for a single Team Galactic's Wager,
+	can I play Team Galactic's Wager or not?
+	A. No. At least one player must be able to draw a card. (Feb 21, 2008 PUI Rules Team)
+	https://compendium.pokegym.net/compendium-lvx.html#193
 ]]

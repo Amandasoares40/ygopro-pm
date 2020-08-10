@@ -1,11 +1,11 @@
 --Time Capsule (Neo Genesis 90/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
-	--to deck, get effect
+	--to deck, gain effect
 	aux.PlayTrainerFunction(c,aux.CheckCardFunction(scard.tdfilter,LOCATION_DPILE,LOCATION_DPILE),scard.op1)
 end
 scard.trainer_item=true
---to deck, get effect
+--to deck, gain effect
 function scard.tdfilter(c)
 	return (c:IsPokemon() or c:IsBasicEnergy()) and c:IsAbleToDeck()
 end

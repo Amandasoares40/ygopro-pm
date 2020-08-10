@@ -2,11 +2,11 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_GIOVANNI)
-	--choose one (draw or get effect)
+	--choose one (draw or gain effect)
 	aux.PlayTrainerFunction(c,scard.tg1,scard.op1)
 end
 scard.trainer_supporter=true
---choose one (draw or get effect)
+--choose one (draw or gain effect)
 function scard.tg1(e,tp,eg,ep,ev,re,r,rp,chk)
 	local ct=5-Duel.GetMatchingGroupCount(nil,tp,LOCATION_HAND,0,e:GetHandler())
 	local b1=ct>0 and Duel.IsPlayerCanDraw(tp,1)

@@ -27,9 +27,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. If I have two Magnezones in play with the "Dual Brains" Ability, does that mean I can play 4 Supporters during
-		my turn?
-		A. No, you cannot. Dual Brains says you may play 2 Supporters, period; it doesn't say "an extra supporter" for
-		each Magnezone. (Plasma Storm FAQ; Feb 7, 2013 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#288
+	Q. If I have two Magnezones in play with the "Dual Brains" Ability, does that mean I can play 4 Supporters during my
+	turn?
+	A. No, you cannot. Dual Brains says you may play 2 Supporters, period; it doesn't say "an extra supporter" for each
+	Magnezone. (Plasma Storm FAQ; Feb 7, 2013 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#288
 ]]

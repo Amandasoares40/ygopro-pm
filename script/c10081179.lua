@@ -17,8 +17,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 end
 --[[
 	Rulings
-		Q. Can I play Kahili if there's only one card left in my deck?
-		A. If you can draw at least 1 card from your deck, you can use Kahili and do the coin flip part. But if you can’t
-		draw any cards, you can’t use it. (Lost Thunder FAQ; Nov 1, 2018 TPCi Rules Team)
-		https://compendium.pokegym.net/compendium-bw.html#625
+	Q. Can I play Kahili if there's only one card left in my deck?
+	A. If you can draw at least 1 card from your deck, you can use Kahili and do the coin flip part. But if you can’t draw
+	any cards, you can’t use it. (Lost Thunder FAQ; Nov 1, 2018 TPCi Rules Team)
+	https://compendium.pokegym.net/compendium-bw.html#625
 ]]
