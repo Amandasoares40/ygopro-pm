@@ -1,6 +1,7 @@
 --Magikarp (Base Set 35/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W)
 end
 scard.pokemon_basic=true
-scard.length=2.11
 scard.evolution_list1={["Basic"]=CARD_MAGIKARP,["Stage 1"]=CARD_GYARADOS}
 scard.weakness_x2={ENERGY_L}
 --damage

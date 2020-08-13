@@ -1,6 +1,7 @@
 --Cyndaquil (Neo Genesis 56/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.80)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_R,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=1.80
 scard.evolution_list1={["Basic"]=CARD_CYNDAQUIL,["Stage 1"]=CARD_QUILAVA,["Stage 2"]=CARD_TYPHLOSION}
 scard.weakness_x2={ENERGY_W}
 --gain effect

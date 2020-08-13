@@ -1,6 +1,7 @@
 --Mareep (Neo Genesis 65/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--search (attach)
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_L)
 end
 scard.pokemon_basic=true
-scard.length=2.00
 scard.evolution_list1={["Basic"]=CARD_MAREEP,["Stage 1"]=CARD_FLAAFFY,["Stage 2"]=CARD_AMPHAROS}
 scard.weakness_x2={ENERGY_F}
 --search (attach)

@@ -1,6 +1,7 @@
 --Mewtwo (Base Set 10/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,6.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_P)
 end
 scard.pokemon_basic=true
-scard.length=6.70
 scard.level_up_list={CARD_MEWTWO,CARD_CARD_MEWTWO_LV_X}
 scard.weakness_x2={ENERGY_P}
 --damage

@@ -1,6 +1,7 @@
 --Typhlosion (Neo Genesis 17/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,5.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -21,7 +22,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_R,ENERGY_R,ENERGY_R,ENERGY_R)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.length=5.70
 scard.evolves_from=CARD_QUILAVA
 scard.evolution_list1={["Basic"]=CARD_CYNDAQUIL,["Stage 1"]=CARD_QUILAVA,["Stage 2"]=CARD_TYPHLOSION}
 scard.weakness_x2={ENERGY_W}

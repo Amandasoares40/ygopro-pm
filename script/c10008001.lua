@@ -1,6 +1,7 @@
 --Ampharos (Neo Genesis 1/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,4.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -10,7 +11,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_L,ENERGY_L,ENERGY_L)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.length=4.70
 scard.evolves_from=CARD_FLAAFFY
 scard.evolution_list1={["Basic"]=CARD_MAREEP,["Stage 1"]=CARD_FLAAFFY,["Stage 2"]=CARD_AMPHAROS}
 scard.weakness_x2={ENERGY_F}

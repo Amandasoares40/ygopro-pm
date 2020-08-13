@@ -1,6 +1,7 @@
 --Slowbro (Fossil 43/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,5.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -20,7 +21,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_P)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=5.30
 scard.evolves_from=CARD_SLOWPOKE
 scard.evolution_list1={["Basic"]=CARD_SLOWPOKE,["Stage 1"]=CARD_SLOWBRO}
 scard.weakness_x2={ENERGY_P}

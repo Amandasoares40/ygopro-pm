@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_ROCKETS,SETNAME_OWNER)
+	aux.AddLength(c,1.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -9,7 +10,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=1.40
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}
 --damage

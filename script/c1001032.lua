@@ -1,6 +1,7 @@
 --Smeargle (Black Star Promo Wizards of the Coast 32)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--add counter, gain effect
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=3.11
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}
 --add counter, gain effect

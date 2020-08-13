@@ -1,6 +1,7 @@
 --Omanyte (Neo Discovery 60/75)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -22,7 +23,6 @@ function scard.initial_effect(c)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
 scard.pokemon_restored=true
-scard.length=1.40
 scard.evolves_from=CARD_MYSTERIOUS_FOSSIL
 scard.evolution_list4={["Basic"]=CARD_MYSTERIOUS_FOSSIL,["Stage 1"]=CARD_OMANYTE,["Stage 2"]=CARD_OMASTAR}
 scard.break_evolution_list={CARD_OMASTAR,CARD_OMASTAR_BREAK}

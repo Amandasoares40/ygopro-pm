@@ -1,6 +1,7 @@
 --Slowpoke (Fossil 55/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--heal
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_P)
 end
 scard.pokemon_basic=true
-scard.length=3.11
 scard.evolution_list1={["Basic"]=CARD_SLOWPOKE,["Stage 1"]=CARD_SLOWBRO}
 scard.evolution_list2={["Basic"]=CARD_SLOWPOKE,["Stage 1"]=CARD_LIGHT_SLOWBRO}
 scard.weakness_x2={ENERGY_P}

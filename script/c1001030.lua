@@ -2,6 +2,7 @@
 --WORK IN PROGRESS: Choosing a Pokemon's attack to copy it
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=1.00
 scard.evolution_list1={["Basic"]=CARD_TOGEPI,["Stage 1"]=CARD_TOGETIC,["Stage 2"]=CARD_TOGEKISS}
 scard.resistance_30={ENERGY_P}
 --gain effect

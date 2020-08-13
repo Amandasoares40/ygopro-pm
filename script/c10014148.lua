@@ -1,6 +1,7 @@
 --Kingdra (Aquapolis 148/147)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,5.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -23,7 +24,6 @@ function scard.initial_effect(c)
 	e3:SetAttackCost(ENERGY_P,ENERGY_P,ENERGY_L,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.length=5.11
 scard.evolves_from=CARD_SEADRA
 scard.evolution_list1={["Basic"]=CARD_HORSEA,["Stage 1"]=CARD_SEADRA,["Stage 2"]=CARD_KINGDRA}
 scard.weakness_x2={ENERGY_L}

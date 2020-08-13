@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_BLAINE,SETNAME_OWNER)
+	aux.AddLength(c,6.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--to deck
@@ -9,7 +10,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_R,ENERGY_R,ENERGY_R,ENERGY_R,ENERGY_R)
 end
 scard.pokemon_basic=true
-scard.length=6.70
 scard.resistance_30={ENERGY_F}
 --to deck
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

@@ -1,6 +1,7 @@
 --Seadra (Fossil 42/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.10)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=3.10
 scard.evolves_from=CARD_HORSEA
 scard.evolution_list1={["Basic"]=CARD_HORSEA,["Stage 1"]=CARD_SEADRA,["Stage 2"]=CARD_KINGDRA}
 scard.weakness_x2={ENERGY_L}

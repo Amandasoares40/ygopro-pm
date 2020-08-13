@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_SABRINA,SETNAME_OWNER)
+	aux.AddLength(c,3.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--poisoned
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=3.30
 scard.evolution_list1={["Basic"]=CARD_SABRINAS_VENONAT,["Stage 1"]=CARD_SABRINAS_VENOMOTH}
 scard.weakness_x2={ENERGY_R}
 --poisoned

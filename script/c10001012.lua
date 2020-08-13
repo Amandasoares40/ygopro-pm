@@ -1,6 +1,7 @@
 --Ninetales (Base Set 12/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_R,ENERGY_R,ENERGY_R,ENERGY_R)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=3.70
 scard.evolves_from=CARD_VULPIX
 scard.evolution_list1={["Basic"]=CARD_VULPIX,["Stage 1"]=CARD_NINETALES}
 scard.break_evolution_list={CARD_NINETALES,CARD_NINETALES_BREAK}

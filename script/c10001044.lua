@@ -1,6 +1,7 @@
 --Bulbasaur (Base Set 44/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--remove counter
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_G,ENERGY_G)
 end
 scard.pokemon_basic=true
-scard.length=2.40
 scard.evolution_list1={["Basic"]=CARD_BULBASAUR,["Stage 1"]=CARD_IVYSAUR,["Stage 2"]=CARD_VENUSAUR}
 scard.weakness_x2={ENERGY_R}
 --remove counter

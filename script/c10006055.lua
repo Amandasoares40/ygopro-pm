@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_MISTY,SETNAME_OWNER)
+	aux.AddLength(c,4.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -14,7 +15,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_W)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=4.30
 scard.evolves_from=CARD_MISTYS_GOLDEEN
 scard.evolution_list1={["Basic"]=CARD_MISTYS_GOLDEEN,["Stage 1"]=CARD_MISTYS_SEAKING}
 scard.weakness_x2={ENERGY_L}

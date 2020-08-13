@@ -1,6 +1,7 @@
 --Cool Porygon (Black Star Promo Wizards of the Coast 15)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=2.70
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}
 --gain effect

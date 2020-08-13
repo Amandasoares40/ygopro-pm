@@ -1,6 +1,7 @@
 --Charizard (Base Set 4/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,5.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -30,7 +31,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_R,ENERGY_R,ENERGY_R,ENERGY_R)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.length=5.70
 scard.evolves_from=CARD_CHARMELEON
 scard.evolution_list1={["Basic"]=CARD_CHARMANDER,["Stage 1"]=CARD_CHARMELEON,["Stage 2"]=CARD_CHARIZARD}
 scard.weakness_x2={ENERGY_W}

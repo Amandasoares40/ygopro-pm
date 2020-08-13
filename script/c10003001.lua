@@ -1,6 +1,7 @@
 --Aerodactyl (Fossil 1/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,5.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -14,7 +15,6 @@ function scard.initial_effect(c)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
 scard.pokemon_restored=true
-scard.length=5.11
 scard.evolves_from=CARD_MYSTERIOUS_FOSSIL
 scard.evolution_list1={["Basic"]=CARD_MYSTERIOUS_FOSSIL,["Stage 1"]=CARD_AERODACTYL}
 scard.weakness_x2={ENERGY_G}

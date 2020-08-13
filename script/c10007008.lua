@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_GIOVANNI,SETNAME_OWNER)
+	aux.AddLength(c,3.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -22,7 +23,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=3.30
 scard.evolves_from=CARD_GIOVANNIS_MEOWTH
 scard.evolution_list1={["Basic"]=CARD_GIOVANNIS_MEOWTH,["Stage 1"]=CARD_GIOVANNIS_PERSIAN}
 scard.weakness_x2={ENERGY_F}

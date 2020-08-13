@@ -1,6 +1,7 @@
 --Vulpix (Base Set 68/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--confused
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_R,ENERGY_R)
 end
 scard.pokemon_basic=true
-scard.length=2.00
 scard.evolution_list1={["Basic"]=CARD_VULPIX,["Stage 1"]=CARD_NINETALES}
 scard.break_evolution_list={CARD_NINETALES,CARD_NINETALES_BREAK}
 scard.weakness_x2={ENERGY_W}

@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_BROCK,SETNAME_OWNER)
+	aux.AddLength(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_F,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=2.00
 scard.evolution_list1={["Basic"]=CARD_BROCKS_SANDSHREW,["Stage 1"]=CARD_BROCKS_SANDSLASH}
 scard.weakness_x2={ENERGY_G}
 scard.resistance_30={ENERGY_L}

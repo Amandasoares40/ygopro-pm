@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_DARK)
+	aux.AddLength(c,3.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -20,7 +21,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_G,ENERGY_G)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=3.30
 scard.evolves_from=CARD_BULBASAUR
 scard.evolution_list1={["Basic"]=CARD_BULBASAUR,["Stage 1"]=CARD_IVYSAUR,["Stage 2"]=CARD_VENUSAUR}
 scard.weakness_x2={ENERGY_R}

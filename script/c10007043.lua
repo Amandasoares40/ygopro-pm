@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_GIOVANNI,SETNAME_OWNER)
+	aux.AddLength(c,1.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--confirm deck (discard deck or to hand)
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=1.40
 scard.evolution_list1={["Basic"]=CARD_GIOVANNIS_MEOWTH,["Stage 1"]=CARD_GIOVANNIS_PERSIAN}
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}

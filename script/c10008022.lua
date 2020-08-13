@@ -1,6 +1,7 @@
 --Elekid (Neo Genesis 22/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--baby pokemon ability
@@ -19,7 +20,6 @@ function scard.initial_effect(c)
 end
 scard.pokemon_basic=true
 scard.pokemon_baby=true
-scard.length=2.00
 scard.evolution_list1={["Baby"]=CARD_ELEKID,["Basic"]=CARD_ELECTABUZZ,["Stage 1"]=CARD_ELECTIVIRE}
 --pokemon power (damage, end turn)
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

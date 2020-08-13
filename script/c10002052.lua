@@ -1,6 +1,7 @@
 --Exeggcute (Jungle 52/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--asleep
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_G,ENERGY_G)
 end
 scard.pokemon_basic=true
-scard.length=1.40
 scard.evolution_list1={["Basic"]=CARD_EXEGGCUTE,["Stage 1"]=CARD_EXEGGUTOR}
 scard.weakness_x2={ENERGY_R}
 --asleep

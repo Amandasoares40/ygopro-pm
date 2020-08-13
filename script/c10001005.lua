@@ -2,6 +2,7 @@
 --WORK IN PROGRESS: Choosing a Pokemon's attack to copy it
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -15,7 +16,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.length=2.00
 scard.evolution_list1={["Baby"]=CARD_CLEFFA,["Basic"]=CARD_CLEFAIRY,["Stage 1"]=CARD_CLEFABLE}
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}

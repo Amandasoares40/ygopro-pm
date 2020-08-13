@@ -1,6 +1,7 @@
 --Natu (Neo Genesis 67/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,0.80)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_P)
 end
 scard.pokemon_basic=true
-scard.length=0.80
 scard.evolution_list1={["Basic"]=CARD_NATU,["Stage 1"]=CARD_XATU}
 scard.weakness_x2={ENERGY_P}
 scard.resistance_30={ENERGY_F}

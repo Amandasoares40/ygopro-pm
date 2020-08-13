@@ -155,6 +155,14 @@ function Auxiliary.AddSetcode(c,...)
 		table.insert(mt.setname_list,setname)
 	end
 end
+--register a pokemon's length
+--required for Card.GetLength, Card.IsHasLength
+function Auxiliary.AddLength(c,val)
+	if c.length==nil then
+		local mt=getmetatable(c)
+		mt.length=val
+	end
+end
 --add a description to a pokemon that lists the effects gained from attached cards
 --Note: The description is removed if con_func returns false
 function Auxiliary.AddAttachedDescription(c,desc,con_func)

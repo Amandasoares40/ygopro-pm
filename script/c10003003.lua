@@ -2,6 +2,7 @@
 --WORK IN PROGRESS: The wrong descriptions are shown for the gained attacks/effects
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--pokemon power (copy pokemon)
@@ -27,7 +28,6 @@ function scard.initial_effect(c)
 	end
 end
 scard.pokemon_basic=true
-scard.length=1.00
 scard.weakness_x2={ENERGY_F}
 scard.resistance_30={ENERGY_P}
 --pokemon power (copy pokemon)

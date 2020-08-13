@@ -1,6 +1,7 @@
 --Tyranitar (Neo Discovery 12/75)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,6.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_D,ENERGY_D,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.length=6.70
 scard.evolves_from=CARD_PUPITAR
 scard.evolution_list1={["Basic"]=CARD_LARVITAR,["Stage 1"]=CARD_PUPITAR,["Stage 2"]=CARD_TYRANITAR}
 scard.resistance_30={ENERGY_P}

@@ -1,6 +1,7 @@
 --Electabuzz (Black Star Promo Wizards of the Coast 46)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.70)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_L)
 end
 scard.pokemon_basic=true
-scard.length=3.70
 scard.evolution_list1={["Baby"]=CARD_ELEKID,["Basic"]=CARD_ELECTABUZZ,["Stage 1"]=CARD_ELECTIVIRE}
 scard.weakness_x2={ENERGY_F}
 --add marker

@@ -1,6 +1,7 @@
 --Horsea (Fossil 49/62)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.40)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_W)
 end
 scard.pokemon_basic=true
-scard.length=1.40
 scard.evolution_list1={["Basic"]=CARD_HORSEA,["Stage 1"]=CARD_SEADRA,["Stage 2"]=CARD_KINGDRA}
 scard.weakness_x2={ENERGY_L}
 --gain effect

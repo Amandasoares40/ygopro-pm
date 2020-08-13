@@ -1,6 +1,7 @@
 --Cleffa (Neo Genesis 20/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--baby pokemon ability
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 end
 scard.pokemon_basic=true
 scard.pokemon_baby=true
-scard.length=1.00
 scard.evolution_list1={["Baby"]=CARD_CLEFFA,["Basic"]=CARD_CLEFAIRY,["Stage 1"]=CARD_CLEFABLE}
 --to deck, draw
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

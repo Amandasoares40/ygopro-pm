@@ -1,6 +1,7 @@
 --Magneton (Base Set 9/102)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddLength(c,3.30)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_L,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.length=3.30
 scard.evolves_from=CARD_MAGNEMITE
 scard.evolution_list1={["Basic"]=CARD_MAGNEMITE,["Stage 1"]=CARD_MAGNETON,["Stage 2"]=CARD_MAGNEZONE}
 scard.weakness_x2={ENERGY_F}
