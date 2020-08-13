@@ -3,7 +3,7 @@ Rule={}
 --Not fully implemented: Cannot change turn counter to 1 during sudden death
 function Rule.RegisterRules(c)
 	local e1=Effect.CreateEffect(c)
-	e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE+EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_NO_TURN_RESET)
+	e1:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_NO_TURN_RESET)
 	e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 	e1:SetCode(EVENT_ADJUST)
 	e1:SetRange(LOCATION_ALL)
@@ -130,94 +130,92 @@ function Rule.ApplyRules(e,tp,eg,ep,ev,re,r,rp)
 	e3:SetCondition(Rule.TakePrizeCondition)
 	e3:SetOperation(Rule.TakePrizeOperation)
 	Duel.RegisterEffect(e3,0)
-	--adjust lp
+	--limit supporter
 	local e4=Effect.GlobalEffect()
 	e4:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e4:SetCode(EVENT_ADJUST)
-	e4:SetOperation(Rule.AdjustLPOperation)
+	e4:SetCode(EVENT_CHAINING)
+	e4:SetOperation(Rule.RegisterSupporter)
 	Duel.RegisterEffect(e4,0)
-	--limit supporter
-	local e5=Effect.GlobalEffect()
-	e5:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e5:SetCode(EVENT_CHAINING)
-	e5:SetOperation(Rule.RegisterSupporter)
+	local e5=e4:Clone()
+	e5:SetCode(EVENT_CHAIN_NEGATED)
+	e5:SetOperation(Rule.ResetSupporter)
 	Duel.RegisterEffect(e5,0)
-	local e6=e5:Clone()
-	e6:SetCode(EVENT_CHAIN_NEGATED)
-	e6:SetOperation(Rule.ResetSupporter)
+	local e6=Effect.GlobalEffect()
+	e6:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
+	e6:SetType(EFFECT_TYPE_FIELD)
+	e6:SetCode(EFFECT_CANNOT_ACTIVATE)
+	e6:SetTargetRange(1,0)
+	e6:SetCondition(Rule.LimitSupporterCondition1)
+	e6:SetValue(Rule.LimitSupporter)
 	Duel.RegisterEffect(e6,0)
-	local e7=Effect.GlobalEffect()
-	e7:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
-	e7:SetType(EFFECT_TYPE_FIELD)
-	e7:SetCode(EFFECT_CANNOT_ACTIVATE)
-	e7:SetTargetRange(1,0)
-	e7:SetCondition(Rule.LimitSupporterCondition1)
-	e7:SetValue(Rule.LimitSupporter)
+	local e7=e6:Clone()
+	e7:SetTargetRange(0,1)
+	e7:SetCondition(Rule.LimitSupporterCondition2)
 	Duel.RegisterEffect(e7,0)
-	local e8=e7:Clone()
-	e8:SetTargetRange(0,1)
-	e8:SetCondition(Rule.LimitSupporterCondition2)
-	Duel.RegisterEffect(e8,0)
 	--adjust special conditions
-	local e9=Effect.GlobalEffect()
-	e9:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
-	e9:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e9:SetCode(EVENT_ADJUST)
-	e9:SetOperation(Rule.AdjustSPCOperation1)
+	local e8=Effect.GlobalEffect()
+	e8:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
+	e8:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e8:SetCode(EVENT_ADJUST)
+	e8:SetOperation(Rule.AdjustSPCOperation1)
+	Duel.RegisterEffect(e8,0)
+	local e9=e8:Clone()
+	e9:SetOperation(Rule.AdjustSPCOperation2)
 	Duel.RegisterEffect(e9,0)
-	local e10=e9:Clone()
-	e10:SetOperation(Rule.AdjustSPCOperation2)
-	Duel.RegisterEffect(e10,0)
 	--attack
-	local e11=Effect.GlobalEffect()
-	e11:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
-	e11:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e11:SetCode(EVENT_PRE_ATTACK)
-	e11:SetCondition(Rule.AttackCondition)
-	e11:SetOperation(Rule.AttackOperation)
-	Duel.RegisterEffect(e11,0)
+	local e10=Effect.GlobalEffect()
+	e10:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
+	e10:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e10:SetCode(EVENT_PRE_ATTACK)
+	e10:SetCondition(Rule.AttackCondition)
+	e10:SetOperation(Rule.AttackOperation)
+	Duel.RegisterEffect(e10,0)
 	--end turn (attacked)
-	local e12=Effect.GlobalEffect()
-	e12:SetDescription(DESC_ATTACK_END_TURN)
-	e12:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e12:SetCode(EVENT_ATTACKED)
-	e12:SetCondition(Rule.EndTurnCondition1)
-	e12:SetOperation(Rule.EndTurnOperation)
-	Duel.RegisterEffect(e12,0)
+	local e11=Effect.GlobalEffect()
+	e11:SetDescription(DESC_ATTACK_END_TURN)
+	e11:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e11:SetCode(EVENT_ATTACKED)
+	e11:SetCondition(Rule.EndTurnCondition1)
+	e11:SetOperation(Rule.EndTurnOperation)
+	Duel.RegisterEffect(e11,0)
 	--end turn (evolved)
-	local e13=e12:Clone()
-	e13:SetDescription(DESC_EVOLVE_END_TURN)
-	e13:SetCode(EVENT_PLAY)
-	e13:SetCondition(Rule.EndTurnCondition2)
-	Duel.RegisterEffect(e13,0)
+	local e12=e11:Clone()
+	e12:SetDescription(DESC_EVOLVE_END_TURN)
+	e12:SetCode(EVENT_PLAY)
+	e12:SetCondition(Rule.EndTurnCondition2)
+	Duel.RegisterEffect(e12,0)
 	--register gx attack
-	local e14=e12:Clone()
-	e14:SetCondition(Rule.RegisterGXAttackCondition)
-	e14:SetOperation(Rule.RegisterGXAttackOperation)
-	Duel.RegisterEffect(e14,0)
+	local e13=e11:Clone()
+	e13:SetCondition(Rule.RegisterGXAttackCondition)
+	e13:SetOperation(Rule.RegisterGXAttackOperation)
+	Duel.RegisterEffect(e13,0)
 	--discard incompatible attached card
-	local e15=Effect.GlobalEffect()
-	e15:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
-	e15:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e15:SetCode(EVENT_ADJUST)
-	e15:SetOperation(Rule.DiscardAttachedOperation)
-	Duel.RegisterEffect(e15,0)
+	local e14=Effect.GlobalEffect()
+	e14:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
+	e14:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e14:SetCode(EVENT_ADJUST)
+	e14:SetOperation(Rule.DiscardAttachedOperation)
+	Duel.RegisterEffect(e14,0)
 	--prism star redirect
-	local e16=Effect.GlobalEffect()
-	e16:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_SET_AVAILABLE+EFFECT_FLAG_IGNORE_RANGE)
-	e16:SetType(EFFECT_TYPE_FIELD)
-	e16:SetCode(EFFECT_TO_DPILE_REDIRECT)
-	e16:SetTargetRange(LOCATION_ALL,LOCATION_ALL)
-	e16:SetTarget(aux.TargetBoolFunction(Card.IsSetCard,SETNAME_PRISM_STAR))
-	e16:SetValue(LOCATION_LZONE)
-	Duel.RegisterEffect(e16,0)
+	local e15=Effect.GlobalEffect()
+	e15:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE+EFFECT_FLAG_SET_AVAILABLE+EFFECT_FLAG_IGNORE_RANGE)
+	e15:SetType(EFFECT_TYPE_FIELD)
+	e15:SetCode(EFFECT_TO_DPILE_REDIRECT)
+	e15:SetTargetRange(LOCATION_ALL,LOCATION_ALL)
+	e15:SetTarget(aux.TargetBoolFunction(Card.IsSetCard,SETNAME_PRISM_STAR))
+	e15:SetValue(LOCATION_LZONE)
+	Duel.RegisterEffect(e15,0)
 	--win game
-	local e17=Effect.GlobalEffect()
-	e17:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-	e17:SetCode(EVENT_ADJUST)
-	e17:SetOperation(Rule.WinOperation)
-	Duel.RegisterEffect(e17,0)
+	local e16=Effect.GlobalEffect()
+	e16:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e16:SetCode(EVENT_ADJUST)
+	e16:SetOperation(Rule.WinOperation)
+	Duel.RegisterEffect(e16,0)
 	--override yugioh rules
+	--set lp
+	Rule.set_lp()
+	--set level status
+	Rule.set_level_status()
 	--draw first turn
 	Rule.draw_first_turn()
 	--cannot summon
@@ -362,17 +360,6 @@ function Rule.TakePrizeOperation(e,tp,eg,ep,ev,re,r,rp)
 		if ct<=0 then break end
 		Duel.TakePrize(1-ec:GetOwner(),ct,ct,REASON_RULE)
 	end
-end
---adjust lp
-function Rule.AdjustLPOperation(e,tp,eg,ep,ev,re,r,rp)
-	local ct1=Duel.GetPrizeCount(PLAYER_ONE)
-	local ct2=Duel.GetPrizeCount(PLAYER_TWO)
-	if ct1==0 and ct2==0 then
-		Rule.sudden_death()
-		return
-	end
-	if Duel.GetLP(PLAYER_ONE)~=ct2 then Duel.SetLP(PLAYER_ONE,ct2) end
-	if Duel.GetLP(PLAYER_TWO)~=ct1 then Duel.SetLP(PLAYER_TWO,ct1) end
 end
 --sudden death
 function Rule.sudden_death()
@@ -572,6 +559,48 @@ function Rule.WinOperation(e,tp,eg,ep,ev,re,r,rp)
 	end
 end
 --override yugioh rules
+--set lp
+function Rule.set_lp(tp)
+	local e1=Effect.GlobalEffect()
+	e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e1:SetCode(EVENT_ADJUST)
+	e1:SetOperation(Rule.SetLPOperation)
+	Duel.RegisterEffect(e1,0)
+end
+function Rule.SetLPOperation(e,tp,eg,ep,ev,re,r,rp)
+	local ct1=Duel.GetPrizeCount(PLAYER_ONE)
+	local ct2=Duel.GetPrizeCount(PLAYER_TWO)
+	if ct1==0 and ct2==0 then
+		Rule.sudden_death()
+		return
+	end
+	if Duel.GetLP(PLAYER_ONE)~=ct2 then Duel.SetLP(PLAYER_ONE,ct2) end
+	if Duel.GetLP(PLAYER_TWO)~=ct1 then Duel.SetLP(PLAYER_TWO,ct1) end
+end
+--set level status
+function Rule.set_level_status()
+	local e1=Effect.GlobalEffect()
+	e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+	e1:SetCode(EVENT_ADJUST)
+	e1:SetOperation(Rule.SetLevelStatusOp)
+	Duel.RegisterEffect(e1,0)
+end
+function Rule.EnableLevelStatusFilter(c)
+	return not c:IsStatus(STATUS_NO_RETREAT_COST) and c:GetRetreatCost()==0
+end
+function Rule.DisableLevelStatusFilter(c)
+	return c:IsStatus(STATUS_NO_RETREAT_COST) and c:GetRetreatCost()>0
+end
+function Rule.SetLevelStatusOp(e,tp,eg,ep,ev,re,r,rp)
+	local g1=Duel.GetMatchingGroup(Rule.EnableLevelStatusFilter,0,LOCATION_ALL,LOCATION_ALL,nil)
+	for c1 in aux.Next(g1) do
+		c1:SetStatus(STATUS_NO_RETREAT_COST,true)
+	end
+	local g2=Duel.GetMatchingGroup(Rule.DisableLevelStatusFilter,0,LOCATION_ALL,LOCATION_ALL,nil)
+	for c2 in aux.Next(g2) do
+		c2:SetStatus(STATUS_NO_RETREAT_COST,false)
+	end
+end
 --draw first turn
 function Rule.draw_first_turn()
 	local e1=Effect.GlobalEffect()

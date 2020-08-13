@@ -1,5 +1,6 @@
 --Temporary Card functions
 --check if a card has a particular setname
+--Note: Overwritten to check for an infinite number of setnames
 local card_is_set_card=Card.IsSetCard
 function Card.IsSetCard(c,...)
 	local setname_list={...}
@@ -22,20 +23,18 @@ function Card.IsOriginalSetCard(c,...)
 end
 --Overwritten Card functions
 --get a pokemon's retreat cost
---Note: Overwritten to get level 0
+--Note: Overwritten to check for the correct value if it is changed while the card is not in LOCATION_MZONE
 local card_get_level=Card.GetLevel
 function Card.GetLevel(c)
-	local res=c:GetOriginalLevel()
+	local res=c:GetOriginalRetreatCost()
 	local t1={c:IsHasEffect(EFFECT_UPDATE_RETREAT_COST)}
 	for _,te1 in pairs(t1) do
 		res=res+te1:GetValue()
 	end
 	local t2={c:IsHasEffect(EFFECT_CHANGE_RETREAT_COST)}
 	for _,te2 in pairs(t2) do
-		res=res+card_get_level(c)
-		if te2:GetValue()==0 then res=0 end
+		res=te2:GetValue()
 	end
-	if res<0 then res=0 end
 	return res
 end
 Card.GetRetreatCost=Card.GetLevel
@@ -1105,7 +1104,7 @@ function Card.IsPlayedFromHand(c,playtype)
 end
 --Renamed Card functions
 --get a pokemon's original retreat cost
---Card.GetOriginalRetreatCost=Card.GetOriginalLevel --reserved
+Card.GetOriginalRetreatCost=Card.GetOriginalLevel
 --check if a pokemon's retreat cost is equal to a given value
 function Card.IsRetreatCost(c,cost)
 	return c:GetRetreatCost()==cost

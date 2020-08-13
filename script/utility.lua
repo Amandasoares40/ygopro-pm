@@ -616,8 +616,6 @@ end
 function Auxiliary.EnablePokemonLEGENDAttribute(c,code)
 	--code: the id of the other half of the Pokemon LEGEND card
 	code=code or c:GetOriginalCode()+1
-	--no retreat cost
-	c:SetStatus(STATUS_NO_RETREAT_COST,true)
 	--bench
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(DESC_BENCH)
@@ -657,10 +655,6 @@ function Auxiliary.MergeLEGENDOperation(code)
 				local c=e:GetHandler()
 				local tc=Duel.GetFirstMatchingCard(Card.IsCode,tp,LOCATION_HAND,0,nil,code)
 				Duel.MergeCards(c,tc)
-				if c:IsStatus(STATUS_NO_RETREAT_COST) then
-					--add retreat cost
-					c:SetStatus(STATUS_NO_RETREAT_COST,false)
-				end
 			end
 end
 
@@ -1262,8 +1256,6 @@ function Auxiliary.PlayTrainerPokemonOperation(hp,setcode,enable_trainer,immune_
 				c:AddPokemonAttribute(attribute)
 				Duel.PlayPokemonStep(c,0,tp,tp,true,false,POS_FACEUP_UPSIDE)
 				c:AddPokemonAttributeComplete()
-				--no retreat cost
-				c:SetStatus(STATUS_NO_RETREAT_COST,true)
 				--treat as basic pokemon
 				local e1=Effect.CreateEffect(c)
 				e1:SetDescription(DESC_BASIC_POKEMON)
