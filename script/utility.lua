@@ -163,6 +163,14 @@ function Auxiliary.AddLength(c,val)
 		mt.length=val
 	end
 end
+--register a pokemon's height
+--required for Card.GetHeight, Card.IsHasHeight
+function Auxiliary.AddHeight(c,val)
+	if c.height==nil then
+		local mt=getmetatable(c)
+		mt.height=val
+	end
+end
 --add a description to a pokemon that lists the effects gained from attached cards
 --Note: The description is removed if con_func returns false
 function Auxiliary.AddAttachedDescription(c,desc,con_func)

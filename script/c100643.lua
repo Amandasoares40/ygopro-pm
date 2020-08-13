@@ -1,6 +1,7 @@
 --Noivern (XY Trainer Kit: Sylveon and Noivern 13/30)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_D,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=4.11
 scard.evolves_from=CARD_NOIBAT
 scard.evolution_list1={["Basic"]=CARD_NOIBAT,["Stage 1"]=CARD_NOIVERN}
 scard.break_evolution_list={CARD_NOIVERN,CARD_NOIVERN_BREAK}

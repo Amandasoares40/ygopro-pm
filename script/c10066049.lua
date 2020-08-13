@@ -1,6 +1,7 @@
 --Raichu (BREAKthrough 49/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.07)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=2.07
 scard.evolves_from=CARD_PIKACHU
 scard.evolution_list1={["Baby"]=CARD_PICHU,["Basic"]=CARD_PIKACHU,["Stage 1"]=CARD_RAICHU}
 scard.break_evolution_list={CARD_RAICHU,CARD_RAICHU_BREAK}

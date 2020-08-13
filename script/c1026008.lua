@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_TEAM_AQUA,SETNAME_OWNER)
+	aux.AddHeight(c,3.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -14,7 +15,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=3.11
 scard.evolves_from=CARD_TEAM_AQUAS_GRIMER
 scard.evolution_list1={["Basic"]=CARD_TEAM_AQUAS_GRIMER,["Stage 1"]=CARD_TEAM_AQUAS_MUK}
 scard.weakness_x2={ENERGY_P}

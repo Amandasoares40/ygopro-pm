@@ -1,6 +1,7 @@
 --Stunfisk (BREAKthrough 56/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -20,7 +21,6 @@ function scard.initial_effect(c)
 	end
 end
 scard.pokemon_basic=true
-scard.height=2.04
 scard.weakness_x2={ENERGY_F}
 scard.resistance_20={ENERGY_M}
 --check for knocked out pokemon

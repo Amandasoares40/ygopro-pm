@@ -1,6 +1,7 @@
 --Fletchling (Kalos Starter Set 31/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.00
 scard.weakness_x2={ENERGY_L}
 scard.resistance_20={ENERGY_F}
 --damage

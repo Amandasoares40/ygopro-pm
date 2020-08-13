@@ -1,6 +1,7 @@
 --Haxorus (Noble Victories 89/101)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,5.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.height=5.11
 scard.evolves_from=CARD_FRAXURE
 scard.evolution_list1={["Basic"]=CARD_AXEW,["Stage 1"]=CARD_FRAXURE,["Stage 2"]=CARD_HAXORUS}
 --paralyzed

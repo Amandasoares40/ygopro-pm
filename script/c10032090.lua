@@ -1,6 +1,7 @@
 --Mime Jr. (Diamond & Pearl 90/130)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--poke-power (evolve)
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 end
 scard.pokemon_basic=true
 scard.pokemon_baby=true
-scard.height=2.00
 scard.evolution_list1={["Baby"]=CARD_MIME_JR,["Basic"]=CARD_MR_MIME}
 scard.weakness_10={ENERGY_P}
 --to deck, draw

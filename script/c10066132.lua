@@ -1,6 +1,7 @@
 --Noibat (BREAKthrough 132/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.08)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--discard energy
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.08
 scard.evolution_list1={["Basic"]=CARD_NOIBAT,["Stage 1"]=CARD_NOIVERN}
 scard.break_evolution_list={CARD_NOIVERN,CARD_NOIVERN_BREAK}
 scard.weakness_x2={ENERGY_L}

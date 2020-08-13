@@ -1,6 +1,7 @@
 --Electivire (Diamond & Pearl 3/130)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,5.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -20,7 +21,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_L,ENERGY_L,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=5.11
 scard.evolves_from=CARD_ELECTABUZZ
 scard.evolution_list1={["Baby"]=CARD_ELEKID,["Basic"]=CARD_ELECTABUZZ,["Stage 1"]=CARD_ELECTIVIRE}
 scard.weakness_20={ENERGY_F}

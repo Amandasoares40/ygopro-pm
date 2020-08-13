@@ -1,6 +1,7 @@
 --Zorua (BREAKthrough 89/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--confused
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_D,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.04
 scard.evolution_list1={["Basic"]=CARD_ZORUA,["Stage 1"]=CARD_ZOROARK}
 scard.weakness_x2={ENERGY_F}
 scard.resistance_20={ENERGY_P}

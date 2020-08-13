@@ -1,6 +1,7 @@
 --Mightyena (Kalos Starter Set 17/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,3.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -10,7 +11,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_D,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=3.03
 scard.evolves_from=CARD_POOCHYENA
 scard.evolution_list1={["Basic"]=CARD_POOCHYENA,["Stage 1"]=CARD_MIGHTYENA}
 scard.weakness_x2={ENERGY_F}

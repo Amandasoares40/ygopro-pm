@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_ROTOM)
+	aux.AddHeight(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--confirm hand, to deck
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_L,ENERGY_L)
 end
 scard.pokemon_basic=true
-scard.height=1.00
 scard.weakness_20={ENERGY_D}
 scard.resistance_20={ENERGY_C}
 --confirm hand, to deck

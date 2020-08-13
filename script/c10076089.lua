@@ -1,6 +1,7 @@
 --Type: Null (Crimson Invasion 89/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,6.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=6.03
 scard.evolution_list1={["Basic"]=CARD_TYPE_NULL,["Stage 1"]=CARD_SILVALLY}
 scard.evolution_list2={["Basic"]=CARD_TYPE_NULL,["Stage 1"]=CARD_SILVALLY_GX}
 scard.weakness_x2={ENERGY_F}

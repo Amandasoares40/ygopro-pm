@@ -1,6 +1,7 @@
 --Chatot (BREAKthrough 128/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.08)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--asleep
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.08
 scard.weakness_x2={ENERGY_L}
 scard.resistance_20={ENERGY_F}
 --asleep

@@ -1,6 +1,7 @@
 --Greninja (Kalos Starter Set 14/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_W,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_2
-scard.height=4.11
 scard.evolves_from=CARD_FROGADIER
 scard.evolution_list1={["Basic"]=CARD_FROAKIE,["Stage 1"]=CARD_FROGADIER,["Stage 2"]=CARD_GRENINJA}
 scard.break_evolution_list={CARD_GRENINJA,CARD_GRENINJA_BREAK}

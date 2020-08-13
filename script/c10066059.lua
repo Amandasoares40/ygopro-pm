@@ -1,6 +1,7 @@
 --Haunter (BREAKthrough 59/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,5.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -21,7 +22,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=5.03
 scard.evolves_from=CARD_GASTLY
 scard.evolution_list1={["Basic"]=CARD_GASTLY,["Stage 1"]=CARD_HAUNTER,["Stage 2"]=CARD_GENGAR}
 scard.weakness_x2={ENERGY_D}

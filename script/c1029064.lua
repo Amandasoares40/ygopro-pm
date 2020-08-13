@@ -1,6 +1,7 @@
 --Silvally (Black Star Promo SM64)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,7.07)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=7.07
 scard.evolves_from=CARD_TYPE_NULL
 scard.evolution_list1={["Basic"]=CARD_TYPE_NULL,["Stage 1"]=CARD_SILVALLY}
 scard.weakness_x2={ENERGY_F}

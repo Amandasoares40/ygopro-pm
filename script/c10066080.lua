@@ -1,6 +1,7 @@
 --Swinub (BREAKthrough 80/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--asleep
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_F,ENERGY_F,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.04
 scard.evolution_list1={["Basic"]=CARD_SWINUB,["Stage 1"]=CARD_PILOSWINE,["Stage 2"]=CARD_MAMOSWINE}
 scard.weakness_x2={ENERGY_G}
 --asleep

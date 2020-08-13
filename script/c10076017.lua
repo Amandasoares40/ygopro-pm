@@ -1,6 +1,7 @@
 --Magikarp (Crimson Invasion 17/111)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--ability (immune to attack damage)
@@ -16,7 +17,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.11
 scard.evolution_list1={["Basic"]=CARD_MAGIKARP,["Stage 1"]=CARD_GYARADOS}
 scard.weakness_x2={ENERGY_L}
 --search (evolve)

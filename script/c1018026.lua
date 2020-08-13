@@ -1,6 +1,7 @@
 --Axew (Black Star Promo BW26)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--gain effect
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.00
 scard.evolution_list1={["Basic"]=CARD_AXEW,["Stage 1"]=CARD_FRAXURE,["Stage 2"]=CARD_HAXORUS}
 --gain effect
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

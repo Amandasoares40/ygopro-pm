@@ -1,6 +1,7 @@
 --Weedle (Kalos Starter Set 1/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--paralyzed
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_G)
 end
 scard.pokemon_basic=true
-scard.height=1.00
 scard.evolution_list1={["Basic"]=CARD_WEEDLE,["Stage 1"]=CARD_KAKUNA,["Stage 2"]=CARD_BEEDRIL}
 scard.weakness_x2={ENERGY_R}
 --paralyzed

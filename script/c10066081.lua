@@ -1,6 +1,7 @@
 --Piloswine (BREAKthrough 81/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,3.07)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_F,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=3.07
 scard.evolves_from=CARD_SWINUB
 scard.evolution_list1={["Basic"]=CARD_SWINUB,["Stage 1"]=CARD_PILOSWINE,["Stage 2"]=CARD_MAMOSWINE}
 scard.weakness_x2={ENERGY_G}

@@ -1,6 +1,7 @@
 --Braixen (Kalos Starter Set 9/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,3.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_R,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=3.03
 scard.evolves_from=CARD_FENNEKIN
 scard.evolution_list1={["Basic"]=CARD_FENNEKIN,["Stage 1"]=CARD_BRAIXEN,["Stage 2"]=CARD_DELPHOX}
 scard.break_evolution_list={CARD_DELPHOX,CARD_DELPHOX_BREAK}

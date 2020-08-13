@@ -1,6 +1,7 @@
 --Granbull (Kalos Starter Set 23/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.07)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_Y,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=4.07
 scard.evolves_from=CARD_SNUBBULL
 scard.evolution_list1={["Basic"]=CARD_SNUBBULL,["Stage 1"]=CARD_GRANBULL}
 scard.weakness_x2={ENERGY_M}

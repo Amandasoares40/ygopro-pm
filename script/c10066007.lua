@@ -1,6 +1,7 @@
 --Chespin (BREAKthrough 7/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--heal
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_G,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.04
 scard.evolution_list1={["Basic"]=CARD_CHESPIN,["Stage 1"]=CARD_QUILLADIN,["Stage 2"]=CARD_CHESNAUGHT}
 scard.break_evolution_list={CARD_CHESNAUGHT,CARD_CHESNAUGHT_BREAK}
 scard.weakness_x2={ENERGY_R}

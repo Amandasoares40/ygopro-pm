@@ -1,6 +1,7 @@
 --Xatu (Legendary Treasures 56/113)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -13,7 +14,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_P,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=4.11
 scard.evolves_from=CARD_NATU
 scard.evolution_list1={["Basic"]=CARD_NATU,["Stage 1"]=CARD_XATU}
 scard.weakness_x2={ENERGY_P}

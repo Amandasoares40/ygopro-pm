@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_TEAM_MAGMA,SETNAME_OWNER)
+	aux.AddHeight(c,1.08)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -9,7 +10,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_P,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.08
 scard.evolution_list1={["Basic"]=CARD_TEAM_MAGMAS_BALTOY,["Stage 1"]=CARD_TEAM_MAGMAS_CLAYDOL}
 scard.weakness_x2={ENERGY_P}
 --damage

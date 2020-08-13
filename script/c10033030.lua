@@ -1,6 +1,7 @@
 --Mr. Mime (Mysterious Treasures 30/123)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--poke-body (immune to attack damage)
@@ -22,7 +23,6 @@ function scard.initial_effect(c)
 	e3:SetAttackCost(ENERGY_P,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=4.03
 scard.evolution_list1={["Baby"]=CARD_MIME_JR,["Basic"]=CARD_MR_MIME}
 scard.weakness_20={ENERGY_P}
 --poke-body (immune to attack damage)

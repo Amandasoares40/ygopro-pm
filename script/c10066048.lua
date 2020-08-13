@@ -1,6 +1,7 @@
 --Pikachu (BREAKthrough 48/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.04
 scard.evolution_list1={["Baby"]=CARD_PICHU,["Basic"]=CARD_PIKACHU,["Stage 1"]=CARD_RAICHU}
 scard.break_evolution_list={CARD_RAICHU,CARD_RAICHU_BREAK}
 scard.weakness_x2={ENERGY_F}

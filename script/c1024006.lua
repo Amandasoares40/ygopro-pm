@@ -1,6 +1,7 @@
 --Slugma (Kalos Starter Set 6/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -8,5 +9,4 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_R,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.04
 scard.weakness_x2={ENERGY_W}

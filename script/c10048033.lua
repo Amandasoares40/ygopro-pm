@@ -1,6 +1,7 @@
 --Panpour (Black & White 33/114)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -11,6 +12,5 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.00
 scard.evolution_list1={["Basic"]=CARD_PANPOUR,["Stage 1"]=CARD_SIMIPOUR}
 scard.weakness_x2={ENERGY_L}

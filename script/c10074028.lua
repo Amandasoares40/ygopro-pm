@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_ALOLAN)
+	aux.AddHeight(c,3.07)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--evolution
@@ -14,7 +15,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_W,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_evolution=TYPE_STAGE_1
-scard.height=3.07
 scard.evolves_from=CARD_ALOLAN_VULPIX
 scard.evolution_list1={["Basic"]=CARD_ALOLAN_VULPIX,["Stage 1"]=CARD_ALOLAN_NINETALES}
 scard.weakness_x2={ENERGY_M}

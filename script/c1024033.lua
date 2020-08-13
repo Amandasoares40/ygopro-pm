@@ -1,6 +1,7 @@
 --Furfrou (Kalos Starter Set 33/39) (Alias)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,3.11)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--paralyzed
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=3.11
 scard.weakness_x2={ENERGY_F}
 --paralyzed
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

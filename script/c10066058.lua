@@ -1,6 +1,7 @@
 --Gastly (BREAKthrough 58/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,4.03)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--asleep, poisoned
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_P)
 end
 scard.pokemon_basic=true
-scard.height=4.03
 scard.evolution_list1={["Basic"]=CARD_GASTLY,["Stage 1"]=CARD_HAUNTER,["Stage 2"]=CARD_GENGAR}
 scard.weakness_x2={ENERGY_D}
 scard.resistance_20={ENERGY_F}

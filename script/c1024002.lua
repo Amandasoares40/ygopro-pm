@@ -1,6 +1,7 @@
 --Pansage (Kalos Starter Set 2/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,2.00)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--draw
@@ -11,7 +12,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=2.00
 scard.evolution_list1={["Basic"]=CARD_PANSAGE,["Stage 1"]=CARD_SIMISAGE}
 scard.weakness_x2={ENERGY_R}
 --draw

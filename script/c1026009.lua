@@ -2,6 +2,7 @@
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	aux.AddSetcode(c,SETNAME_TEAM_AQUA,SETNAME_OWNER)
+	aux.AddHeight(c,8.10)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--poisoned
@@ -12,7 +13,6 @@ function scard.initial_effect(c)
 	e2:SetAttackCost(ENERGY_C,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=8.10
 scard.weakness_x2={ENERGY_P}
 --poisoned
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)

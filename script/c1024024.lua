@@ -1,6 +1,7 @@
 --Swirlix (Kalos Starter Set 24/39)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--heal
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_Y)
 end
 scard.pokemon_basic=true
-scard.height=1.04
 scard.weakness_x2={ENERGY_M}
 scard.resistance_20={ENERGY_D}
 --heal

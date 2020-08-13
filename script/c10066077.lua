@@ -1,6 +1,7 @@
 --Cubone (BREAKthrough 77/162)
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
+	aux.AddHeight(c,1.04)
 	--pokemon
 	aux.EnablePokemonAttribute(c)
 	--damage
@@ -8,7 +9,6 @@ function scard.initial_effect(c)
 	e1:SetAttackCost(ENERGY_F,ENERGY_C)
 end
 scard.pokemon_basic=true
-scard.height=1.04
 scard.evolution_list1={["Basic"]=CARD_CUBONE,["Stage 1"]=CARD_MAROWAK}
 scard.break_evolution_list={CARD_MAROWAK,CARD_MAROWAK_BREAK}
 scard.weakness_x2={ENERGY_G}
