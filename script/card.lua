@@ -29,11 +29,19 @@ function Card.GetLevel(c)
 	local res=c:GetOriginalRetreatCost()
 	local t1={c:IsHasEffect(EFFECT_UPDATE_RETREAT_COST)}
 	for _,te1 in pairs(t1) do
-		res=res+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			res=res+te1:GetValue()(te1,c)
+		else
+			res=res+te1:GetValue()
+		end
 	end
 	local t2={c:IsHasEffect(EFFECT_CHANGE_RETREAT_COST)}
 	for _,te2 in pairs(t2) do
-		res=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			res=te2:GetValue()(te2,c)
+		else
+			res=te2:GetValue()
+		end
 	end
 	return res
 end
@@ -403,12 +411,20 @@ function Card.GetWeaknessType(c)
 	--check for effects that add weakness
 	local t1={c:IsHasEffect(EFFECT_ADD_WEAKNESS_TYPE)}
 	for _,te1 in pairs(t1) do
-		res=res+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			res=res+te1:GetValue()(te1,c)
+		else
+			res=res+te1:GetValue()
+		end
 	end
 	--check for effects that change weakness
 	local t2={c:IsHasEffect(EFFECT_CHANGE_WEAKNESS_TYPE)}
 	for _,te2 in pairs(t2) do
-		res=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			res=te2:GetValue()(te2,c)
+		else
+			res=te2:GetValue()
+		end
 	end
 	--check for effects that turn off weakness
 	if c:IsHasEffect(EFFECT_NO_WEAKNESS) then res=0 end
@@ -470,12 +486,20 @@ function Card.GetResistanceType(c)
 	--check for effects that add resistance
 	local t1={c:IsHasEffect(EFFECT_ADD_RESISTANCE_TYPE)}
 	for _,te1 in pairs(t1) do
-		res=res+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			res=res+te1:GetValue()(te1,c)
+		else
+			res=res+te1:GetValue()
+		end
 	end
 	--check for effects that change resistance
 	local t2={c:IsHasEffect(EFFECT_CHANGE_RESISTANCE_TYPE)}
 	for _,te2 in pairs(t2) do
-		res=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			res=te2:GetValue()(te2,c)
+		else
+			res=te2:GetValue()
+		end
 	end
 	--check for effects that turn off resistance
 	if c:IsHasEffect(EFFECT_NO_RESISTANCE) then res=0 end
@@ -521,12 +545,20 @@ function Card.GetWeaknessCount(c)
 	--check for effects that add weakness
 	local t1={c:IsHasEffect(EFFECT_ADD_WEAKNESS_COUNT)}
 	for _,te1 in pairs(t1) do
-		res=te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			res=res+te1:GetValue()(te1,c)
+		else
+			res=res+te1:GetValue()
+		end
 	end
 	--check for effects that change weakness
 	local t2={c:IsHasEffect(EFFECT_SET_WEAKNESS_COUNT)}
 	for _,te2 in pairs(t2) do
-		res=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			res=te2:GetValue()(te2,c)
+		else
+			res=te2:GetValue()
+		end
 	end
 	--check for effects that turn off weakness
 	if c:IsHasEffect(EFFECT_NO_WEAKNESS) then res=0 end
@@ -540,12 +572,20 @@ function Card.GetResistanceCount(c)
 	--check for effects that add resistance
 	local t1={c:IsHasEffect(EFFECT_ADD_RESISTANCE_COUNT)}
 	for _,te1 in pairs(t1) do
-		res=te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			res=res+te1:GetValue()(te1,c)
+		else
+			res=res+te1:GetValue()
+		end
 	end
 	--check for effects that increase or decrease resistance
 	local t2={c:IsHasEffect(EFFECT_UPDATE_RESISTANCE_COUNT)}
 	for _,te2 in pairs(t2) do
-		res=res-te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			res=res-te2:GetValue()(te2,c)
+		else
+			res=res-te2:GetValue()
+		end
 	end
 	--check for effects that turn off resistance
 	if c:IsHasEffect(EFFECT_NO_RESISTANCE) then res=0 end
@@ -862,7 +902,11 @@ function aux.CheckAsleepOperation(e,tp,eg,ep,ev,re,r,rp)
 	--check for effects that increase the coin flip
 	local t={Duel.IsPlayerAffectedByEffect(cp,EFFECT_ASLEEP_TOSS_EXTRA_COIN)}
 	for _,te in pairs(t) do
-		coins_left=coins_left+te:GetValue()
+		if type(te:GetValue())=="function" then
+			coins_left=coins_left+te:GetValue()(te,tc)
+		else
+			coins_left=coins_left+te:GetValue()
+		end
 	end
 	local awaken=true
 	while coins_left>0 do
@@ -889,12 +933,20 @@ function aux.CheckBurnedOperation(e,tp,eg,ep,ev,re,r,rp)
 	--check for effects that increase or decrease the number of damage counters
 	local t1={Duel.IsPlayerAffectedByEffect(cp,EFFECT_UPDATE_BURNED_DAMAGE)}
 	for _,te1 in pairs(t1) do
-		damc=damc+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			damc=damc+te1:GetValue()(te1,tc)
+		else
+			damc=damc+te1:GetValue()
+		end
 	end
 	--check for effects that replace the number of damage counters
 	local t2={Duel.IsPlayerAffectedByEffect(cp,EFFECT_REPLACE_BURNED_DAMAGE)}
 	for _,te2 in pairs(t2) do
-		damc=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			damc=te2:GetValue()(te2,tc)
+		else
+			damc=te2:GetValue()
+		end
 	end
 	tc:AddCounter(cp,COUNTER_DAMAGE,damc,REASON_RULE)
 	--check for effects that prevent removing the burned special condition
@@ -945,16 +997,28 @@ function aux.CheckPoisonedOperation(e,tp,eg,ep,ev,re,r,rp)
 	--check for effects that increase or decrease the number of damage counters
 	local t1={Duel.IsPlayerAffectedByEffect(cp,EFFECT_UPDATE_POISONED_DAMAGE)}
 	for _,te1 in pairs(t1) do
-		damc=damc+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			damc=damc+te1:GetValue()(te1,tc)
+		else
+			damc=damc+te1:GetValue()
+		end
 	end
 	--check for effects that replace the number of damage counters
 	local t2={tc:IsHasEffect(EFFECT_REPLACE_POISONED_DAMAGE)}
 	for _,te2 in pairs(t2) do
-		damc=te2:GetValue()
+		if type(te2:GetValue())=="function" then
+			damc=te2:GetValue()(te2,tc)
+		else
+			damc=te2:GetValue()
+		end
 	end
 	local t3={Duel.IsPlayerAffectedByEffect(cp,EFFECT_REPLACE_POISONED_DAMAGE)}
 	for _,te3 in pairs(t3) do
-		damc=te3:GetValue()
+		if type(te3:GetValue())=="function" then
+			damc=te3:GetValue()(te3,tc)
+		else
+			damc=te3:GetValue()
+		end
 	end
 	tc:AddCounter(cp,COUNTER_DAMAGE,damc,REASON_RULE)
 end

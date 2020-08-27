@@ -346,15 +346,24 @@ function Rule.TakePrizeOperation(e,tp,eg,ep,ev,re,r,rp)
 		if ec:IsHasEffect(EFFECT_CANNOT_TAKE_PRIZE) then break end
 		local ct=ec:GetPrizeValue()
 		if ec:IsPreviousActive() then
-			if Duel.GetAttackingPokemon() then
-				local t1={Duel.GetAttackingPokemon():IsHasEffect(EFFECT_ATTACK_UPDATE_PRIZE)}
+			local tc=Duel.GetAttackingPokemon()
+			if tc then
+				local t1={tc:IsHasEffect(EFFECT_ATTACK_UPDATE_PRIZE)}
 				for _,te1 in pairs(t1) do
-					ct=ct+te1:GetValue()
+					if type(te1:GetValue())=="function" then
+						ct=ct+te1:GetValue()(te1,tc)
+					else
+						ct=ct+te1:GetValue()
+					end
 				end
 			end
 			local t2={ec:IsHasEffect(EFFECT_DEFEND_UPDATE_PRIZE)}
 			for _,te2 in pairs(t2) do
-				ct=ct+te2:GetValue()
+				if type(te2:GetValue())=="function" then
+					ct=ct+te2:GetValue()(te2,ec)
+				else
+					ct=ct+te2:GetValue()
+				end
 			end
 		end
 		if ct<=0 then break end

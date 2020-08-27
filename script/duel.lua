@@ -414,45 +414,73 @@ function Duel.AttackDamage(e,count,c,apply_weak,apply_resist,apply_effect)
 		--check for "Any damage done to the receiving Pokemon is reduced by N"
 		local t1={c:IsHasEffect(EFFECT_UPDATE_DAMAGE_BEFORE)}
 		for _,te1 in pairs(t1) do
-			count=count+te1:GetValue()
+			if type(te1:GetValue())=="function" then
+				count=count+te1:GetValue()(te1,c)
+			else
+				count=count+te1:GetValue()
+			end
 		end
 		--check for "The attacks do N more damage to your opponent's Active Pokemon"
 		local t2={a:IsHasEffect(EFFECT_UPDATE_ATTACK_ACTIVE_BEFORE)}
 		for _,te2 in pairs(t2) do
 			if c:IsActive() then
-				count=count+te2:GetValue()
+				if type(te2:GetValue())=="function" then
+					count=count+te2:GetValue()(te2,a)
+				else
+					count=count+te2:GetValue()
+				end
 			end
 		end
 		--check for "The attacks do N more damage to your opponent's Active Pokemon-EX"
 		local t3={a:IsHasEffect(EFFECT_UPDATE_ATTACK_ACTIVE_EX_BEFORE)}
 		for _,te3 in pairs(t3) do
 			if c:IsActive() and c:IsPokemonEX() then
-				count=count+te3:GetValue()
+				if type(te3:GetValue())=="function" then
+					count=count+te3:GetValue()(te3,a)
+				else
+					count=count+te3:GetValue()
+				end
 			end
 		end
 		--check for "The attacks do N more damage to your opponent's Active Pokemon-GX or Active Pokemon-EX"
 		local t4={a:IsHasEffect(EFFECT_UPDATE_ATTACK_ACTIVE_GX_EX_BEFORE)}
 		for _,te4 in pairs(t4) do
 			if c:IsActive() and (c:IsPokemonGX() or c:IsPokemonEX()) then
-				count=count+te4:GetValue()
+				if type(te4:GetValue())=="function" then
+					count=count+te4:GetValue()(te4,a)
+				else
+					count=count+te4:GetValue()
+				end
 			end
 		end
 		--check for "Any damage done to your opponent's Pokemon is reduced by N"
 		local t5={a:IsHasEffect(EFFECT_UPDATE_ATTACK_OPPO_BEFORE)}
 		for _,te5 in pairs(t5) do
 			if a:GetControler()~=c:GetControler() then
-				count=count+te5:GetValue()
+				if type(te5:GetValue())=="function" then
+					count=count+te5:GetValue()(te5,a)
+				else
+					count=count+te5:GetValue()
+				end
 			end
 		end
 		--check for "Any damage done by attacks is reduced by N"
 		local t6={a:IsHasEffect(EFFECT_UPDATE_ATTACK_BEFORE)}
 		for _,te6 in pairs(t6) do
-			count=count+te6:GetValue()
+			if type(te6:GetValue())=="function" then
+				count=count+te6:GetValue()(te6,a)
+			else
+				count=count+te6:GetValue()
+			end
 		end
 		--check for "The attacks of your opponent's Pokemon do N less damage"
 		local t7={c:IsHasEffect(EFFECT_UPDATE_DEFEND_BEFORE)}
 		for _,te7 in pairs(t7) do
-			count=count+te7:GetValue()
+			if type(te7:GetValue())=="function" then
+				count=count+te7:GetValue()(te7,c)
+			else
+				count=count+te7:GetValue()
+			end
 		end
 	end
 	--apply weakness
@@ -475,39 +503,65 @@ function Duel.AttackDamage(e,count,c,apply_weak,apply_resist,apply_effect)
 		--check for "The attack does N more damage to the Defending Pokemon"
 		local t8={a:IsHasEffect(EFFECT_UPDATE_ATTACK_ACTIVE_AFTER)}
 		for _,te8 in pairs(t8) do
-			if c:IsActive() then count=count+te8:GetValue() end
+			if c:IsActive() then
+				if type(te8:GetValue())=="function" then
+					count=count+te8:GetValue()(te8,a)
+				else
+					count=count+te8:GetValue()
+				end
+			end
 		end
 		--check for "Pokemon take N less damage from the opponent's attacks"
 		local t9={c:IsHasEffect(EFFECT_UPDATE_DEFEND_AFTER)}
 		for _,te9 in pairs(t9) do
-			count=count+te9:GetValue()
+			if type(te9:GetValue())=="function" then
+				count=count+te9:GetValue()(te9,c)
+			else
+				count=count+te9:GetValue()
+			end
 		end
 		--check for "Any damage done by your opponent's Pokemon-ex is reduced by N"
 		local t10={c:IsHasEffect(EFFECT_UPDATE_DEFEND_OPPO_EX_OLD_AFTER)}
 		for _,te10 in pairs(t10) do
 			if a:GetControler()~=c:GetControler() and a:IsPokemonex() then
-				count=count+te10:GetValue()
+				if type(te10:GetValue())=="function" then
+					count=count+te10:GetValue()(te10,c)
+				else
+					count=count+te10:GetValue()
+				end
 			end
 		end
 		--check for "The receiving Pokemon takes N less damage from your opponent's attacks"
 		local t11={c:IsHasEffect(EFFECT_UPDATE_DEFEND_OPPO_AFTER)}
 		for _,te11 in pairs(t11) do
 			if a:GetControler()~=c:GetControler() then
-				count=count+te11:GetValue()
+				if type(te11:GetValue())=="function" then
+					count=count+te11:GetValue()(te11,c)
+				else
+					count=count+te11:GetValue()
+				end
 			end
 		end
 		--check for "The receiving Pokemon takes N less damage from your opponent's Pokemon-GX and Pokemon-EX attacks"
 		local t12={c:IsHasEffect(EFFECT_UPDATE_DEFEND_OPPO_GX_EX2_AFTER)}
-		for _,t12 in pairs(t12) do
+		for _,te12 in pairs(t12) do
 			if a:GetControler()~=c:GetControler() and (a:IsPokemonGX() or a:IsPokemonEX()) then
-				count=count+t12:GetValue()
+				if type(te12:GetValue())=="function" then
+					count=count+te12:GetValue()(te12,c)
+				else
+					count=count+te12:GetValue()
+				end
 			end
 		end
 		--check for "Any damage done to the receiving Pokemon from your opponent's Pokemon that have any Special Energy attached is reduced by N"
 		local t13={c:IsHasEffect(EFFECT_UPDATE_DEFEND_OPPO_SPENERGY_AFTER)}
-		for _,t13 in pairs(t13) do
+		for _,te13 in pairs(t13) do
 			if a:GetControler()~=c:GetControler() and a:GetAttachedGroup():IsExists(Card.IsSpecialEnergy,1,nil) then
-				count=count+t13:GetValue()
+				if type(te13:GetValue())=="function" then
+					count=count+te13:GetValue()(te13,c)
+				else
+					count=count+te13:GetValue()
+				end
 			end
 		end
 	end
@@ -559,7 +613,11 @@ function Duel.EffectDamage(e,count,c1,c2,apply_weak,apply_resist)
 	--check for "Any damage done to the receiving Pokemon is reduced by N"
 	local t1={c2:IsHasEffect(EFFECT_UPDATE_DAMAGE_BEFORE)}
 	for _,te1 in pairs(t1) do
-		count=count+te1:GetValue()
+		if type(te1:GetValue())=="function" then
+			count=count+te1:GetValue()(te1,c2)
+		else
+			count=count+te1:GetValue()
+		end
 	end
 	--apply weakness
 	if apply_weak and c2:GetWeaknessCount()>0 then
