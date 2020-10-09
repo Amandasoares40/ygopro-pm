@@ -1,5 +1,4 @@
 --Wishful Baton (Burning Shadows 128/147)
---UNCONFIRMED: Can I move 0 basic Energy cards from the Knocked Out Pokemon? (regarding "up to N")
 local scard,sid=aux.GetID()
 function scard.initial_effect(c)
 	--pokemon tool
@@ -60,7 +59,8 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=e:GetLabelObject():Filter(scard.cfilter,nil,tp)
 	if g:GetCount()==0 then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_MOVEENERGY)
-	local sg1=g:Select(tp,1,3,nil)
+	local sg1=g:Select(tp,0,3,nil)
+	if sg1:GetCount()==0 then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_MOVEENERGYTO)
 	local sg2=Duel.GetInPlayPokemon(tp):FilterSelect(tp,scard.mefilter,1,1,nil,sg1:GetFirst())
 	Duel.HintSelection(sg2)
