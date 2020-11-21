@@ -1212,6 +1212,7 @@ EVENT_BECOME_TARGET				=1028	--(unused)
 EVENT_KNOCKED_OUT				=1029	--When a Pokemon is Knocked Out
 EVENT_MOVE						=1030	--(unused, not available in YGOPro Percy)
 EVENT_ADJUST					=1040	--After adjusting the adjust_all() card
+EVENT_BREAK_EFFECT				=1050	--(unused, not available in YGOPro Percy)
 EVENT_SUMMON_SUCCESS			=1100	--(unused)
 EVENT_FLIP_SUMMON_SUCCESS		=1101	--(unused)
 EVENT_PLAY						=1102	--When a Pokemon is played
