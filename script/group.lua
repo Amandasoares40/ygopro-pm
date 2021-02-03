@@ -14,7 +14,7 @@ function Group.Select(g,player,min,max,ex)
 	return group_select(g,player,min,max,ex)
 end
 --select a number of cards from a group at random
---Note: Overwritten to allow selecting up to N cards
+--Note: Overwritten to notify a player if there are no cards to select and to allow selecting up to N cards
 local group_random_select=Group.RandomSelect
 function Group.RandomSelect(g,player,min,max)
 	local ct=g:GetCount()

@@ -24,8 +24,8 @@ function Rule.LegendFilter4(c,code)
 	return c:IsPokemonLEGEND() and c.legend_bottom_half==code
 end
 function Rule.ApplyRules(e,tp,eg,ep,ev,re,r,rp)
-	if Duel.GetFlagEffect(PLAYER_ONE,10000000)>0 then return end
-	Duel.RegisterFlagEffect(PLAYER_ONE,10000000,0,0,0)
+	if Duel.GetFlagEffect(PLAYER_ONE,FLAG_CODE_RULES)>0 then return end
+	Duel.RegisterFlagEffect(PLAYER_ONE,FLAG_CODE_RULES,0,0,0)
 	--remove rules
 	Rule.remove_rules(PLAYER_ONE)
 	Rule.remove_rules(PLAYER_TWO)
@@ -241,7 +241,7 @@ function Rule.ApplyRules(e,tp,eg,ep,ev,re,r,rp)
 end
 --remove rules
 function Rule.remove_rules(tp)
-	local g=Duel.GetMatchingGroup(Card.IsCode,tp,LOCATION_ALL,0,nil,10000000)
+	local g=Duel.GetMatchingGroup(Card.IsCode,tp,LOCATION_ALL,0,nil,CARD_RULES)
 	if g:GetCount()==0 then return end
 	Duel.DisableShuffleCheck()
 	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_UNEXIST,REASON_RULE)
@@ -373,7 +373,7 @@ end
 --sudden death
 function Rule.sudden_death()
 	local g=Duel.GetFieldGroup(0,LOCATION_ALL-LOCATION_DECK,LOCATION_ALL-LOCATION_DECK)
-	g:Sub(g:Filter(Card.IsCode,nil,10000000))
+	g:Sub(g:Filter(Card.IsCode,nil,CARD_RULES))
 	g:Merge(Duel.GetAttachedGroup(0,1,1))
 	local turnp=Duel.GetTurnPlayer()
 	--reset game
@@ -677,9 +677,12 @@ function Rule.cannot_battle_phase()
 	local e1=Effect.GlobalEffect()
 	e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
 	e1:SetType(EFFECT_TYPE_FIELD)
-	e1:SetCode(EFFECT_CANNOT_BP)
+	e1:SetCode(EFFECT_SKIP_BP)
 	e1:SetTargetRange(1,1)
 	Duel.RegisterEffect(e1,0)
+	local e2=e1:Clone()
+	e2:SetCode(EFFECT_CANNOT_BP)
+	Duel.RegisterEffect(e2,0)
 end
 --cannot change position
 function Rule.cannot_change_position()

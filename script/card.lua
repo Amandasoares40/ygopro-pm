@@ -1,5 +1,5 @@
 --Temporary Card functions
---check if a card has a particular setname
+--check if a card has a given setname
 --Note: Overwritten to check for an infinite number of setnames
 local card_is_set_card=Card.IsSetCard
 function Card.IsSetCard(c,...)
@@ -9,7 +9,7 @@ function Card.IsSetCard(c,...)
 	end
 	return false
 end
---check if a card has a particular original setname
+--check if a card has a given original setname
 function Card.IsOriginalSetCard(c,...)
 	local osetname_list=c.setname_list
 	if not osetname_list then return false end
@@ -150,7 +150,7 @@ function Card.IsTrainer(c)
 end
 --check if a card is an Energy card
 function Card.IsEnergy(c,energy)
-	--energy: check if the energy card has a particular energy type
+	--energy: check if the energy card has a given energy type
 	return c:IsType(TYPE_ENERGY) and (not energy or c:IsEnergyType(energy))
 end
 --check if a card is a Dual-Type Pokemon card
@@ -323,7 +323,7 @@ function Card.GetTopAttachedCard(c)
 end
 --get the amount of energy a card provides
 function Card.GetEnergyCount(c,energy)
-	--energy: check if the card provides a particular energy type
+	--energy: check if the card provides a given energy type
 	if not c:IsEnergy() or (energy and c:GetEnergyType()~=energy) then return false end
 	return c:GetLevel()
 end
@@ -430,7 +430,7 @@ function Card.GetWeaknessType(c)
 	if c:IsHasEffect(EFFECT_NO_WEAKNESS) then res=0 end
 	return res
 end
---check if a pokemon has a particular energy type in its weakness
+--check if a pokemon has a given energy type in its weakness
 function Card.IsWeaknessType(c,...)
 	local res=nil
 	local energy_list={...}
@@ -505,7 +505,7 @@ function Card.GetResistanceType(c)
 	if c:IsHasEffect(EFFECT_NO_RESISTANCE) then res=0 end
 	return res
 end
---check if a pokemon has a particular energy type in its resistance
+--check if a pokemon has a given energy type in its resistance
 function Card.IsResistanceType(c,...)
 	local res=nil
 	local energy_list={...}
@@ -1174,24 +1174,24 @@ function Card.IsRetreatCost(c,cost)
 	return c:GetRetreatCost()==cost
 end
 --check if a pokemon's retreat cost is less than or equal to a given value
---Card.IsRetreatCostBelow=Card.IsLevelBelow --reserved
+Card.IsRetreatCostBelow=Card.IsLevelBelow
 --check if a pokemon's retreat cost is greater than or equal to a given value
 Card.IsRetreatCostAbove=Card.IsLevelAbove
 --get all energy types a card has
 Card.GetEnergyType=Card.GetAttribute
---check if a card has a particular energy type
+--check if a card has a given energy type
 Card.IsEnergyType=Card.IsAttribute
---get a pokemon's remaining HP (hit points)
+--get a pokemon's remaining HP
 Card.GetRemainingHP=Card.GetAttack
---get a pokemon's maximum HP (hit points)
+--get a pokemon's maximum HP
 Card.GetMaxHP=Card.GetDefense
---check if a pokemon's remaining HP (hit points) is less than or equal to a given value
+--check if a pokemon's remaining HP is less than or equal to a given value
 Card.IsRemainingHPBelow=Card.IsAttackBelow
---check if a pokemon's remaining HP (hit points) is greater than or equal to a given value
---Card.IsRemainingHPAbove=Card.IsAttackAbove --reserved
---check if a pokemon's maximum HP (hit points) is less than or equal to a given value
+--check if a pokemon's remaining HP is greater than or equal to a given value
+Card.IsRemainingHPAbove=Card.IsAttackAbove
+--check if a pokemon's maximum HP is less than or equal to a given value
 Card.IsMaxHPBelow=Card.IsDefenseBelow
---check if a pokemon's maximum HP (hit points) is greater than or equal to a given value
+--check if a pokemon's maximum HP is greater than or equal to a given value
 Card.IsMaxHPAbove=Card.IsDefenseAbove
 --get a pokemon's play type (SUMMON_TYPE)
 Card.GetPlayType=Card.GetSummonType
@@ -1215,7 +1215,7 @@ Card.GetAttachedCount=Card.GetOverlayCount
 Card.IsAbleToDPile=Card.IsAbleToGrave
 --check if a card can be put in the lost zone
 Card.IsAbleToLost=Card.IsAbleToRemove
---get the number of a particular marker on a card
+--get the number of a given marker on a card
 Card.GetMarker=Card.GetCounter
 --limit the number of markers that can be put on a card
 Card.SetMarkerLimit=Card.SetCounterLimit

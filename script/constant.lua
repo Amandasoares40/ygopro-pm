@@ -4,6 +4,8 @@ MAX_ID		=268435455	--9 digit, by DataManager::GetDesc()
 MAX_COUNTER	=65535		--max number for adding/removing counters, by card::add_counter(), field::remove_counter()
 MAX_NUMBER	=999999999	--Max number allowed in YGOPro
 --Card ID
+--System cards
+CARD_RULES						=10000000	--Rules (Unofficial card)
 --Pokemon that are part of an evolutionary line
 CARD_DRATINI					=10001026	--Dratini → Dragonair → Dragonite (Base Set 26/102)
 CARD_DRAGONAIR					=10001018	--Dratini → Dragonair → Dragonite (Base Set 18/102)
@@ -390,6 +392,8 @@ CARD_RAINBOW_ENERGY				=10005017	--EVENT_CUSTOM+EVENT_BECOME_ATTACHED
 CARD_KOGA						=10007019	--EVENT_CUSTOM+EVENT_ATTACK_DAMAGE
 CARD_POKEMON_PARK				=10014131	--EVENT_CUSTOM+EVENT_ATTACH
 CARD_GREEDY_DICE				=10070102	--EVENT_CUSTOM+EVENT_PRE_PRIZE_TAKE
+--Flag Effect Code (for Card.RegisterFlagEffect, Duel.RegisterFlagEffect)
+FLAG_CODE_RULES	=10000000	--Prevents registering rules twice
 --Location
 LOCATION_ALL		=0xff	--All locations
 LOCATION_DECK		=0x01	--Deck
@@ -951,7 +955,7 @@ EFFECT_LPCOST_REPLACE				=171	--(unused)
 EFFECT_SKIP_DP						=180	--Skip Draw Phase
 EFFECT_SKIP_SP						=181	--Skip Standby Phase
 EFFECT_SKIP_M1						=182	--(unused) Skip Main Phase 1
-EFFECT_SKIP_BP						=183	--(unused) Skip Battle Phase
+EFFECT_SKIP_BP						=183	--Skip Battle Phase
 EFFECT_SKIP_M2						=184	--(unused) Skip Main Phase 2
 EFFECT_CANNOT_BP					=185	--Cannot conduct Battle Phase
 EFFECT_CANNOT_M2					=186	--(unused) Cannot conduct Main Phase 2
@@ -1368,7 +1372,7 @@ HINTMSG_HEIGHT				=551	--Select a height.
 HINTMSG_DISABLEZONE			=570	--Select Zones to render unusable.
 --Information displayed in a dialog box
 ERROR_DECKCOUNT		=1450	--You must have exactly 60 or 30 cards in your deck!
-ERROR_BASICCOUNT	=1451	--You need at least 1 Basic Pokemon in your deck!
+ERROR_BASICCOUNT	=1451	--You must have at least 1 Basic Pokemon in your deck!
 ERROR_MIRACLECOUNT	=1452	--You can't have more than 1 Miracle Energy in your deck!
 ERROR_STARCOUNT		=1453	--You can't have more than 1 Pokemon Star card in your deck!
 ERROR_ACESPECCOUNT	=1454	--You can't have more than 1 ACE SPEC card in your deck!

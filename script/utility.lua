@@ -677,7 +677,7 @@ end
 --Energy card
 --Rulings: https://compendium.pokegym.net/compendium-bw.html#c7
 function Auxiliary.EnableEnergyAttribute(c,f,discard,o_only)
-	--f: filter function if the energy card can only be attached to a particular pokemon
+	--f: filter function if the energy card can only be attached to a specified pokemon
 	--discard: 1 to discard at the end of the turn, 2 to discard at the end of the opponent's turn
 	--o_only: true if the energy card can only be attached to an opponent's pokemon
 	local s=o_only and 0 or LOCATION_INPLAY
@@ -795,7 +795,7 @@ end
 function Auxiliary.EnableProvideEnergy(c,energy_type,energy_count,f)
 	--energy_type: the type(s) of energy the energy card provides
 	--energy_count: the amount of energy the energy card provides (provides 1 by default)
-	--f: filter function if the energy card only provides energy while attached to a particular pokemon
+	--f: filter function if the energy card only provides energy while attached to a specified pokemon
 	energy_count=energy_count or 1
 	local code=c:GetOriginalCode()
 	local m=_G["c"..code]
@@ -841,7 +841,7 @@ function Auxiliary.PlayTrainerFunction(c,targ_func,op_func,con_func,cost_func,pr
 end
 --Non-Pokemon Tool and non-Technical Machine Trainer card that attaches to Pokemon
 function Auxiliary.EnableAttachTrainer(c,f,discard,o_only)
-	--f: filter function if the trainer can only be attached to a particular pokemon
+	--f: filter function if the trainer can only be attached to a specified pokemon
 	--discard: 1 to discard at the end of the turn, 2 to discard at the end of the opponent's turn
 	--o_only: true if the trainer can only be attached to an opponent's pokemon
 	local s=o_only and 0 or LOCATION_INPLAY
@@ -901,7 +901,7 @@ function Auxiliary.AttachTrainerOperation(f,s,o,discard)
 end
 --Technical Machine
 function Auxiliary.EnableTechnicalMachineAttribute(c,f,discard,o_only)
-	--f: filter function if the technical machine can only be attached to a particular pokemon
+	--f: filter function if the technical machine can only be attached to a specified pokemon
 	--discard: 1 to discard at the end of the turn, 2 to discard at the end of the opponent's turn
 	--o_only: true if the technical machine can only be attached to an opponent's pokemon
 	local s=o_only and 0 or LOCATION_INPLAY
@@ -920,7 +920,7 @@ function Auxiliary.EnableTechnicalMachineAttribute(c,f,discard,o_only)
 end
 --Pokemon Tool
 function Auxiliary.EnablePokemonToolAttribute(c,f,discard,o_only)
-	--f: filter function if the pokemon tool can only be attached to a particular pokemon
+	--f: filter function if the pokemon tool can only be attached to a specified pokemon
 	--discard: 1 to discard at the end of the turn, 2 to discard at the end of the opponent's turn
 	--o_only: true if the pokemon tool can only be attached to an opponent's pokemon
 	local s=o_only and 0 or LOCATION_INPLAY
@@ -1124,7 +1124,7 @@ function Auxiliary.EnableEffectImmune(c,val,range,s_range,o_range,targ_func)
 		e1:SetType(EFFECT_TYPE_SINGLE)
 	end
 	e1:SetCode(EFFECT_IMMUNE_EFFECT)
-	e1:SetProperty(EFFECT_FLAG_UNCOPYABLE+EFFECT_FLAG_SINGLE_RANGE)
+	e1:SetProperty(EFFECT_FLAG_SINGLE_RANGE+EFFECT_FLAG_UNCOPYABLE)
 	if range then e1:SetRange(range) end
 	e1:SetValue(val)
 	c:RegisterEffect(e1)
@@ -1474,14 +1474,14 @@ function Auxiliary.SelfRCAboveCondition(cost)
 				return e:GetHandler():IsRetreatCostAbove(cost)
 			end
 end
---condition for a card to have a particular energy type
+--condition for a card to have a given energy type
 --e.g. "Metal Energy" (Neo Genesis 19/111)
 function Auxiliary.SelfEnergyTypeCondition(energy_type)
 	return	function(e,tp,eg,ep,ev,re,r,rp)
 				return e:GetHandler():IsEnergyType(energy_type)
 			end
 end
---condition for a card to have a particular card name
+--condition for a card to have a given card name
 --e.g. "Crystal Edge" (Boundaries Crossed 138/149), "Ancient Crystal" (Ultra Prism 118/156)
 function Auxiliary.SelfCardCodeCondition(...)
 	local card_code_list={...}
@@ -1492,7 +1492,7 @@ function Auxiliary.SelfCardCodeCondition(...)
 				return false
 			end
 end
---condition for a card to have a particular setcode
+--condition for a card to have a given setcode
 --e.g. "R Energy" (Team Rocket Returns 95/109), "Aqua Diffuser" (Double Crisis 23/34)
 function Auxiliary.SelfSetCardCondition(...)
 	local setcode_list={...}
