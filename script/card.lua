@@ -10,6 +10,7 @@ function Card.IsSetCard(c,...)
 	return false
 end
 --check if a card has a given original setname
+--Note: Overwritten to check for an infinite number of setnames
 function Card.IsOriginalSetCard(c,...)
 	local osetname_list=c.setname_list
 	if not osetname_list then return false end
@@ -46,6 +47,27 @@ function Card.GetLevel(c)
 	return res
 end
 Card.GetRetreatCost=Card.GetLevel
+--check if a pokemon's retreat cost is equal to a given value
+--Note: See Card.GetRetreatCost
+local card_is_level=Card.IsLevel
+function Card.IsLevel(c,lv)
+	return c:GetLevel()==lv
+end
+Card.IsRetreatCost=Card.IsLevel
+--check if a pokemon's retreat cost is less than or equal to a given value
+--Note: See Card.GetRetreatCost
+local card_is_level_below=Card.IsLevelBelow
+function Card.IsLevelBelow(c,lv)
+	return c:GetLevel()<=lv
+end
+Card.IsRetreatCostBelow=Card.IsLevelBelow
+--check if a pokemon's retreat cost is greater than or equal to a given value
+--Note: See Card.GetRetreatCost
+local card_is_level_above=Card.IsLevelAbove
+function Card.IsLevelAbove(c,lv)
+	return c:GetLevel()>=lv
+end
+Card.IsRetreatCostAbove=Card.IsLevelAbove
 --add an effect to a card
 --Note: Added parameter reset_benched to reset the effect of a pokemon's attack if the pokemon is benched
 local card_register_effect=Card.RegisterEffect
@@ -93,7 +115,7 @@ function Card.RegisterEffect(c,e,forced,reset_benched)
 	end
 	return card_register_effect(c,e,forced)
 end
---put a counter/marker on a pokemon
+--add a counter to a card
 --Note: Overwritten to implement "Metal Goggles" (Team Up 148/181) and added player and reason parameters
 local card_add_counter=Card.AddCounter
 function Card.AddCounter(c,player,countertype,count,reason)
@@ -123,8 +145,13 @@ function Card.AddCounter(c,player,countertype,count,reason)
 	return res
 end
 Card.AddMarker=Card.AddCounter
---remove a counter/marker from a pokemon
---Note: Overwritten to check if a card has less counters/markers than the number of counters/markers they will remove
+--check if a counter can be added to a card
+local card_is_can_add_counter=Card.IsCanAddCounter
+function Card.IsCanAddCounter(c,countertype,count,singly)
+	return card_is_can_add_counter(c,countertype,count,singly)
+end
+--remove a counter from a card
+--Note: Overwritten to check if a card has less counters than the number of counters the player will remove
 local card_remove_counter=Card.RemoveCounter
 function Card.RemoveCounter(c,player,countertype,count,reason)
 	local counter_count=c:GetCounter(countertype)
@@ -134,11 +161,6 @@ function Card.RemoveCounter(c,player,countertype,count,reason)
 	return res
 end
 Card.RemoveMarker=Card.RemoveCounter
---check if a counter can be put on a pokemon
-local card_is_can_add_counter=Card.IsCanAddCounter
-function Card.IsCanAddCounter(c,countertype,count,singly)
-	return card_is_can_add_counter(c,countertype,count,singly)
-end
 --New Card functions
 --check if a card is a Pokemon card
 function Card.IsPokemon(c)
@@ -646,19 +668,43 @@ function Card.AddResistance(c,resist_type,resist_count)
 	e2:SetValue(resist_count)
 	c:RegisterEffect(e2,true)
 end
---get the length printed on a pokemon's card (not to be confused with height)
+--get a pokemon's length (not to be confused with height)
 function Card.GetLength(c)
 	return c.length
 end
---get the height printed on a pokemon's card (not to be confused with length)
-function Card.GetHeight(c)
-	return c.height
+--check if a pokemon's length is equal to a given value
+function Card.IsLength(c,lt)
+	return c:GetLength()==lt
 end
---check if a pokemon has length printed on its card (not to be confused with height)
+--check if a pokemon's length is less than or equal to a given value
+function Card.IsLengthBelow(c,lt)
+	return c:GetLength()<=lt
+end
+--check if a pokemon's length is greater than or equal to a given value
+function Card.IsLengthAbove(c,lt)
+	return c:GetLength()>=lt
+end
+--check if a pokemon has a length
 function Card.IsHasLength(c)
 	return c.length
 end
---check if a pokemon has height printed on its card (not to be confused with length)
+--get a pokemon's height (not to be confused with length)
+function Card.GetHeight(c)
+	return c.height
+end
+--check if a pokemon's height is equal to a given value
+function Card.IsHeight(c,ht)
+	return c:GetHeight()==ht
+end
+--check if a pokemon's height is less than or equal to a given value
+function Card.IsHeightBelow(c,ht)
+	return c:GetHeight()<=ht
+end
+--check if a pokemon's height is greater than or equal to a given value
+function Card.IsHeightAbove(c,ht)
+	return c:GetHeight()>=ht
+end
+--check if a pokemon has a height
 function Card.IsHasHeight(c)
 	return c.height
 end
@@ -1169,26 +1215,18 @@ end
 --Renamed Card functions
 --get a pokemon's original retreat cost
 Card.GetOriginalRetreatCost=Card.GetOriginalLevel
---check if a pokemon's retreat cost is equal to a given value
-function Card.IsRetreatCost(c,cost)
-	return c:GetRetreatCost()==cost
-end
---check if a pokemon's retreat cost is less than or equal to a given value
-Card.IsRetreatCostBelow=Card.IsLevelBelow
---check if a pokemon's retreat cost is greater than or equal to a given value
-Card.IsRetreatCostAbove=Card.IsLevelAbove
 --get all energy types a card has
 Card.GetEnergyType=Card.GetAttribute
 --check if a card has a given energy type
 Card.IsEnergyType=Card.IsAttribute
 --get a pokemon's remaining HP
 Card.GetRemainingHP=Card.GetAttack
---get a pokemon's maximum HP
-Card.GetMaxHP=Card.GetDefense
 --check if a pokemon's remaining HP is less than or equal to a given value
 Card.IsRemainingHPBelow=Card.IsAttackBelow
 --check if a pokemon's remaining HP is greater than or equal to a given value
 Card.IsRemainingHPAbove=Card.IsAttackAbove
+--get a pokemon's maximum HP
+Card.GetMaxHP=Card.GetDefense
 --check if a pokemon's maximum HP is less than or equal to a given value
 Card.IsMaxHPBelow=Card.IsDefenseBelow
 --check if a pokemon's maximum HP is greater than or equal to a given value
