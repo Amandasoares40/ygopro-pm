@@ -1,3 +1,9 @@
+## Card Data
+- [ ] **You can't search for some card information**
+	- [ ] Pokemon Category (Species) (e.g. Electric Pokemon)
+	- [ ] Pokemon Length/Height (e.g. Ht:3'07'')
+	- [ ] Pokedex Number (e.g. No. 125)
+	- [ ] Pokemon Weight (e.g. WT 66.1 lbs)
 ## Deck Building
 - [ ] **[Rotation](https://bulbapedia.bulbagarden.net/wiki/Rotation_(TCG)) isn't implemented**
 - [ ] **You can build a deck with less than 60 cards**

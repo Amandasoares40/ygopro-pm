@@ -552,6 +552,11 @@ SETNAME_TEAM_PLASMA		=0x19	--Supported by "Skarmory" (Plasma Storm 87/135)
 SETNAME_PRISM_STAR		=0x1a	--Supported by "Lisia" (Celestial Storm 137/168)
 SETNAME_FAIRY_CHARM		=0x1b	--Supported by "Tapu Lele" (Black Star Promo SM05)
 SETNAME_ALOLAN			=0x1c	--Supported by "Aether Foundation Employee" (Lost Thunder 168/214)
+SETNAME_FALINKS			=0x1d	--Supported by "Falinks" (Rebel Clash 109/192)
+SETNAME_SINGLE_STRIKE	=0x1e	--Supported by "Emboar" (Battle Styles 025/163)
+SETNAME_RAPID_STRIKE	=0x1f	--Supported by "Octillery" (Battle Styles 037/163)
+SETNAME_WEEZING			=0x20	--Supported by "Galarian Weezing" (Chilling Reign 096/198)
+SETNAME_GALARIAN		=0x21	--Supported by "Galarian Chestplate" (Chilling Reign 141/198)
 --Reason
 --The reason for sending a card to another location
 REASON_DESTROY		=0x1		--(unused)

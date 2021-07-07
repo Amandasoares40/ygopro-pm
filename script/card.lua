@@ -331,6 +331,11 @@ end
 function Card.IsHasAncientTrait(c)
 	return c:IsType(TYPE_ANCIENT_TRAIT)
 end
+--check if a card has a rule box
+function Card.IsHasRuleBox(c)
+	return c:IsPokemonEX() or c:IsMegaEvolution() or c:IsPokemonBREAK() or c:IsPokemonGX()
+		or c:IsTAGTEAM() or c:IsPokemonV() or c:IsPokemonVMAX() or c:IsSetCard(SETNAME_PRISM_STAR)
+end
 --get the default number of prizes a pokemon is worth
 function Card.GetPrizeValue(c)
 	local res=1

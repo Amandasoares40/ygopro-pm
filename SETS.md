@@ -237,8 +237,16 @@
 <summary></summary>
 
 - **Nov. 2019 - Present : [Sword & Shield Promos (SWSHP)](https://bulbapedia.bulbagarden.net/wiki/SWSH_Black_Star_Promos_(TCG))** : `1034XXX` (Ongoing)
-- Feb. 7, 2020 : Sword & Shield (SSH) | Sword/Shield : `10087XXX`
-- May 1, 2020 : Rebellion Crash (RCL) | Rebel Clash : `10088XXX`
+- Feb. 7, 2020 : Sword & Shield (SSH) | Sword / Shield : `10087XXX`
+- May 1, 2020 : Rebel Clash (RCL) | Rebellion Crash : `10088XXX`
+- Aug. 14, 2020 : Darkness Ablaze (DAA) | Infinity Zone : `10089XXX`
+- **Sept. 11, 2020 : [Pokemon Futsal Collection (FUT20)](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Futsal_Collection_(TCG))** : `1035XXX`
+- **Sept. 25, 2020 : [Champion's Path](https://bulbapedia.bulbagarden.net/wiki/Champion%27s_Path_(TCG))** : `1036XXX`
+- Nov. 13, 2020 : Vivid Voltage (VIV) | Amazing Volt Tackle : `10090XXX`
+- **Feb. 9, 2021 : [McDonald's Collection 2021 (MCD)](https://bulbapedia.bulbagarden.net/wiki/McDonald%27s_Collection_2021_(TCG))** : `1037XXX`
+- **Feb. 19, 2021 : [Shining Fates (SHF)](https://bulbapedia.bulbagarden.net/wiki/Shining_Fates_(TCG))** : `1038XXX`
+- Mar. 19, 2021 : Battle Styles (BST) | Single Strike Master / Rapid Strike Master : `10091XXX`
+- June 18, 2021 : Chilling Reign (CRE) | Silver Lance / Jet-Black Spirit : `10092XXX`
 </details>
 
 ## Miscellaneous Promotional cards
