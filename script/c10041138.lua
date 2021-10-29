@@ -9,7 +9,7 @@ scard.trainer_item=true
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g1=Duel.GetMatchingGroup(Card.IsAbleToDeck,tp,LOCATION_HAND,0,nil)
 	if g1:GetCount()==0 or Duel.TossCoin(tp,1)==RESULT_TAILS then return end
-	Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATOHAND)
 	local g2=Duel.SelectMatchingCard(tp,Card.IsAbleToHand,tp,LOCATION_DECK,0,1,1,nil)
 	if g2:GetCount()>0 then

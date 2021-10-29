@@ -28,7 +28,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local opt=e:GetLabel()
 	if opt==1 then
 		local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 		Duel.ShuffleDeck(tp)
 		Duel.BreakEffect()
 		Duel.Draw(tp,5,REASON_EFFECT)

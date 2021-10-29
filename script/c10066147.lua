@@ -11,5 +11,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECKTOP)
 	local g=Duel.SelectMatchingCard(tp,nil,tp,LOCATION_DECK,0,1,1,nil)
 	Duel.ShuffleDeck(tp)
-	Duel.MoveSequence(g:GetFirst(),SEQ_DECK_TOP)
+	Duel.MoveSequence(g:GetFirst(),SEQ_DECKTOP)
 end

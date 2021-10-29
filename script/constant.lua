@@ -417,10 +417,10 @@ LOCATIONS_PHDP		=LOCATION_INPLAY+LOCATION_HAND+LOCATION_DPILE	--"Silent Lab" (Pr
 LOCATION_DECKBOT	=0x10001	--(unused)
 LOCATION_DECKSHF	=0x20001	--(unused)
 --Deck Sequence (for Duel.SendtoDeck)
-SEQ_DECK_TOP		=0	--Return to the top of the deck
-SEQ_DECK_BOTTOM		=1	--Return to the bottom of the deck
-SEQ_DECK_SHUFFLE	=2	--Shuffle into the deck
-SEQ_DECK_UNEXIST	=-2	--Disappear from the game
+SEQ_DECKTOP			=0	--Return to the top of the deck
+SEQ_DECKBOTTOM		=1	--Return to the bottom of the deck
+SEQ_DECKSHUFFLE		=2	--Shuffle into the deck
+SEQ_DECKUNEXIST		=-2	--Disappear from the game
 --Zone Sequence (for Card.GetSequence, Card.GetPreviousSequence, etc.)
 SEQ_MZONE_LEFT		=0	--(reserved) Leftmost Main Monster Zone
 SEQ_MZONE_MID_LEFT	=1	--(reserved) Center-left Main Monster Zone

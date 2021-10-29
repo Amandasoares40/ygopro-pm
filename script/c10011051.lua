@@ -32,7 +32,7 @@ function scard.todeck(tp)
 	if g:GetCount()==0 or not Duel.SelectYesNo(tp,YESNOMSG_TODECK) then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 	local sg=g:Select(tp,1,3,nil)
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 end
 --damage
 function scard.op2(e,tp,eg,ep,ev,re,r,rp)

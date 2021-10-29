@@ -25,7 +25,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	for tc in aux.Next(g) do
 		g:Merge(tc:GetAttachedGroup())
 	end
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 end
 --[[
 	Rulings

@@ -12,7 +12,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.ConfirmCards(tp,g1)
 	local sg=g1:Filter(Card.IsAbleToDeck,nil)
 	if sg:GetCount()==0 or not Duel.SelectYesNo(tp,YESNOMSG_TODECK) then return end
-	local ct=Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	local ct=Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(1-tp)
 	local g2=Duel.GetDecktopGroup(1-tp,ct)
 	Duel.SendtoPrize(g2,REASON_EFFECT)

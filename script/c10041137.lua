@@ -16,13 +16,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 	local sg=g:FilterSelect(tp,Card.IsAbleToDeck,ct1,ct1,nil)
 	if ct1==1 then
-		Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_BOTTOM,REASON_EFFECT)
+		Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKBOTTOM,REASON_EFFECT)
 	else
-		local ct2=Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_TOP,REASON_EFFECT)
+		local ct2=Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKTOP,REASON_EFFECT)
 		Duel.SortDecktop(tp,1-tp,ct2)
 		for i=1,ct2 do
 			local mg=Duel.GetDecktopGroup(1-tp,ct2)
-			Duel.MoveSequence(mg:GetFirst(),SEQ_DECK_BOTTOM)
+			Duel.MoveSequence(mg:GetFirst(),SEQ_DECKBOTTOM)
 		end
 	end
 	Duel.ShuffleHand(1-tp)

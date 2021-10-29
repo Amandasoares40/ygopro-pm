@@ -22,6 +22,6 @@ function scard.todeck(tp)
 	if g:GetCount()==0 then return end
 	Duel.ConfirmCards(1-tp,g)
 	local sg=g:Filter(scard.tdfilter,nil)
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleHand(tp)
 end

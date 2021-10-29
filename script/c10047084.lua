@@ -16,7 +16,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local sg1=g:Select(tp,0,dct,nil)
 	local ct1=sg1:GetCount()
 	for tc1 in aux.Next(sg1) do
-		Duel.MoveSequence(tc1,SEQ_DECK_TOP)
+		Duel.MoveSequence(tc1,SEQ_DECKTOP)
 	end
 	if ct1>1 then
 		Duel.SortDecktop(tp,tp,ct1)
@@ -26,13 +26,13 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local sg2=g:Select(tp,dct-ct1,dct-ct1,nil)
 	local ct2=sg2:GetCount()
 	for tc2 in aux.Next(sg2) do
-		Duel.MoveSequence(tc2,SEQ_DECK_TOP)
+		Duel.MoveSequence(tc2,SEQ_DECKTOP)
 	end
 	if ct2>1 then
 		Duel.SortDecktop(tp,tp,ct2)
 	end
 	for i=1,ct2 do
 		local mg=Duel.GetDecktopGroup(tp,ct2)
-		Duel.MoveSequence(mg:GetFirst(),SEQ_DECK_BOTTOM)
+		Duel.MoveSequence(mg:GetFirst(),SEQ_DECKBOTTOM)
 	end
 end

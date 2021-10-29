@@ -12,7 +12,7 @@ function scard.tg1(e,tp,eg,ep,ev,re,r,rp,chk)
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(tp)
 	local ct=(Duel.TossCoin(tp,1)==RESULT_HEADS and 7 or 4)
 	Duel.BreakEffect()

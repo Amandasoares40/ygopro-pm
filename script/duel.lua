@@ -91,12 +91,12 @@ function Duel.SortDeckbottom(sort_player,target_player,count)
 	if count<=1 then return end
 	for i=1,count do
 		local g1=Duel.GetDeckbottomGroup(target_player,count)
-		Duel.MoveSequence(g1:GetFirst(),SEQ_DECK_TOP)
+		Duel.MoveSequence(g1:GetFirst(),SEQ_DECKTOP)
 	end
 	Duel.SortDecktop(sort_player,target_player,count)
 	for i=1,count do
 		local g2=Duel.GetDecktopGroup(target_player,count)
-		Duel.MoveSequence(g2:GetFirst(),SEQ_DECK_BOTTOM)
+		Duel.MoveSequence(g2:GetFirst(),SEQ_DECKBOTTOM)
 	end
 end
 --a player puts their card face down in front of them

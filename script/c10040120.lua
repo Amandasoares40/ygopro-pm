@@ -22,7 +22,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 		local sg2=g:Select(tp,1,1,nil)
 		Duel.HintSelection(sg2)
-		Duel.SwitchPokemonOffField(tp,sg2,sg1,LOCATION_DECK,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SwitchPokemonOffField(tp,sg2,sg1,LOCATION_DECK,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	else
 		Duel.ShuffleDeck(tp)
 	end

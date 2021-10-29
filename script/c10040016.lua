@@ -18,7 +18,7 @@ scard.resistance_20={ENERGY_R}
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,0)
 	local g=Duel.GetFieldGroup(tp,LOCATION_HAND,LOCATION_HAND)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	Duel.ShuffleDeck(tp)
 	Duel.ShuffleDeck(1-tp)
 	Duel.BreakEffect()

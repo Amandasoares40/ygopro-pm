@@ -16,7 +16,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.ConfirmCards(tp,g)
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 		local sg=g:FilterSelect(tp,Card.IsAbleToDeck,1,1,nil)
-		Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 		Duel.ShuffleDeck(1-tp)
 		Duel.ShuffleHand(1-tp)
 	end

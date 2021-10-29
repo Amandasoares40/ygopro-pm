@@ -12,7 +12,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local sg=Duel.SelectMatchingCard(tp,nil,tp,LOCATION_HAND,0,1,1,nil)
 	if sg:GetCount()>0 then
 		g:Sub(sg)
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	end
 	Duel.ShuffleDeck(tp)
 	Duel.BreakEffect()

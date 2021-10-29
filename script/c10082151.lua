@@ -22,5 +22,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if g:GetCount()==0 then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECKTOP)
 	local sg=g:Select(tp,1,1,nil)
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_TOP,REASON_EFFECT)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKTOP,REASON_EFFECT)
 end

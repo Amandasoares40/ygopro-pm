@@ -12,6 +12,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if Duel.TossCoin(tp,1)==RESULT_TAILS then return end
 	local sg=g:RandomSelect(tp,3)
 	Duel.ConfirmCards(tp,sg)
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleHand(1-tp)
 end

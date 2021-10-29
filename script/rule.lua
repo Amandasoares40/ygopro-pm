@@ -244,7 +244,7 @@ function Rule.remove_rules(tp)
 	local g=Duel.GetMatchingGroup(Card.IsCode,tp,LOCATION_ALL,0,nil,CARD_RULES)
 	if g:GetCount()==0 then return end
 	Duel.DisableShuffleCheck()
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_UNEXIST,REASON_RULE)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKUNEXIST,REASON_RULE)
 end
 --draw starting hand
 function Rule.draw_starting_hand(tp)
@@ -268,7 +268,7 @@ function Rule.check_basic_pokemon(tp)
 		repeat
 			local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
 			Duel.ConfirmCards(1-tp,g)
-			Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_RULE)
+			Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_RULE)
 			Duel.ShuffleDeck(tp)
 			Duel.BreakEffect()
 			Duel.Draw(tp,7,REASON_RULE)
@@ -378,7 +378,7 @@ function Rule.sudden_death()
 	local turnp=Duel.GetTurnPlayer()
 	--reset game
 	Duel.Hint(HINT_OPSELECTED,1-turnp,ERROR_SUDDENDEATH)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_RULE)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_RULE)
 	Duel.ShuffleDeck(turnp)
 	Duel.ShuffleDeck(1-turnp)
 	Duel.ResetFlagEffect(turnp,EFFECT_PRIZE_CARD_CHECK)

@@ -11,6 +11,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 	local g=Duel.SelectMatchingCard(tp,Card.IsAbleToDeck,tp,LOCATION_DPILE,0,1,1,nil)
 	if g:GetCount()>0 then
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_TOP,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKTOP,REASON_EFFECT)
 	end
 end

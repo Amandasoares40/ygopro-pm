@@ -35,6 +35,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.Attach(e,tc,sg3)
 	end
 	Duel.ConfirmCards(1-tp,sg2)
-	Duel.SendtoDeck(sg2,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(sg2,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(tp)
 end

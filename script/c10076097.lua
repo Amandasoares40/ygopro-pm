@@ -10,7 +10,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetFieldGroup(tp,0,LOCATION_HAND)
 	Duel.ConfirmCards(tp,g)
 	if Duel.SelectYesNo(tp,YESNOMSG_TODECK) then
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 		Duel.ShuffleDeck(1-tp)
 		Duel.BreakEffect()
 		local ct=Duel.GetFieldGroupCount(tp,0,LOCATION_HAND)

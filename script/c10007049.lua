@@ -24,7 +24,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,0)
 	local g1=Group.FromCards(c)
 	g1:Merge(c:GetAttachedGroup())
-	Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATOHAND)
 	local g2=Duel.SelectMatchingCard(tp,scard.thfilter,tp,LOCATION_DECK,0,0,1,nil)
 	if g2:GetCount()==0 then return end

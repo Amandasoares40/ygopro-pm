@@ -17,7 +17,7 @@ scard.evolution_list1={["Baby"]=CARD_CLEFFA,["Basic"]=CARD_CLEFAIRY,["Stage 1"]=
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,0)
 	local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	Duel.ShuffleDeck(tp)
 	Duel.BreakEffect()
 	Duel.Draw(tp,7,REASON_ATTACK)

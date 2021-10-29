@@ -23,7 +23,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 	local sg=g:Select(tp,1,1,nil)
 	if not sg:GetFirst():IsPublic() then Duel.ConfirmCards(tp,sg) end
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	Duel.ShuffleHand(1-tp)
 end
 --paralyzed

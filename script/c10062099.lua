@@ -11,5 +11,5 @@ function scard.tdfilter(c)
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetMatchingGroup(scard.tdfilter,tp,LOCATION_DPILE,LOCATION_DPILE,nil)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 end

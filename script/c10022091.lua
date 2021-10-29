@@ -17,7 +17,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g1=Duel.SelectMatchingCard(tp,scard.devfilter,tp,LOCATION_INPLAY,0,1,1,nil)
 	if g1:GetCount()==0 then return end
 	Duel.HintSelection(g1)
-	Duel.Devolve(g1,LOCATION_DECK,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.Devolve(g1,LOCATION_DECK,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	local tc=Duel.GetDevolvedPokemon()
 	if not tc then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_EVOLVETO)

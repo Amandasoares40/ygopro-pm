@@ -15,7 +15,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		local sg=g:Select(tp,2,2,nil)
 		Duel.ShuffleDeck(tp)
 		for tc in aux.Next(sg) do
-			Duel.MoveSequence(tc,SEQ_DECK_TOP)
+			Duel.MoveSequence(tc,SEQ_DECKTOP)
 		end
 		Duel.SortDecktop(tp,tp,2)
 	elseif ct==1 then

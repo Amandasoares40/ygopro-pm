@@ -23,9 +23,9 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	if g:GetCount()>1 then
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECKBOT)
 		local sg2=g:Select(tp,1,1,nil)
-		Duel.MoveSequence(sg2:GetFirst(),SEQ_DECK_BOTTOM)
+		Duel.MoveSequence(sg2:GetFirst(),SEQ_DECKBOTTOM)
 	else
-		Duel.MoveSequence(g:GetFirst(),SEQ_DECK_BOTTOM)
+		Duel.MoveSequence(g:GetFirst(),SEQ_DECKBOTTOM)
 	end
 end
 --[[

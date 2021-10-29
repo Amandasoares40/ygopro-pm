@@ -31,5 +31,5 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local sg=g:Select(tp,1,1,nil)
 	Duel.ShuffleDeck(p)
 	Duel.BreakEffect()
-	Duel.MoveSequence(sg:GetFirst(),SEQ_DECK_TOP)
+	Duel.MoveSequence(sg:GetFirst(),SEQ_DECKTOP)
 end

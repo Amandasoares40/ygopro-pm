@@ -9,7 +9,7 @@ scard.trainer_item=true
 --to deck, to prize
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g1=Duel.GetPrize(tp):Filter(Card.IsAbleToDeck,nil)
-	local ct=Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	local ct=Duel.SendtoDeck(g1,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(tp)
 	if ct==0 then return end
 	local g2=Duel.GetDecktopGroup(tp,ct)

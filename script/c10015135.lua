@@ -21,7 +21,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,0)
 	if Duel.GetPrizeCount(1-tp)>=5 then
 		local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 		Duel.ShuffleDeck(tp)
 		Duel.BreakEffect()
 		Duel.Draw(tp,6,REASON_EFFECT)
@@ -30,6 +30,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		local g=Duel.SelectMatchingCard(tp,scard.devfilter,tp,0,LOCATION_INPLAY,1,1,nil)
 		if g:GetCount()==0 then return end
 		Duel.HintSelection(g)
-		Duel.Devolve(g,LOCATION_DECK,SEQ_DECK_BOTTOM,REASON_EFFECT)
+		Duel.Devolve(g,LOCATION_DECK,SEQ_DECKBOTTOM,REASON_EFFECT)
 	end
 end

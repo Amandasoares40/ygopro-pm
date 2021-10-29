@@ -33,7 +33,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local opt=t[Duel.SelectOption(tp,table.unpack(option_list))+1]
 	local p=(opt==1 and tp) or (opt==2 and 1-tp)
 	local g2=Duel.GetFieldGroup(p,LOCATION_HAND,0)
-	Duel.SendtoDeck(g2,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g2,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(p)
 	Duel.BreakEffect()
 	Duel.DrawUpTo(p,5,REASON_EFFECT,true)

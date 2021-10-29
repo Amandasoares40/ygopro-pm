@@ -8,7 +8,7 @@ scard.trainer_item=true
 --to deck, discard deck
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetMatchingGroup(Card.IsAbleToDeck,tp,LOCATION_DPILE,0,nil)
-	local ct=Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	local ct=Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(tp)
 	Duel.BreakEffect()
 	Duel.DiscardDeck(tp,ct,REASON_EFFECT)

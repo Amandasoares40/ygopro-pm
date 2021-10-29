@@ -45,6 +45,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 		local g=tc:GetAttachedGroup():FilterSelect(tp,scard.tdfilter,1,1,nil)
 		Duel.ConfirmCards(1-tp,g)
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	end
 end

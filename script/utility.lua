@@ -1578,12 +1578,12 @@ function Auxiliary.SendtoDeckCost(f,location,min,max,seq,...)
 	--f: filter function if the card is specified
 	--location: the location to send the card from
 	--min,max: the number of cards to send (nil to send all cards)
-	--seq: where to put the card in the deck (SEQ_DECK_SHUFFLE by default)
+	--seq: where to put the card in the deck (SEQ_DECKSHUFFLE by default)
 	local ext_params={...}
 	return	function(e,tp,eg,ep,ev,re,r,rp,chk)
 				local minc=min or 1
 				local maxc=max or minc
-				seq=seq or SEQ_DECK_SHUFFLE
+				seq=seq or SEQ_DECKSHUFFLE
 				local filt_func=function(c,f,ext_params)
 					return c:IsAbleToDeckAsCost() and (not f or f(c,table.unpack(ext_params)))
 				end

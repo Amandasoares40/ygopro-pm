@@ -12,7 +12,7 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.SelectMatchingCard(tp,Card.IsAbleToDeck,tp,0,LOCATION_HAND,1,1,nil)
 	if g:GetCount()==0 then return end
 	Duel.BreakEffect()
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_BOTTOM,REASON_EFFECT)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKBOTTOM,REASON_EFFECT)
 end
 --[[
 	Rulings

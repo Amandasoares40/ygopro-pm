@@ -11,6 +11,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetMatchingGroup(Card.IsAbleToDeck,tp,0,LOCATION_HAND,nil)
 	if g:GetCount()==0 or Duel.TossCoin(tp,1)==RESULT_TAILS then return end
 	local sg=g:RandomSelect(tp,1,3)
-	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(sg,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleHand(1-tp)
 end

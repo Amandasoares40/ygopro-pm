@@ -16,7 +16,7 @@ function scard.tg1(e,tp,eg,ep,ev,re,r,rp,chk)
 end
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	local g=Duel.GetFieldGroup(tp,LOCATION_HAND,LOCATION_HAND)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_EFFECT)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_EFFECT)
 	Duel.ShuffleDeck(tp)
 	Duel.ShuffleDeck(1-tp)
 	Duel.BreakEffect()

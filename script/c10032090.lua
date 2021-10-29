@@ -18,7 +18,7 @@ scard.weakness_10={ENERGY_P}
 function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.AttackDamage(e,0)
 	local g=Duel.GetFieldGroup(tp,LOCATION_HAND,0)
-	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+	Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	Duel.ShuffleDeck(tp)
 	Duel.BreakEffect()
 	local ct=Duel.GetFieldGroupCount(tp,0,LOCATION_HAND)

@@ -18,6 +18,6 @@ function scard.op1(e,tp,eg,ep,ev,re,r,rp)
 		local c=e:GetHandler()
 		local g=Group.FromCards(c)
 		g:Merge(c:GetAttachedGroup())
-		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECK_SHUFFLE,REASON_ATTACK)
+		Duel.SendtoDeck(g,PLAYER_OWNER,SEQ_DECKSHUFFLE,REASON_ATTACK)
 	end
 end
